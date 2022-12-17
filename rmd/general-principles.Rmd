@@ -1,0 +1,86 @@
+# Üldprintsiibid
+
+## Orgaaniliste ainete lahustuvus ja lahustamisvõime
+
+### Ennustused
+
+Benseen ($\ce{C6H6}$) ja etaanhape ($\ce{CH3COOH}$) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidavad, et etaanhape ja benseen segunevad omavahel.
+
+Benseen ja etanool ($\ce{CH3CH2COH}$) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et etanool ja benseen segunevad omavahel.
+
+Benseen ja 2-propanoon (atsetoon, $\ce{CH3COCH3}$, $\chemfig{-[:30](=[::60]O)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-34)")`) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et atsetoon ja benseen segunevad omavahel.
+
+Atsetoon ja heksaan ($\ce{CH3CH2CH2CH2CH2CH3}$) omavahel ei lahustu, sest nende polaarsuste erinevus on suur.
+
+Atsetoon ja etanool omavahel lahustuvad, sest nende polaarsuste erinevus on väike. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-246")` väidab, et atsetoon ja etanool segunevad omavahel.
+
+Triklorometaan (kloroform, $\ce{HCCl3}$) ja etanool omavahel lahustuvad. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-246")` väidab, et triklorometaan ja etanool segunevad omavahel.
+
+Vesi ($\ce{H2O}$) ja metaan ($\ce{CH4}$) omavahel lahustuvad, sest metaanil puudub hüdrofiilne osa. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-344")` väidab, et vesi ja metaan on omavahel vähelahustuvad.
+
+Vesi ja heksaan omavahel lahustuvad, sest heksaanil puudub hüdrofiilne osa. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-298")` väidab, et vesi ja heksaan omavahel ei lahustu.
+
+Vesi ja 2-propanool ($\ce{CH3HCOHCH3}$, $\chemfig{-[:30](=[::60]OH)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-467)")`) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-466")` väidab, et vesi ja 2-propanool omavahel segunevad.
+
+Vesi ja butanool ($\ce{CH3CH2CH2H2COH}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-78")` väidab, et vesi ja butanool omavahel lahustuvad.
+
+Vesi ja benseen omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et vesi ja benseen kergelt lahustuvad omavahel.
+
+Vesi ja tolueen ($\ce{C(CH3)CHCHCHCHCH}$, $\chemfig{*6(-=-=(-)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-515)")`) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.  `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-514")` väidab, et vesi ja tolueen omavahel ei lahustu.
+
+Vesi ja fenool omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+Vesi ja etaanhape omavahel lahustuvad, sest hüdrofoobseid süsinikke ja hüdrofiilseid hapnikke on võrdselt. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidab, et vesi ja etaanhape omavahel segunevad.
+
+Vesi ja etaandihape (oblikhape) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju.
+
+Vesi ja oktadekaanhape (stearhape) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+Vesi ja 2-hüdroksü-1,2,3-heksaantrihape (sidrunhape) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju.
+
+Vesi ja atsetoon omavahel ei lahustu, sest nende polaarsuste erinevus on suur.
+
+Vesi ja dietüüleeter omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+Vesi ja etüületanaat omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+```{r label = "mhchem"}
+if (knitr::is_html_output()) {
+  "\\require{mhchem}"
+}
+
+```
+
+Vesi ja tärpentin ($\ce{C10H6}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+Vesi ja triklorometaan omavahel ei lahustu, sest hüdrofiilseid osi triklorometaanis pole.
+
+Vesi ja bensiin ($\ce{C5-C12}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+Vee ja glütserooli omavahelise lahustuvuse kohta ei tea mitte midagi väita, sest juhendis puudub teave, milline on glütserooli valem.
+
+```{r label = "solubilities"}
+
+
+```
+
+
+
+
+
+
+
+
+
+
+### Töövahendid
+
+### Reaktiivid
+
+### Töö käik
+
+### Tulemused ja järeldused
+
+### Vastused küsimustele
+
+## Orgaaniliste ainete põlemine
