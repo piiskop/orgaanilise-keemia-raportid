@@ -7,8 +7,8 @@ date: "`r Sys.Date()`"
 description: "Tallinna Ülikooli kursuse \"Orgaaniline keemia I\" peacecop kalmeri: praktiliste tööde raport aastast 2022"
 lang: et
 title: |
-    Orgaanilise keemia esimese osa
-    praktiliste tööde raportid
+    | Orgaanilise keemia esimese osa
+    | praktiliste tööde raportid
 
 documentclass: book
 papersize: a4

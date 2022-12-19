@@ -4,11 +4,18 @@
 
 ### Ennustused
 
+```{r label = "mhchem", echo=FALSE}
+if (knitr::is_html_output()) {
+  "\\require{mhchem}"
+}
+
+```
+
 Benseen ($\ce{C6H6}$) ja etaanhape ($\ce{CH3COOH}$) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidavad, et etaanhape ja benseen segunevad omavahel.
 
 Benseen ja etanool ($\ce{CH3CH2COH}$) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et etanool ja benseen segunevad omavahel.
 
-Benseen ja 2-propanoon (atsetoon, $\ce{CH3COCH3}$, $\chemfig{-[:30](=[::60]O)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-34)")`) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et atsetoon ja benseen segunevad omavahel.
+Benseen ja 2-propanoon (atsetoon, $\ce{CH3COCH3}$, $\chemfig{-[:30](=[::60]O)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-5)")`) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et atsetoon ja benseen segunevad omavahel.
 
 Atsetoon ja heksaan ($\ce{CH3CH2CH2CH2CH2CH3}$) omavahel ei lahustu, sest nende polaarsuste erinevus on suur.
 
@@ -28,50 +35,29 @@ Vesi ja benseen omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemi
 
 Vesi ja tolueen ($\ce{C(CH3)CHCHCHCHCH}$, $\chemfig{*6(-=-=(-)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-515)")`) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.  `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-514")` väidab, et vesi ja tolueen omavahel ei lahustu.
 
-Vesi ja fenool omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja hüdroksübenseen (fenool `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-446)")`, $\ce{C(OH)CHCHCHCHCH}$, $\chemfig{*6(-=-=(-OH)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-447)")`) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-446")` väidab, et vesti ja hüdroksübenseen omavahel lahustuvad.
 
 Vesi ja etaanhape omavahel lahustuvad, sest hüdrofoobseid süsinikke ja hüdrofiilseid hapnikke on võrdselt. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidab, et vesi ja etaanhape omavahel segunevad.
 
-Vesi ja etaandihape (oblikhape) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju.
+Vesi ja etaandihape (oblikhape, $\ce{HO(O)CC(O)OH}$, $\chemfig{HO-[:-30](=[::-60]O)-[:30](=[::60]O)-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-431)")`) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-430")` väidab, et vesi ja etaandihape omavahel lahustuvad.
 
-Vesi ja oktadekaanhape (stearhape) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja oktadekaanhape (stearhape, $\ce{CH3CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2C(O)OH}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-488")` väidab, et vesi ja oktadekaanhape omavahel ei lahustu.
 
-Vesi ja 2-hüdroksü-1,2,3-heksaantrihape (sidrunhape) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju.
+Vesi ja 2-hüdroksü-1,2,3-heksaantrihape ehk 2-hüdroksü-1,2,3-propaantrikarboksüülhape `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-126)")` (sidrunhape, $\ce{(HO)C(COOH)3}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 5-126)")`, $\ce{H3C(OH)(COO)3}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 5-73)")`, $\chemfig{HOOC-[:-30]-[:30](-[::60]COOH)(-[:-90]OH)-[:-30]-[:30]COOH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-127)")`) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-126)")` väidab, et vesi ja 2-hüdroksü-1,2,3-propaaneeterkarboksüülhape omavahel väga hästi lahustuvad.
 
-Vesi ja atsetoon omavahel ei lahustu, sest nende polaarsuste erinevus on suur.
+Vesi ja atsetoon omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-4)")` väidab, et vesi ja 2-propanoon omavahel segunevad.
 
-Vesi ja dietüüleeter omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja dietüüleeter ($\ce{CH3CH2OCH2CH3}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
-Vesi ja etüületanaat omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
-
-```{r label = "mhchem"}
-if (knitr::is_html_output()) {
-  "\\require{mhchem}"
-}
-
-```
+Vesi ja etüületanaat ($\ce{CH3COOCH2CH3}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 6-53)")`) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
 Vesi ja tärpentin ($\ce{C10H6}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
-Vesi ja triklorometaan omavahel ei lahustu, sest hüdrofiilseid osi triklorometaanis pole.
+Vesi ja triklorometaan ($\ce{HCCl3}$) omavahel ei lahustu, sest hüdrofiilseid osi triklorometaanis pole. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-520)")` väidab, et vesi ja triklorometaan on omavahel vähe lahustuvad.
 
 Vesi ja bensiin ($\ce{C5-C12}$) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
-Vee ja glütserooli omavahelise lahustuvuse kohta ei tea mitte midagi väita, sest juhendis puudub teave, milline on glütserooli valem.
-
-```{r label = "solubilities"}
-
-
-```
-
-
-
-
-
-
-
-
-
+Vee ja 1,2,3-propaantriool (glütserool, gro, $\ce{HOCH2C(OH)H2CH(OH)}$, $\chemfig{HO-[:30]-[:-30](-[:-90]OH)-[:30]-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-285)")`) omavahelise lahustuvuse kohta ei tea mitte midagi väita, sest juhendis puudub teave, milline on glütserooli valem. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-284)")` väidab, et vesi ja 1,2,3-propaantriool omavahel segunevad.
 
 ### Töövahendid
 
