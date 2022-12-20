@@ -1,0 +1,162 @@
+# Süsivesinikud
+
+## Alkeenid ja alkaanid
+
+### Eesmärk
+
+Saadud eksperimentaalne kinnitus teooriale, et kaaliumpermanganaadi lahus muudab värvi, kui reageerib küllastumata ainega, ja ei muuda värvi, kui reageerib küllastunud ainega.
+
+### Vahendid
+
+1. Kolm katseklaasi, et nendesse vedelikke toppida.
+
+2. Toruga katseklaasi kork, et toru kaudu eteen välja juhtida.
+
+3. Põleti, et katseklaasi kuumutada.
+
+4. Tõmbekapp, et mürgistust mitte saada.
+
+### Ained
+
+1. Etanool.
+
+2. Kontsentreeritud väävelhape.
+
+3. Peen liiv.
+
+4. 5 % $\ce{Na2CO3}$ vesilahus.
+
+5. 0,5 % $\ce{KMnO4}$ vesilahus.
+
+6. Bensiin.
+
+### Töö käik
+
+Teostasime eksperimendi esimese katse liisa kasemaga, teise katse ragne kalmetiga. Bensiini ja etanooli eksperimendi teostasin karl salumetsaga.
+
+Töö osad:
+
+1. Katseklaasi 1 valasime 1 ml etanooli.
+
+2. Katseklaasi 1 lisasime 6 ml kontsentreeritud väävelhapet.
+
+3. Katseklaasi 1 lisasime pisut peent liiva.
+
+4. Katseklaasi 1 sulgesime korgiga, mida läbis painutatud klaastoru tekkiva gaasi väljajuhtimiseks.
+
+5. Katseklaasi 2 panime 2 ml 5 % $\ce{Na2CO3}$ vesilahust.
+
+6. Katseklaasi 2 panime 3 tilka 0,5 % $\ce{KMnO4}$ vesilahust.
+
+7. Suunasime toru katseklaasist 1 otsapidi katseklaasi 2.
+
+8. Katseklaasi 1 kuumutasime põleti abil ettevaatlikult ja eteen eraldus mullidena.
+
+9. Loksutasime katseklaasi 2.
+
+10. Jätsime katseklaasi 2 viieks minutiks seisma.
+
+11. Jälgisime katseklaasis 2 oleva lahuse värvuse muutumist.
+
+12. 0,2 ml bensiini lahustasime 2 ml etanoolis.
+
+13. Lisasime 2 ml 5 % $\ce{Na2CO3}$ vesilahust.
+
+14. Lisasime 2 tilka 0,5 % $\ce{KMnO4}$ vesilahust.
+
+15. Loksutasime.
+
+16. Jätsime 1 minutiks seisma.
+
+17. Jälgisime, kas $\ce{KMnO4}$ lilla värvus kadus.
+
+### Tulemused
+
+Etanool värvus leeklambil kuumutades pruunikaks (joonised \@ref(fig:heating-ethanol) leheküljel `r render_pageref(reference = "fig:heating-ethanol")`, \@ref(fig:heating-ethanol-ethen) leheküljel `r render_pageref(reference = "fig:heating-ethanol-ethen")`) ja tumepruuniks muutudes eteeniks (joonis \@ref(fig:heating-ethen) leheküljel `r render_pageref(reference = "fig:heating-ethen")`). Gaasiline eteen liikus mööda toru kaaliumpermanganaadi seltsi muutes selle värvuse esmalt tuhmroosaks (joonis \@ref(fig:potassium-permanganate-pink) leheküljel `r render_pageref(reference = "fig:potassium-permanganate-pink")`), seejärel peaaegu värvusetuks (joonis \@ref(fig:potassium-permanganate-colourless) leheküljel `r render_pageref(reference = "fig:potassium-permanganate-colourless")`), misjärel roheliseks (joonis \@ref(fig:potassium-permanganate-green) leheküljel `r render_pageref(reference = "fig:potassium-permanganate-green")`) ja helekollaseks (joonis \@ref(fig:potassium-permanganate-lightyellow) leheküljel `r render_pageref(reference = "fig:potassium-permanganate-lightyellow")`). Pärast toru eemaldamist tumenes katseklaasis 2 olev ollus (joonis \@ref(fig:potassium-permanganate-yellow) leheküljel `r render_pageref(reference = "fig:potassium-permanganate-yellow")`).
+
+```{r label = "heating-ethanol", echo=FALSE, fig.cap = "Katseklaasi kuumutamine, milles pisut liiva ja etanooli, katalüsaatoriks väävelhape."}
+include_external_graphics("rmd/3/3-etanool.png")
+
+```
+
+```{r label = "heating-ethanol-ethen", echo=FALSE, fig.cap = "Etanooli kuumenedes muutus selle värvus pruuniks."}
+include_external_graphics("rmd/3/3-etanool-eteen.png")
+
+```
+
+```{r label = "heating-ethen", echo=FALSE, fig.cap = "Kui katseklaasis 1 olev vedelik oli juba tumepruuniks muutunud, oli etanoolist saanud eteen. Samaaegselt oli kaaliumpermanganaadi värvus veel roosa."}
+include_external_graphics("rmd/3/3-eteen.png")
+
+```
+
+```{r label = "potassium-permanganate-pink", echo=FALSE, fig.cap = "Kui katseklaasis 1 olevast etanoolist oli saanud eteen, lendus see katseklaasi 2, kus hakkas mõjutama kaaliumpermanganaadi värvust."}
+include_external_graphics("rmd/3/3-kaaliumpermanganaat-heleroosa.png")
+
+```
+
+```{r label = "potassium-permanganate-colourless", echo=FALSE, fig.cap = "Katseklaasis 2 oleva vedeliku värvus muutus tuhmroosast tuhmroheliseks."}
+include_external_graphics("rmd/3/3-kaaliumpermanganaat-heleroheline.png")
+
+```
+
+```{r label = "potassium-permanganate-green", echo=FALSE, fig.cap = "Katseklaasis 2 oleva vedeliku värvus muutus tuhmrohelisest erkroheliseks."}
+include_external_graphics("rmd/3/3-kaaliumpermanganaat-roheline.png")
+
+```
+
+```{r label = "potassium-permanganate-lightyellow", echo=FALSE, fig.cap = "Katseklaasis 2 oleva vedeliku värvus muutus erkrohelisest helekollaseks."}
+include_external_graphics("rmd/3/3-kaaliumpermanganaat-helekollane.png")
+
+```
+
+```{r label = "potassium-permanganate-yellow", echo=FALSE, fig.cap = "Katseklaasi 2 eemaldamise järel süsteemist tumenes selles olev ollus."}
+include_external_graphics("rmd/3/3-kaaliumpermanganaat-kollane.png")
+
+```
+
+Eksperimendi teises katses ei muutunud katseklaasis 1 oleva segu värv, kuigi katseklaasis 2 oleva segu värv muutus (joonis \@ref(fig:run-2) leheküljel `r render_pageref(reference = "fig:run-2")`).
+
+```{r label = "run-2", echo=FALSE, fig.cap = "Eksperimendi teises katses ei tumenenud katseklaasis 1 olev lahus, kuigi katseklaasis 2 oleva olluse värv muutus."}
+include_external_graphics("rmd/3/3-katse-2.png")
+
+```
+
+Bensiini ja etanooli eksperimendi esialgset lillat värvust ma ei täheldanud, kuna asjatasin parasjagu millegi muuga, kui need ained kokku segati. Küll aga jõudsin kohale eksperimendi lõpuks, kui näha oli roosa värvus (joonis \@ref(fig:from-violet-to-pink) leheküljel `r render_pageref(reference = "fig:from-violet-to-pink")`).
+
+```{r label = "from-violet-to-pink", echo=FALSE, fig.cap = "Kokku segati bensiin, etanool, naatriumkarbonaat ja kaaliumpermanganaat ning pärast loksutamist ja minut ootamist oli segu roosa."}
+include_external_graphics("rmd/3/3-lillast-roosaks.png")
+
+```
+
+### Selgitus
+
+Kui väävelhappe üks vesinikuaatom märkas etanooli hapnikuaatomit, otsustas see enda hapnikuaatomi maha jätta andes kaasavaraks oma ainsa elektroni. Vesinikuaatom sai hetke olla õnnelik, sest polnud vaja mitte ühtki elektroni kaasa tassida. Etanooli hapnikuaatom oli piisavalt rikas, et võtta vesinikuaatom enda juurde elama sidudes vesinikuaatomi iseenda vaba elektronidepaariga. Tulemusena tekkis väävelhappe molekulis elektronide ülejääk ja väävelhappe molekulist sai negatiivne ioon. Etanoolis oli nüüd aga elektronide puudujääk, mistõttu sai etanoolist positiivne ioon ehk toimus etanooli protoniseerimine. See protsess on näidatud joonisel \@ref(fig:protonizing-ethanol) leheküljel `r render_pageref(reference = "fig:protonizing-ethanol")`.
+
+```{r label = "protonizing-ethanol", echo=FALSE, fig.cap = paste("Etanooli protoniseerimine ", render_with_emojis(text = "((ref:a2013-e))"), ".", sep = "")}
+include_external_graphics("rmd/3/3-protonizing-ethanol.png")
+
+```
+
+Ei meeldinud väävelhappe hapnikuaatomile olla ilma vesinikuaatomita ja meelitas etanooliiooni metüülosast ühe vesinikuaatomi eelmise asemele. Ka see vesinik lahkus ilma elektronita jättes etanooliiooni metüülosa süsinikuaatomile ühe üleliigse elektroni. Samaaegselt kiskus protoniseerunud etanooli hapnikuaatom end süsinikuaatomi küljest lahti ja oli nüüd koos oma kahe vesinikuaatomist partneriga vesi. Süsinikuaatom, mille küljest lahtirebimine toimus, kaotas ühe oma elektroni. Nüüd oli molekulis, mis etanoolist veel järel oli kaks kohkunud süsinikuaatomit: ühel oli üleliigne elektron, teiselt just varastati üks ära, nii et üks jäi puudu. Kähku leidsid nad viisi, kuidas üksteist aidata moodustades kaksiksideme. Nii moodustus eteen. Väävelhape oli taas õnnelik, lisaks oli veel hea meel, et sai veidi aidata maailma ümber korraldada ning vesinikuvahetus oli ka tore vaheldus. See protsess on näidatud joonisel \@ref(fig:building-ethen) leheküljel `r render_pageref(reference = "fig:building-ethen")`.
+
+```{r label = "building-ethen", echo=FALSE, fig.cap = "Eteeni moodustumine."}
+include_external_graphics("rmd/3/3-building-ethen.png")
+
+```
+
+Eteeni mõjul lagunes roosa kaaliumpermanganaat kaaliummanganaadiks ja kollaseks mangaandioksiidiks ning eteeni asemele moodustus etaan-1,2-diool. See protsess on esitatud joonisel \@ref(fig:making-manganese-dioxide) leheküljel `r render_pageref(reference = "fig:making-manganese-dioxide")`.
+
+```{r label = "making-manganese-dioxide", echo=FALSE, fig.cap = paste("Eteeni toimel lagunes kaaliumpermanganaat ja vedeliku värv muutus ", render_with_emojis(text = "((ref:chemistrylearner-2020-baeyers))"), ".", sep = "")}
+include_external_graphics("rmd/3/Baeyers-Reagent-Example-Ethylene.jpg")
+
+```
+
+Baeyeri testiga testitakse küllastuvust. Kaaliumpermanganaat reageeris küllastunud alkeeniga, lagunes ja lahuse värvus muutus. Küllastumata alkoholiga poleks sellist reaktsiooni toimunud ja lahuse värvus oleks jäänud muutumatuks. Niimoodi saab eristada alkeene ja alküüne alkaanidest ja areenidest.
+
+Huvitav asjaolu on, et õpetaja järgi tekkisid veidi teistsugused saadused:
+
+$$\ce{CH2=CH2 + 2KMnO4 + 4H2O -> 2MnO2 + 2KOH + 3CH2OH-CH2OH},$$
+
+millest mangaandioksiid olevat mitte pruun, vaid hoopiski läbipaistev.
+
+Bensiini ja etanooli eksperimendi ollus ei olnudki alul lilla, vaid oligi roosa nagu eteeni kasutamise eksperimendi alguses. Nii et lahuse värv ei muutunudki. Põhjus seisneb selles, et bensiin ja etanool on küllastunud ühendid ja küllastunud ühendiga kaaliumpermanganaat ei reageeri.

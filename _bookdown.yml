@@ -4,5 +4,6 @@ delete_merged_file: true
 rmd_files: [
   "index.Rmd",
   "rmd/general-principles.Rmd",
+  "rmd/hydrocarbons.Rmd",
   "references.Rmd"
 ]

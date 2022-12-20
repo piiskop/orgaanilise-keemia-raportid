@@ -5,4 +5,8 @@
 \hyphenpenalty=10000
 \fontspec{Symbola}
 
+(ref:a2013-e) @a2013_e
+
+(ref:chemistrylearner-2020-baeyers) @chemistrylearner_2020_baeyers
+
 (ref:haynes-2014-crc) @haynes_2014_crc

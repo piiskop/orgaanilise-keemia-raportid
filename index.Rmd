@@ -7,8 +7,8 @@ date: "`r Sys.Date()`"
 description: "Tallinna Ülikooli kursuse \"Orgaaniline keemia I\" peacecop kalmeri: praktiliste tööde raport aastast 2022"
 lang: et
 title: |
-    | Orgaanilise keemia esimese osa
-    | praktiliste tööde raportid
+  | Orgaanilise keemia esimese osa
+  | praktiliste tööde raportid
 
 documentclass: book
 papersize: a4
@@ -21,6 +21,7 @@ mainfont: DejaVu Serif # for displaying both Chinese symbols and emojis
 CJKmainfont: Droid Sans Fallback
 
 bibliography: [references.bib]
+csl: apa.csl
 link-citations: yes
 
 lof: yes
@@ -215,5 +216,5 @@ render_color <- function(color, text) {
 
 ```
 
-# Introduction
+# Sissejuhatus {.unnumbered}
 
