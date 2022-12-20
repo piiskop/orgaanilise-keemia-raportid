@@ -9,4 +9,6 @@
 
 (ref:chemistrylearner-2020-baeyers) @chemistrylearner_2020_baeyers
 
+(ref:clark-2013-ring) @clark_2013_ring
+
 (ref:haynes-2014-crc) @haynes_2014_crc

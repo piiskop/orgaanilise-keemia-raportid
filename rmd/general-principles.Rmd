@@ -35,7 +35,7 @@ Vesi ja butanool ($\ce{CH3CH2CH2H2COH}$, alkohol) omavahel ei lahustu, sest hüd
 
 Vesi ja benseen omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et vesi ja benseen kergelt lahustuvad omavahel.
 
-Vesi ja tolueen ($\ce{C(CH3)CHCHCHCHCH}$, $\chemfig{*6(-=-=(-)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-515)")`, tsüklohekseen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.  `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-514")` väidab, et vesi ja tolueen omavahel ei lahustu.
+Vesi ja metüülbenseen ($\ce{CH3C6H5}$, `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-515)")`, tolueen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.  `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-514")` väidab, et vesi ja tolueen omavahel ei lahustu.
 
 Vesi ja hüdroksübenseen (fenool `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-446)")`, $\ce{C6H5(OH)}$, $\chemfig{*6(-=-=(-OH)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-447)")`, tsükloalkeen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-446")` väidab, et vesi ja hüdroksübenseen omavahel lahustuvad.
 

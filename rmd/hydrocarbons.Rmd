@@ -151,7 +151,7 @@ include_external_graphics("rmd/3/Baeyers-Reagent-Example-Ethylene.jpg")
 
 ```
 
-Baeyeri testiga testitakse küllastuvust. Kaaliumpermanganaat reageeris küllastunud alkeeniga, lagunes ja lahuse värvus muutus. Küllastumata alkoholiga poleks sellist reaktsiooni toimunud ja lahuse värvus oleks jäänud muutumatuks. Niimoodi saab eristada alkeene ja alküüne alkaanidest ja areenidest.
+Baeyeri testiga testitakse küllastuvust. Kaaliumpermanganaat reageeris küllastumata alkeeniga, lagunes ja lahuse värvus muutus. Küllastunud alkoholiga poleks sellist reaktsiooni toimunud ja lahuse värvus oleks jäänud muutumatuks. Niimoodi saab eristada alkeene ja alküüne alkaanidest ja areenidest.
 
 Huvitav asjaolu on, et õpetaja järgi tekkisid veidi teistsugused saadused:
 
@@ -160,3 +160,198 @@ $$\ce{CH2=CH2 + 2KMnO4 + 4H2O -> 2MnO2 + 2KOH + 3CH2OH-CH2OH},$$
 millest mangaandioksiid olevat mitte pruun, vaid hoopiski läbipaistev.
 
 Bensiini ja etanooli eksperimendi ollus ei olnudki alul lilla, vaid oligi roosa nagu eteeni kasutamise eksperimendi alguses. Nii et lahuse värv ei muutunudki. Põhjus seisneb selles, et bensiin ja etanool on küllastunud ühendid ja küllastunud ühendiga kaaliumpermanganaat ei reageeri.
+
+## Areenid
+
+### Eesmärgid
+
+Kontrollitud eksperimentaalselt, et
+
+1. metüülbenseen reageerib kaaliumpermanganaadiga, benseen mitte,
+
+2. hüdroksübenseen reageerib lämmastikhappega,
+
+3. hüdroksübenseen reageerib raudkloriidiga, resortsiin mitte.
+
+### Tööriistad
+
+1. Kuus katseklaasi, et sinna lahuseid surada.
+
+2. Neli pipetti, et nendega lahuseid mõõta.
+
+3. Tõmbekapp, et mürgistust mitte saada.
+
+4. Põleti, et lahust kuumutada.
+
+5. Katseklaasi tõstmise hoidik, et katseklaasi saaks põleti leegi kohale, ilma et see pudeneks.
+
+### Ained
+
+1. Benseen.
+
+2. Metüülbenseen.
+
+3. 5 % $\ce{Na2CO3}$.
+
+4. 0,5 % $\ce{KMnO4}$.
+
+5. 5 % hüdroksübenseen.
+
+6. 10 % $\ce{HNO3}$.
+
+7. Hüdroksübenseen.
+
+8. 1,3-benseendiool ($\chemfig{*6(-=(-\ce{OH})-=(-\ce{OH})-=)}$, resortsiin `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-480")`).
+
+9. Vesi.
+
+10. 10 % $\ce{FeCl3}$.
+
+### Töö käik
+
+Töö teostasin marjuga, kes kirjeldab end kui kõige värisevamate kätega inimest ja kes teostas eksperimendi benseeni ja metüülbenseeniga, ning liisa kasemaga, kes teostas eksperimendis fenooliga kõik peale selle, et erki tilgutas juurde lämmastikhapet.
+
+Töö osad:
+
+1. Ühte katseklaasi pipeteerisime 1 ml benseeni.
+
+2. Teise katseklaasi pipeteerisime 1 ml metüülbenseeni. Toimus keemiline lehkamine. Oli tunne, nagu oleks arsti juures.
+
+3. Kummassegi katseklaasi lisasime tõmbekapis 1 ml 5 % $\ce{Na2CO3}$ vesilahust.
+
+4. Kummassegi katseklaasi lisasime tõmbekapis 2 tilka 0,5 % $\ce{KMnO4}$ vesilahust.
+
+5. Tõmbekapis loksutasime mõlemat katseklaasi.
+
+6. Tõmbekapis jälgisime värvuse muutumist.
+
+7. Tühja katseklaasi valasime tõmbekapis 1 ml 5 % fenooli vesilahust.
+
+8. Tõmbekapis lisasime 1 ml ja neli tilka 10 % $\ce{HNO3}$ lahust.
+
+9.  Kuumutasime tõmbekapis fenooliga katseklaasi põletileegiga. Kuumutama tõstes tuleb olla näpitsatega ettevaatlik, et katseklaas ei pudeneks. meil pudenes (joonis \@ref(fig:phenol-falling) leheküljel `r render_pageref(reference = "fig:phenol-falling")`). Tuleb kasutada sellist hoidikut nagu joonisel \@ref(fig:phenol-hno3-after) leheküljel `r render_pageref(reference = "fig:phenol-hno3-after")`.
+
+    ```{r label = "phenol-falling", echo=FALSE, fig.cap = "Liigutades fenooliga katseklaasi näpitsatega leegi poole, komistas liisa katseklaasi hoidiku käepideme pihta, mille tulemusel kukkus katseklaas näpitsa haarade vahelt kuumakindlale alusele."}
+include_external_graphics("rmd/4/4-fenool-kukub.png")
+
+    ```
+
+10. Tühja katseklaasi asetasime väikese koguse fenooli (mõned kristallid).
+
+11. Tühja katseklaasi asetasime resortsiini.
+
+12. Sammudes 10 ja 11 kasutatud katseklaasidesse lisasime kumbagi 3 ml vett ainete lahustamiseks.
+
+13. Samuti lisasime kumbagisse 5 tilka 10 % $\ce{FeCl3}$.
+
+14. Loksutasime kumbagi katseklaasi.
+
+15. Jälgisime kumbagi katseklaasi sisu värvuse muutumist.
+
+### Tulemused
+
+Vahetult pärast naatriumkarbonaadi ja kaaliumpermanganaadi lisamist olid nii benseeni kui tolueeni lahus sarnaselt roosad (joonis \@ref(fig:sodiumcarbonate-potassiumpermanganate-before) leheküljel `r render_pageref(reference = "fig:sodiumcarbonate-potassiumpermanganate-before")`).
+
+```{r label = "sodiumcarbonate-potassiumpermanganate-before", echo=FALSE, fig.cap = "Paremal on benseeni, vasemal metüülbenseeni lahus vahetult pärast naatriumkarbonaadi ja kaaliumpermanganaadi lisamist."}
+include_external_graphics("rmd/4/4-benseen-tolueen-enne.png")
+
+```
+
+Pärast loksutamist oli näha kihte (joonis \@ref(fig:sodiumcarbonate-potassiumpermanganate-after) leheküljel `r render_pageref(reference = "fig:sodiumcarbonate-potassiumpermanganate-after")`). Tolueeni lahuse pealmine kiht oli tumekollasem kui benseeni lahuse pealmine kiht. Ilmselt toimus tolueeni toimel kaaliumpermanganaadi lagunemine.
+
+```{r label = "sodiumcarbonate-potassiumpermanganate-after", echo=FALSE, fig.cap = "Paremal on metüülbenseeni, vasemal benseeni lahus pärast loksutamist."}
+include_external_graphics("rmd/4/4-benseen-tolueen-pärast.png")
+
+```
+
+Benseen kaaliumpermanganaadiga ei reageerivat.
+
+Tolueeni reageerimine kaaliumpermanganaadiga:
+
+$$\chemfig{*6(-=-=(-\ce{CH3})-=)}\ce{+ 2KMnO4 ->}\chemfig{*6(-=-=(-\ce{COOK})-=)}\ce{+ 2MnO2 + KOH + H2O}.$$
+
+Fenooli ja lämmastikhappe segu kuumutamisel lahus muutus tumedamaks (joonised \@ref(fig:phenol-hno3-before) leheküljel `r render_pageref(reference = "fig:phenol-hno3-before")` ja \@ref(fig:phenol-hno3-after) leheküljel `r render_pageref(reference = "fig:phenol-hno3-after")`).
+
+```{r label = "phenol-hno3-before", echo=FALSE, fig.cap = "Enne kuumutamist oli fenooli ja lämmastikhappe segu heledam."}
+include_external_graphics("rmd/4/4-fenool-hno3-enne.png")
+
+```
+
+```{r label = "phenol-hno3-after", echo=FALSE, fig.cap = "Pärast kuumutamist oli fenooli ja lämmastikhappe segu tumedam. Katseklaasi kuumutamiseks on sobilik kasutada sellist hoidikut nagu pildil, et katseklaas hoidikust ära ei libiseks."}
+include_external_graphics("rmd/4/4-fenool-hno3-pärast.png")
+
+```
+
+Toatemperatuuril tekitavat hüdroksübenseen lahjendatud lämmastikhappega reageerides 2-nitrohüdroksübenseeni ja 4-nitrohüdroksübenseeni segu (joonised \@ref(fig:nitrophenol-2) leheküljel `r render_pageref(reference = "fig:nitrophenol-2")` ja \@ref(fig:nitrophenol-4) leheküljel `r render_pageref(reference = "fig:nitrophenol-4")`).
+
+```{r label = "nitrophenol-2", echo=FALSE, fig.cap = paste("Lahjendatud lämmastikhappega hüdroksübenseeni reageerides tekib ühe ainena 2-nitrohüdroksübenseen ", render_with_emojis(text = "((ref:clark-2013-ring))"), ".", sep = "")}
+include_external_graphics("rmd/4/make2nitroph.gif")
+
+```
+
+```{r label = "nitrophenol-4", echo=FALSE, fig.cap = "Lahjendatud lämmastikhappega hüdroksübenseeni reageerides tekib ühe ainena 4-nitrohüdroksübenseen."}
+include_external_graphics("rmd/4/make4nitroph.gif")
+
+```
+
+Fenool ja resortsiin on ilma värvita. Kui lisasime nendesse kollast raudkloriidi (joonis \@ref(fig:adding-fecl3) leheküljel `r render_pageref(reference = "fig:adding-fecl3")`), värvusid mõlemad segud ühtmoodi lillaks (joonis \@ref(fig:our-phenol-resorcin) leheküljel `r render_pageref(reference = "fig:our-phenol-resorcin")`. erkil ja liisal oli tulemus selles mõttes sama, et kumbki segu oli sama värvi, kuid nende segud olid tumedamad kui meie segud (joonis \@ref(fig:their-phenol-resorcin) leheküljel `r render_pageref(reference = "fig:their-phenol-resorcin")`).
+
+```{r label = "adding-fecl3", echo=FALSE, fig.cap = "Kollase raudkloriidi lisamine."}
+include_external_graphics("rmd/4/4-fecl3-lisamine.png")
+
+```
+
+```{r label = "our-phenol-resorcin", echo=FALSE, fig.cap = "Raudkloriidi mõjul värvus segu fenooli ja resortsiiniga ühtmoodi lillaks."}
+include_external_graphics("rmd/4/4-meie-fenool-resortsiin.png")
+
+```
+
+```{r label = "their-phenol-resorcin", echo=FALSE, fig.cap = "Ka erkil ja liisal värvus segu nii fenooli kui resortsiiniga pärast raudkloriidi lisamist lillaks, kuigi tumedamaks kui meie segud."}
+include_external_graphics("rmd/4/4-erki-ja-liisa-fenool-resortsiin.png")
+
+```
+
+Hüdroksübenseen reageeris raudkloriidiga niimoodi:
+
+$$\ce{3} \chemfig{*6(-=-=(-\ce{OH})-=)} \ce{+ FeCl3 ->} \chemfig{*6(-=-(-O-[:30]Fe(-[:90]O(-[:90]*6(-=-=-=)))-[:-30]O-[:-30]*6(-=-=-=))=-=)} \ce{+ 3HCl}.$$
+
+## Halogeeniühendid
+
+### Eesmärk
+
+Vee, halogenoalkaani ja alkaani tihedused omavahel võrreldud.
+
+### Töövahend
+
+Katseklaas, et sinna ained kokku segada.
+
+### Ained
+
+1. Vesi, mis on $\ce{KMnO4}$, metüülsinise või mõne teise vees hästilahustuva
+värvilise aine abil värviliseks muudetud.
+
+2. Halogenoalkaan.
+
+3. Alkaan.
+
+### Töö käik
+
+Töö teostasin erkiga ja liisa kasemaga.
+
+Töö osad:
+
+1. Katseklaasi valasime ~2 ml vett, mis oli $\ce{KMnO4}$, metüülsinise või mõne teise vees hästilahustuva
+värvilise aine abil värviliseks muudetud.
+
+2. Katseklaasi lisasime ~0,5 ml halogenoalkaani $\ce{CCl4}$.
+
+3. Katseklaasi lisasime ~0,5 ml alkaani bensiin.
+
+### Tulemus
+
+Nagu joonisel \@ref(fig:densities) leheküljel `r render_pageref(reference = "fig:densities")` näha, kujunes kolmest ainest välja kolm kihti, millest kõige madalamal kõige tihedam aine halogenoalkaan, keskel vesi ja kõige kõrgemal kõige väiksema tihedusega aine alkaan.
+
+```{r label = "densities", echo=FALSE, fig.cap = "Kõige madalamale kihistus kõige tihedam aine halogenoalkaan tetraklorometaan, keskele vesi, kõige kõrgemale kõige hõredam aine alkaan bensiin."}
+include_external_graphics("rmd/5-tihedused.png")
+
+```
