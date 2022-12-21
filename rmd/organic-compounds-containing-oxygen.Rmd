@@ -1,0 +1,766 @@
+# Hapnikku sisaldavad orgaanilised ühendid
+
+## Alkoholid
+
+### Teooria
+
+Kui 1,2,3-propaantriool segada vaskhüdroksiidiga, tekib vaskglütseraat (joonis \@ref(fig:copper-glycerate) leheküljel `r render_pageref(reference = "fig:copper-glycerate")`).
+
+```{r label = "copper-glycerate", echo=FALSE, fig.cap = paste("Glütserooli reageerimisel vaskhüdroksiidiga tekib vaskglütseraat ", render_with_emojis(text = "((ref:alcohols))"), ".", sep = "")}
+include_external_graphics("rmd/6/P44R20.jpeg")
+
+```
+
+õpetaja kirjutas joonisel \@ref(fig:copper-glycerate) leheküljel `r render_pageref(reference = "fig:copper-glycerate")` oleva reaktsioonivõrrandi asemel tahvlile teistsuguse reaktsioonivõrrandi, mis tundub kummaline, sest selles osaleb vask üksnes katalüsaatoris, kuid eksisteerib saaduses, ning hapnikuaatomid on kolme sidemega. Kuna mul puudub arusaamine, kuidas nii saab olla, siis seda teisendit ma oma raportis ei esita.
+
+Primaarsel alkoholil on hüdroksüülrühm süsiniku küljes, mis on seotud ainult ühe süsinikuga.
+
+Etanool on primaarne alkohol. Järelikult oksüdeerub etanool $\ce{CH3-CH2-OH}$ kõigepealt aldehüüdiks etanaal $\ce{CH3-CHO}$ ja siis karboksüülhappeks etaanhape $\ce{CH3-COOH}$.
+
+Naatriumi lisamisel etanoolile tekivad naatriumetoksiid ja vesinik:
+
+$$\ce{2CH3CH2OH(l) + 2Na(s) -> 2CH3CH2ONa(aq) + H2(g)} \text{`r render_with_emojis(text = "((ref:clark-2019-the))")`}.$$
+
+Naatrium on vesinikust tegusam ja lükkab vesiniku välja võttes viimase positsiooni endale.
+
+### Eesmärgid
+
+Oskus tekitada
+
+1. vaskglütseraadi,
+
+2. alkoholist aldehüüdi ja karboksüülhapet,
+
+3. naatriumetoksiidi.
+
+### Töövahendid
+
+1. Kuus katseklaasi, et nendesse lahuseid tekitada.
+
+2. Katseklaaside alus, et ei peaks katseklaasi kogu aeg käega hoidma.
+
+3. Keeduklaas, et sellest etanooli mõõta.
+
+4. Spaatel naatriumi urgitsemiseks ja lõikamiseks.
+
+5. Majapidamispaber, et sinna õline naatriumitükk heita.
+
+### Ained
+
+1. 5 % $\ce{CuSO4}$.
+
+2. 5 % $\ce{NaOH}$.
+
+3. Etanool.
+
+4. Glütserool.
+
+5. Butanool.
+
+6. 5 % $\ce{K2Cr2O7}$.
+
+7. Kontsentreeritud $\ce{H2SO4}$.
+
+8. Naatrium.
+
+### Töö käik
+
+Töö sooritasin marjuga, kes segas kokku vasksulfaadi ja naatriumhüdroksiidi ning loksutas ja kes toimetas ka kaaliumkromaadiga, mõõtis samuti etanooli, ning karl salumetsaga, kes jaotas vasksulfaadi ja naatriumhüdroksiidi segu kahte katseklaasi, toimetas tõmbekapis ja möllas naatriumiga.
+
+Töö osad:
+
+1. Katseklaasi valasime 1 ml 5 % $\ce{CuSO4}$ lahust.
+
+2. Lisasime 1 ml 5 % $\ce{NaOH}$ lahust. Tekib
+kahvatusinine mahukas $\ce{Cu(OH)2}$ sade.
+
+3. Katseklaasi sisu loksutasime.
+
+4. Jagasime katseklaasi sisu kahte
+tühja katseklaasi.
+
+5. Punktis 4 täidetud ühte katseklaasi lisasime 5 tilka etanooli.
+
+6. Punktis 4 täidetud ühte katseklaasi, kuhu polnud lisatud etanooli, lisasime 5 tilka glütserooli.
+
+7. Tühja katseklaasi pipeteerisime 1 ml etanooli.
+
+8. Tühja katseklaasi pipeteerisime 1 ml butanooli.
+
+9. Sammul 7 mainitud katseklaasi lisasime veidi 5 % $\ce{K2Cr2O7}$ vesilahust.
+
+10. Sammul 8 mainitud katseklaasi lisasime veidi 5 % $\ce{K2Cr2O7}$ vesilahust.
+
+11. Sammul 7 mainitud katseklaasi lisasime tõmbekapis mõne tilga kontsentreeritud $\ce{H2SO4}$.
+
+12. Sammul 8 mainitud katseklaasi lisasime tõmbekapis mõne tilga kontsentreeritud $\ce{H2SO4}$.
+
+13. Keeduklaasi valasime etanooli.
+
+14. Keeduklaasist mõõtsime pipetiga 3 ml etanooli tühja katseklaasi.
+
+15. Asetasime sammul 14 mainitud katseklaasi väikese tüki (väikse hernetera suurune)
+metallilist naatriumit. NB! Vältida vee sattumist kontakti naatriumiga!
+
+### Tulemused
+
+Glütserool muutis lahuse tumedamaks (joonised \@ref(fig:dropping-glycerol) leheküljel `r render_pageref(reference = "fig:dropping-glycerol")` ja \@ref(fig:influence-of-glycerol) leheküljel `r render_pageref(reference = "fig:influence-of-glycerol")`).
+
+```{r label = "dropping-glycerol", echo=FALSE, fig.cap = "Glütserooli tilgutamine vasksulfaadi ja naatriumhüdroksiidi lahusesse."}
+include_external_graphics("rmd/6/6-glütserooli-tilgutamine.png")
+
+```
+
+```{r label = "influence-of-glycerol", echo=FALSE, fig.cap = "Glütserool muutis lahuse tumedamaks. Paremal on vasksulfaadi ja naatriumhüdroksiidi lahus etanooliga."}
+include_external_graphics("rmd/6/6-glütserooliga-etanooliga.png")
+
+```
+
+$\ce{K2Cr2O7}$ lisamise mõjul muutus etanool *Fanta*-sarnaseks, butanool hakkas meenutaba filtreeritud õunamahla (joonised \@ref(fig:dropping-k2cr2o7) leheküljel `r render_pageref(reference = "fig:dropping-k2cr2o7")` ja \@ref(fig:k2cr2o7-in-alcohol) leheküljel `r render_pageref(reference = "fig:k2cr2o7-in-alcohol")`).
+
+```{r label = "dropping-k2cr2o7", echo=FALSE, fig.cap = "Hetk enne kaaliumkromaadi tilga langemist butanooli. Vasemal on etanool juba osaliselt kaaliumkromaadiga segunenud."}
+include_external_graphics("rmd/6/6-k2cr2o7-butanooli.png")
+
+```
+
+```{r label = "k2cr2o7-in-alcohol", echo=FALSE, fig.cap = "Kaaliumkromaadi mõjul värvus etanool *Fanta*-sarnaseks (vasakul) ja butanool filtreeritud õunamahla sarnaseks (paremal)."}
+include_external_graphics("rmd/6/6-k2cr2o7-alkoholides.png")
+
+```
+
+Väävelhappe mõjul värvus etanoolisegu roheliseks, butanoolisegu siniseks (joonis \@ref(fig:h2so4-in-alcohol) leheküljel `r render_pageref(reference = "fig:h2so4-in-alcohol")`).
+
+```{r label = "h2so4-in-alcohol", echo=FALSE, fig.cap = "Väävelhape muutis etanoolisegu roheliseks (vasakul) ja butanoolisegu siniseks (paremal)."}
+include_external_graphics("rmd/6/6-väävelhape-alkoholis.png")
+
+```
+
+Vahetult pärast naatriumitüki lisamist etanooli tekkisid mullid ja segu meenutas *Kellukest*. Peagi tõusis põhja vajunud naatriumitükk heljuma ja seejärel ujuma ning näha oli ka lenduvat vesinikku (joonis \@ref(fig:na-in-ethanol) leheküljel `r render_pageref(reference = "fig:na-in-ethanol")`).
+
+```{r label = "na-in-ethanol", echo=FALSE, fig.cap = "Naatrium ägedalt reageerimas etanooliga. Auruna eraldub vesinik.", out.height = "90%"}
+include_external_graphics("rmd/6/6-na.png")
+
+```
+
+## Oksoühendid
+
+### Teooria
+
+Kui segada kokku naatriumhüdroksiid ja vaskvitriol, ladestub vaskhüdroksiid:
+
+$$\ce{2NaOH + CuSO4 -> Cu(OH)2 + Na2SO4} \text{`r render_with_emojis(text = "((ref:a44), 1:15 min)")`}.$$
+
+Kui lisada tekkinud vaskhüdroksiidi lahusele aldehüüd, siis hakkab toimuma reaktsioon, kuid toatemperatuuril toimub see aeglaselt `r render_with_emojis(text = "((ref:a44), 2:14 min)")`.
+
+Aldehüüd on redutseerija ja redutseerib komplekseeritud vask(II)iooni vask(I)oksiidiks:
+
+$$\ce{2Cu^2+}_\text{complexed}\ce{+2OH- + 2e- -> Cu2O + H2O}.$$
+
+Kuna lahus on aluseline, oksüdeerub aldehüüd ise vastava karboksüülhappe soolaks:
+
+$$\ce{RCHO + 3OH- -> RCOO- + 2H2O + 2e-}.$$
+
+Seetõttu on terve reaktsioon selline:
+
+$$\ce{2Cu^2+}_\text{complexed}\ce{+5OH- + RCHO -> Cu2O + 3H2O + RCOO-}. \text{`r render_with_emojis(text = paste("((ref:a2015-188))", ".", sep = ""))`}$$
+
+õpetaja kirjutas tahvlile reaktsioonivõrrandi, mille kohaselt tekib mitte vask(I)oksiid, vaid hoopis vask(I)hüdraat.
+
+Aldehüüd oksüdeerub kiiremini karboksüülhappeks kui alkohol, sest on vähem vaheetappe.
+
+Seistes võivad tekkida plahvatusohtlikud
+ühendid: hõbeamiinist ($\ce{AgNH2}$) tekib heli, löögi, soojuse või valguse mõjul äärmiselt plahvatav
+hõbenitriid
+($\ce{Ag3N}$):
+
+$$\ce{Ag(NH3)2OH -> AgNH2 + NH3 + H2O},$$
+
+$$\ce{2AgNH2 -> Ag2NH + NH3},$$
+
+$$\ce{3Ag2NH -> 2Ag3N + NH3}.$$
+
+### Eesmärgid
+
+Võrreldud aldehüüdi ja alkoholi oksüdeerumise kiirus karboksüülhappeks.
+
+### Töövahendid
+
+1. Neli katseklaasi, et segusid valmistada.
+
+2. Katseklaaside alus, et ei peaks käes hoidma.
+
+3. Kaks pipetti, et mõõta.
+
+4. Pliit, et kuumutada.
+
+5. Kaks keeduklaasi, et mõõta ja kuumutada.
+
+6. Vesi, et kuumutada.
+
+### Ained
+
+1. 5 % $\ce{NaOH}$.
+
+2. 5 % $\ce{CuSO4}$.
+
+3. Formaliin.
+
+4. Propanool.
+
+5. 10 % $\ce{AgNO3}$.
+
+6. 25 % $\ce{NH3}$.
+
+7. Glükoos.
+
+### Töö käik
+
+Töö tegin koos karl salumetsaga.
+
+Töö osad:
+
+1. Katseklaasi valasime 1 ml 5 % $\ce{NaOH}$ lahust.
+
+2. Lisasime tilkhaaval 5 % $\ce{CuSO4}$ lahust, kuni tekkis kahvatusinine $\ce{Cu(OH)2}$ sade.
+
+3. Tühja katseklaasi valasime 1 ml 5 % $\ce{NaOH}$ lahust.
+
+4. Lisasime tilkhaaval 5 % $\ce{CuSO4}$ lahust, kuni tekkis kahvatusinine $\ce{Cu(OH)2}$ sade.
+
+5. Tühja katseklaasi valasime 1 ml 5 % $\ce{NaOH}$ lahust.
+
+6. Lisasime tilkhaaval 5 % $\ce{CuSO4}$ lahust, kuni tekkis kahvatusinine $\ce{Cu(OH)2}$ sade.
+
+7. Sammul 2 kasutatud katseklaasi lisasime mõne tilga uuritavat aldehüüdi (nt formaliini).
+
+8. Loksutasime.
+
+9. Sammul 4 kasutatud katseklaasi lisasime mõne tilga uuritavat aldehüüdi (nt formaliini).
+
+10. Loksutasime.
+
+11. Kuumutasime kuumal vesivannil ettevaatlikult.
+
+12. Jälgisime, kas toimus värvuse muutumine.
+
+13. Võrdlesime sammul 8 mainitud loksutatud segu värviga.
+
+14. Sammul 6 kasutatud katseklaasi lisasime propanooli.
+
+15. Loksutasime.
+
+16. Kuumutasime kuumal vesivannil ettevaatlikult.
+
+17. Jälgisime, kas toimus värvuse muutumist.
+
+18. Võrdlesime sammul 8 mainitud loksutatud segu värviga.
+
+19. Katset viiakse läbi paralleelselt kolme uuritava lahusega: formaliiniga (aldehüüd), propanooliga
+(alkohol) ja glükoosiga (aldoos).
+
+19. Tühja katseklaasi pesime hoolikalt kroomseguga.
+
+20. Loputasime veega.
+
+21. Valasime sisse 2 ml 10 % $\ce{AgNO3}$ lahust.
+
+22. Lisasime 10 tilka 5 % $\ce{NaOH}$ lahust. Tekkis must sade ($\ce{AgOH}$ ja
+$\ce{Ag2O}$).
+
+23. Lisasime tilkhaaval 25 % $\ce{NH3}$ vesilahust, kuni sade lahustus ja tekkis värvitu
+lahus (vahepeal loksutasime).
+
+24. Lisasime 1 ml formaliini (aldehüüd). (NB! Katseklaasi
+loksutada ei tohi!). Katseklaasi seintele tekkis metallist hõbeda kiht (hõbepeegel). Kui seda kohe ei
+teki, hoitakse katseklaasi mõni minut kuumas (~70°C, mitte keevas!) vesivannis.
+
+25. Peale katset valasime katseklaasi sisu kohe minema.
+
+26. Tühja katseklaasi pesime hoolikalt kroomseguga.
+
+27. Loputasime veega.
+
+28. Valasime sisse 2 ml 10 % $\ce{AgNO3}$ lahust.
+
+29. Lisasime 10 tilka 5 % $\ce{NaOH}$ lahust. Tekkis must sade ($\ce{AgOH}$ ja
+$\ce{Ag2O}$).
+
+30. Lisasime tilkhaaval 25 % $\ce{NH3}$ vesilahust, kuni sade lahustus ja tekkis värvitu
+lahus (vahepeal loksutasime).
+
+31. Lisasime 1 ml propanooli (alkohol). (NB! Katseklaasi
+loksutada ei tohi!). Katseklaasi seintele tekkis metallist hõbeda kiht (hõbepeegel). Kui seda kohe ei
+teki, hoitakse katseklaasi mõni minut kuumas (~70°C, mitte keevas!) vesivannis.
+
+32. Peale katset valasime katseklaasi sisu kohe minema.
+
+33. Tühja katseklaasi pesime hoolikalt kroomseguga.
+
+34. Loputasime veega.
+
+35. Valasime sisse 2 ml 10 % $\ce{AgNO3}$ lahust.
+
+36. Lisasime 10 tilka 5 % $\ce{NaOH}$ lahust. Tekkis must sade ($\ce{AgOH}$ ja
+$\ce{Ag2O}$).
+
+37. Lisasime tilkhaaval 25 % $\ce{NH3}$ vesilahust, kuni sade lahustus ja tekkis värvitu
+lahus (vahepeal loksutasime).
+
+38. Lisasime 1 ml glükoosi (aldoos). (NB! Katseklaasi
+loksutada ei tohi!). Katseklaasi seintele tekkis metallist hõbeda kiht (hõbepeegel). Kui seda kohe ei
+teki, hoitakse katseklaasi mõni minut kuumas (~70°C, mitte keevas!) vesivannis.
+
+39. Peale katset valasime katseklaasi sisu kohe minema.
+
+### Tulemused
+
+Lisasime naatriumhüdroksiidi hulka tilkhaaval vasksulfaati, et tekiks sade (joonis \@ref(fig:cuoh2) leheküljel `r render_pageref(reference = "fig:cuoh2")`).
+
+```{r label = "cuoh2", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: esimeses katseklaasis on ainult naatriumhüdroksiid, teise olen parajasti lisamas vasksulfaati ja kolmandasse on vasksulfaat juba lisatud ning näha on sinist sadet."}
+include_external_graphics("rmd/7/7-naoh-cuso4.png")
+
+```
+
+Formaliini lisamise järel segu värvus ei muutunud. Propanooli lisamise järel segu värvus muutus (joonis \@ref(fig:aldehyde) leheküljel `r render_pageref(reference = "fig:aldehyde")`).
+
+```{r label = "aldehyde", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: kahes esimeses katseklaasis on vaskhüdroksiid segatud formaliiniga, kolmandas propanooliga."}
+include_external_graphics("rmd/7/7-formaliin-propanool.png")
+
+```
+
+Kuumutades ei juhtunud tükk aega mitte midagi nähtavat, millest järeldasin, et karl oli ained kokku seganud liiga uisapäisa. ta ei mõõtnud nimelt koguseid mõõtmisvahendiga, vaid pani silma järgi ja nii sai tema katseklaasidesse naatriumhüdroksiidi kümmekond korda vähem kui minu omadesse. Pärast formaliini ja propanooli lisamist nägid minu segud välja nagu joonisel \@ref(fig:formalin-propanol) leheküljel `r render_pageref(reference = "fig:formalin-propanol")`.
+
+```{r label = "formalin-propanol", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: kahes esimeses katseklaasis on vaskhüdroksiid segatud formaliiniga, kolmandas propanooliga. Need segud on nüüd mõõdetud välja vastavalt juhendile."}
+include_external_graphics("rmd/7/7-formaliin-propanool-kalmer.png")
+
+```
+
+Kui kuumutasin enda segusid, hakkas üsna kiiresti tumenema formaliini lahus (joonis \@ref(fig:path-to-carboxylic-acid) leheküljel `r render_pageref(reference = "fig:path-to-carboxylic-acid")`). Eksperiment kinnitas teooriat.
+
+```{r label = "path-to-carboxylic-acid", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: formaliin kui aldehüüd juba tumeneb karboksüülhappeks, sellal kui propanool alles alustab tumenemist, sest vaja esmalt jõuda aldehüüdi staatusesse."}
+include_external_graphics("rmd/7/7-oksüdeerumiskiirus.png")
+
+```
+
+Hõbepeegli eksperimendi tegime anorgaanilise keemia raames ja ilmselt seetõttu ei ole mul jäädvustusi sellekohasest eksperimendist orgaanilise keemia raames.
+
+## Karboksüülühendid
+
+### Teooria
+
+Happe ja aluse vahelise reaktsiooni tulemusena tekib sool.
+
+Etaanhappe ja naatriumhüdroksiidi omavahelise reageerimise tulemusena tekivad naatriumetanaat ja vesi:
+
+$$\ce{CH3COOH + NaOH -> CH3COONa + H2O}.$$
+
+Soola ja happe vahelise reaktsiooni tulemusena tekivad uus hape ja uus sool.
+
+Naatriumetanaadi ja väävelhappe omavahelise reaktsiooni tulemusena tekivad etaanhape ja naatriumsulfaat:
+
+$$\ce{2CH3COONa + H2SO4 -> 2CH3COOH + Na2SO4}.$$
+
+Etaanhappe ja etanooli reageerimises toimib väävelhape katalüsaatorina:
+
+$$\ce{CH3COOH + C2H5OH ->[\text{conc.} H2SO4]} \underbrace{\ce{CH3COOC2H5}}_{\text{etüületanaat}} + \ce{H2O}.$$
+
+Etüületanaadi hüdrolüüsi tulemusel naatriumhüdroksiidiga tekivad karboksüülhappe sool naatriumetanaat ja alkohol etanool:
+
+$$\ce{CH3COOC2H5 + NaOH -> CH3COONa + CH3CH2OH}.$$
+
+Alkoholi olemasolu puhul muutub kroomisegu oranž värvus 2-3 sekundi jooksul roheliseks. Etanool oksüdeerub kroomisegu toimel karboksüülhappeks:
+
+```{=tex}
+\begin{align}
+\ce{3CH3CH2OH + 4CrO3 + 6HCl -> 3CH3COOH + 2CrCl3 + 9H2O}.
+(\#eq:ethanol-to-ethanate)
+\end{align}
+
+```
+
+Oksüdeerija võtab oksüdeeritavalt elektrone, mille tulemusel oksüdeerija oksüdatsiooniaste langeb ja redutseerija oksüdatsiooniaste tõuseb. Võrrandis \@ref(eq:ethanol-to-ethanate) on $\ce{CrO3}$ oksüdeerija ning langetab kroomi oksüdatsiooniastet, mis on $\ce{CrCl3}$'s väiksem. Redutseerija on etanool suurendades radikaali oksüdatsiooniastet, mis on kõrgem etanaadis.
+
+Fenoolftaleiiniga saab kindlaks teha ilmselt aluselist keskkonda. Fenoolftaleiini värvus aluselises keskkonnas on roosa `r render_with_emojis(text = "((ref:fenoolftaleiin))")`.
+
+Nii fenoolftaleiini kui fluorestseiini saamiseks kasutatakse ftaalhapet ja väävelhapet. Mõlemal on spetsiifiline värvus.
+
+### Eesmärgid
+
+1. Võrreldud karboksüülhapete tugevusi omavahel ja teiste hapetega.
+
+2. Praktiseeritud karboksüülhapete soolade saamine ja lagundamine.
+
+3. Praktiseeritud estri tekitamine.
+
+4. Praktiseeritud estri hüdrolüüsimine.
+
+5. Praktiseeritud fenoolftaleiini saamine.
+
+6. Praktiseeritud fluorestseiini saamine.
+
+### Töövahendid
+
+Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
+
+1. Kaheksa madalat katseklaasi segamiseks.
+
+2. Katseklaaside alus, et ei peaks käes hoidma.
+
+3. Täppiskaal, et kaaluda.
+
+4. Pipett, et mõõta.
+
+5. Keeduklaas, et selles vett hoida.
+
+6. Tõmbekapp, et mürgistust mitte saada.
+
+7. Spaatel, et tahket ainet tõsta.
+
+8. Destilleeritud vesi pH sensori puhastamiseks.
+
+9. Keeduklaas destilleeritud vee jaoks.
+
+10. Majapidamispaber kuivatamiseks.
+
+11. Filterpaber filtreerimiseks.
+
+12. Trehtel filtreerimiseks.
+
+Muude töö osade jaoks:
+
+1. Seitse korgiga katseklaasi, et aineid kokku segada.
+
+2. Katseklaaside alus, et ei peaks käes hoidma.
+
+3. Pliit, et soojendada.
+
+4. Kolm 100 ml keeduklaasi, et soojendada vesivannis, mõõta ja lahustada.
+
+5. Vesi, et soojendada vesivannis.
+
+6. Spaatel tahke aine tõstmiseks.
+
+7. Klaaspulk segamiseks.
+
+8. Kaks lahuse indikaatorpaberit ja legend pH taseme mõõtmiseks.
+
+9. 200-300 ml keeduklaasi, et lahustada.
+
+10. Tõmbekapp, et mitte mürgistust saada.
+
+11. Kolm pipetti mõõtmiseks.
+
+### Ained
+
+Karboksüülhapete tugevuse võrdlemiseks omavahel ja teiste hapetega vajalikud ainete loend on tabelis \@ref(tab:comparison-of-acids).
+
+Muude töö osade jaoks:
+
+1. Kontsentreeritud etaanhape.
+
+2. 5 % $\ce{NaOH}$.
+
+3. 10 % $\ce{H2SO4}$.
+
+4. Bensoehape.
+
+5. Etanool.
+
+6. Kontsentreeritud väävelhape.
+
+7. Ftaalhape või ftaalhappeanhüdriid.
+
+8. Fenool.
+
+9. Vesi.
+
+10. Kange $\ce{NaOH}$.
+
+11. Resortsinool.
+
+12. 20 % $\ce{NaOH}$.
+
+13. 10 % $\ce{HCl}$.
+
+14. Atsetoon.
+
+15. Kroomisegu.
+
+### Töö käik
+
+Töö teostasin karl salumetsaga.
+
+Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
+
+1. Katseklaasi asetasime 0,5 ml (vedelat) või 0,5 g (tahket) uuritavat hapet.
+
+2. Lisasime 5 ml vett.
+
+3. Loksutasime.
+
+4. Tahke happe puhul lahuse enne pH-meetriga mõõtmist filtreerisime.
+
+5. Saadud lahuse pH-d uurisime universaalindikaatorpaberi abil.
+
+6. Saadud lahuse pH'd uurisime pH-meetri abil.
+
+Ülejäänud töö osad:
+
+1. Katseklaasi asetasime 2 tilka kontsentreeritud etaanhapet.
+
+2. Lisasime tilkhaaval 5 % $\ce{NaOH}$ lahust.
+
+3. Loksutasime, kuni etaanhappe lõhn kadus
+
+4. Lisasime 1 ml 10 % $\ce{H2SO4}$ lahust. Tekkis uuesti etaanhappe lõhn.
+
+5. Tühja katseklaasi asetasime 0,1 g bensoehapet.
+
+6. Lisasime tilkhaaval 5 % $\ce{NaOH}$ lahust.
+
+7. Loksutasime, kuni bensoehape täielikult lahustus.
+
+8. Lisasime 1 ml 10 % $\ce{H2SO4}$ lahust. Tekkis bensoehappe valge sade.
+
+9. Tühja katseklaasi valasime 0,5 ml etaanhapet.
+
+10. Lisasime 1 ml etanooli.
+
+11. Lisasime 3 tilka kontsentreeritud $\ce{H2SO4}$.
+
+12. Soojendatakse ettevaatlikult.
+
+13. Jälgisime etaanhappe lõhna kadumist ja meeldiva puuviljalõhna
+(essentsi) tekkimist.
+
+14. Tühja katseklaasi võtsime tuletikupea suuruse hulga ftaalhapet.
+
+15. Lisasime kahekordse koguse kristalset fenooli.
+
+16. Tõmbekapis lisasime 5 tilka kontsentreeritud $\ce{H2SO4}$.
+
+17. Segasime klaaspulgaga.
+
+18. Kuumutasime, kuni katseklaasi sisu muutus punakaks.
+
+19. Lasime jahtuda.
+
+20. Lisasime veidi vett.
+
+21. Segasime.
+
+22. Kallasime osa lahust 100 ml tühja keeduklaasi.
+
+23. Lisasime 50 ml vett.
+
+24. Lisasime kanget $\ce{NaOH}$ lahust kuni punase värvuse tekkeni.
+
+25. Mõõtsime lahuse pH indikaatorpaberiga.
+
+26. Lisasime 10-% $\ce{HCl}$.
+
+27. Mõõtsime lahuse pH indikaatorpaberiga.
+
+28. Tühja katseklaasi võtsime tuletikupea suuruse koguse ftaalhapet.
+
+29. Lisasime kahekordse koguse resortsinooli.
+
+30. Tõmbekapis lisasime 3-4 tilka kontsentreeritud $\ce{H2SO4}$.
+
+31. Segasime klaaspulgaga.
+
+32. Kuumutasime, kuni sisu muutus punakaks.
+
+33. Lasime jahtuda.
+
+34. Kallasime segu 200-300 ml keeduklaasi.
+
+35. Lisasime 150-200 ml vett.
+
+36. Segasime.
+
+37. Lisasime 6,5 ml 10 % $\ce{NaOH}$ lahust.
+
+38. Täheldasime.
+
+39. Lisasime keeduklaasi 10-% $\ce{HCl}$.
+
+40. 5 tilka sammul 13 mainitud estrit viisime tühja katseklaasi.
+
+41. Lisasime 1 ml $\ce{NaOH}$ kontsentreeritud lahust.
+
+42. Soojendasime vesivannil 10 minutit.
+
+43. Jälgisime estri lõhna kadumist.
+
+44. Tekkinud alkoholi tõestamiseks neutraliseerisime reaktsioonisegu ettevaatlikult kümne tilga 10-% $\ce{HCl}$-ga.
+
+45. Võtsime pealmisest kihist 2 tilka tühja katseklaasi.
+
+46. Lisasime 1 ml atsetooni.
+
+47. Lisasime ühe tilga kroomisegu.
+
+48. Loksutasime.
+
+### Tulemused
+
+pH mõõtmiste tulemused on esitatud tabelis \@ref(tab:comparison-of-acids). Näeme, et kõige tugevamad happed on anorgaanilised happed. Alkoholid paistavad olevat nõrgad happed.
+
+```{r label = "comparison-of-acids", echo=FALSE}
+acids <- c(
+  "conc. $\\ce{HCl}$",
+  "conc. $\\ce{H2SO4}$",
+  "99,3-\\% $\\ce{CH3COOH}$",
+  "$\\ce{HO(O)CC(O)OH}$",
+  "$\\ce{C6H5(OH)}$",
+  "$\\ce{CH3CH2OH}$"
+)
+
+is_hard <- c(
+  0,
+  0,
+  0,
+  1,
+  1,
+  0
+)
+
+pH_paper <- c(
+  1,
+  1,
+  3,
+  1,
+  3,
+  7
+)
+
+pH_meter <- c(
+  NA,
+  .66,
+  2.2,
+  1.1,
+  3.5,
+  3.15
+)
+
+pH <- data.frame(acids = acids, is_hard = is_hard, pH_paper = pH_paper, pH_meter = pH_meter)
+
+colnames(pH) <- c(
+  "Uuritav hape, millele on lisatud 5 ml vett",
+  "Kas tahke?",
+  "pH indikaatorpaberiga",
+  "pH-meetri näit"
+)
+
+librarian::shelf(c(
+  "dplyr",
+  "kableExtra"
+))
+
+print_table(
+  table = pH,
+  caption = "Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega."
+) %>%
+  column_spec(1, width = "12em") %>%
+  column_spec(3, width = "8em")
+
+```
+
+Etaanhappe katseklaasist peale loksutamist oli tõesti etaanhappe lõhn kadunud, mis naases, kui olime sinna lisanud väävelhapet.
+
+Naatriumhüdroksiidiga lahustunud bensoehappele (joonis \@ref(fig:benzoic-acid-with-naoh) leheküljel `r render_pageref(reference = "fig:benzoic-acid-with-naoh")`) piisas vaid ühe tilga väävelhappe lisamisest, et tekiks sade (joonis \@ref(fig:sodiumethanate-with-h2so4) leheküljel `r render_pageref(reference = "fig:sodiumethanate-with-h2so4")`).
+
+```{r label = "benzoic-acid-with-naoh", echo=FALSE, fig.cap = "Bensoehape lahustunud naatriumhüdroksiidi toimel."}
+include_external_graphics("rmd/8/8-bensoehape.png")
+
+```
+
+```{r label = "sodiumethanate-with-h2so4", echo=FALSE, fig.cap = "Ühe tilga väävelhappe lisamine lahustunud bensoehappesse põhjustas valge naatriumsulfaadi sademe tekkimise."}
+include_external_graphics("rmd/8/8-bensoehape-h2so4.png")
+
+```
+
+Mõneminutise etaanhappe, etanooli ja väävelhappe segu kuumutamise järel tekkis roiskunud, käärinud puuvilja lõhn, mis minu jaoks ei ole meeldiv.
+
+Fenool räigelt lehkas.
+
+Nii fenooli (joonis \@ref(fig:phthalic-form-phenol-h2so4) leheküljel `r render_pageref(reference = "fig:phthalic-form-phenol-h2so4")`) kui resortsinooliga (joonis \@ref(fig:phthalic-form-resorcinol-h2so4) leheküljel `r render_pageref(reference = "fig:phthalic-form-resorcinol-h2so4")`) oli ftaalhappe ja väävelhappe segu helepruun.
+
+```{r label = "phthalic-form-phenol-h2so4", echo=FALSE, fig.cap = "Klaaspulgaga kokku tambitud ftaalhape, fenool ja väävelhape oli pruun.", out.height="90%"}
+include_external_graphics("rmd/8/8-ftaalhape-fenool-h2so4.png")
+
+```
+
+```{r label = "phthalic-form-resorcinol-h2so4", echo=FALSE, fig.cap = "Klaaspulgaga kokku tambitud ftaalhape, resortsinool ja väävelhape oli pruun.", out.height="90%"}
+include_external_graphics("rmd/8/8-ftaalhape-resortsinool-h2so4.png")
+
+```
+
+Kuumutamise järel olid mõlemad segud punased (joonis \@ref(fig:phthalic-form-h2so4-after-heating) leheküljel `r render_pageref(reference = "fig:phthalic-form-h2so4-after-heating")`).
+
+```{r label = "phthalic-form-h2so4-after-heating", echo=FALSE, fig.cap = "Pliidil vesivannis kuumutades muutus ftaalhappe, fenooli ja väävelhappe segu punaseks (pildi vaataja poolt vasemas katseklaasis). Sama juhtus ftaalhappe, resortsinooli ja väävelhappe segu kuumutamisega (pildi vaataja poolt paremal katseklaasis).", out.height="80%"}
+include_external_graphics("rmd/8/8-ftaalhape-h2so4-kuumutatuna.png")
+
+```
+
+Pärast veidi vee lisamist ja loksutamist oli fenoolilahus heledam kui enne (joonis \@ref(fig:after-some-water) leheküljel `r render_pageref(reference = "fig:after-some-water")`).
+
+```{r label = "after-some-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pärast kuumutamisejärgset veidikese vee lisamist ja loksutamist."}
+include_external_graphics("rmd/8/8-veidi-vett.png")
+
+```
+
+Pärast 50 ml vee lisamist osale fenoolilahusele oli tulemussegu värvitu (joonis \@ref(fig:after-more-water) leheküljel `r render_pageref(reference = "fig:after-more-water")`).
+
+```{r label = "after-more-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segust osa pärast 50 ml vee lisamist."}
+include_external_graphics("rmd/8/8-50ml-vett.png")
+
+```
+
+Juba esimene tilk kanget naatriumhüdroksiidi värvus fenoolilahuses roosaks (joonis \@ref(fig:naoh) leheküljel `r render_pageref(reference = "fig:naoh")`).
+
+```{r label = "naoh", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu põhja on jõudnud esimene tilk naatriumhüdroksiidi."}
+include_external_graphics("rmd/8/8-naoh.png")
+
+```
+
+pH indikaatorpaberiga mõõdetud aluselisus oli vahetult pärast naatriumhüdroksiidi lisamist fenoolilahusesse 8 (joonis \@ref(fig:phenol-naoh-measuring-ph) leheküljel `r render_pageref(reference = "fig:phenol-naoh-measuring-ph")`), vahetult pärast 10-% vesinikkloriidhappe lisamist 13 (joonis \@ref(fig:phenol-measuring-ph) leheküljel `r render_pageref(reference = "fig:phenol-measuring-ph")`). Seega sõltumata sellest, kas lisada fenoolftaleiini alust või hapet, oli lõpplahus aluseline.
+
+```{r label = "phenol-naoh-measuring-ph", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pH mõõtmine vahetult pärast naatriumhüdroksiidi lisamist."}
+include_external_graphics("rmd/8/8-fenool-ph-mõõtmine.png")
+
+```
+
+```{r label = "phenol-measuring-ph", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pH mõõtmine. Pildi vaataja poolt vasakult paremale: pH indikaatorpaberite legend, pH indikaatorpaber vahetult pärast naatriumhüdroksiidi lisamist, pH indikaatorpaber vahetult pärast vesinikkloriidhappe lisamist ja segu ise."}
+include_external_graphics("rmd/8/8-fenool-ph.png")
+
+```
+
+Pärast ftaalhappe, resortsinooli ja väävelhappe segu jahtumist kallasime selle keeduklaasi ja lisasime vee, mille tulemusel muutus segu kollaseks. Segasime (joonis \@ref(fig:risorcinol-mixing) leheküljel `r render_pageref(reference = "fig:risorcinol-mixing")`).
+
+```{r label = "risorcinol-mixing", echo=FALSE, fig.cap = "Ftaalhappe, risortsinooli ja väävelhappe kuumutamisjärgse jahtunud segu segamine veega.", out.height="80%"}
+include_external_graphics("rmd/8/8-resortsiin-vesi.png")
+
+```
+
+Segule naatriumhüdroksiidi lisamine tekitas erksavärvilise rohelise ala (joonis \@ref(fig:risorcinol-naoh) leheküljel `r render_pageref(reference = "fig:risorcinol-naoh")`).
+
+```{r label = "risorcinol-naoh", echo=FALSE, fig.cap = "Ftaalhappe, risortsinooli ja väävelhappe kuumutamisjärgse jahtunud segu, millesse oli lisatud vett, täiendamine naatriumhüdroksiidiga."}
+include_external_graphics("rmd/8/8-risorcinol-naoh.png")
+
+```
+
+Segule happe lisamine tegi segu heledamaks (joonis \@ref(fig:risorcinol-hcl) leheküljel `r render_pageref(reference = "fig:risorcinol-hcl")`).
+
+```{r label = "risorcinol-hcl", echo=FALSE, fig.cap = "Ftaalhappe, risortsinooli ja väävelhappe kuumutamisjärgse jahtunud segu, millesse oli lisatud vett ja naatriumhüdroksiidi, täiendamine vesinikkloriidhappega."}
+include_external_graphics("rmd/8/8-risorcinol-hcl.png")
+
+```
+
+Etaanhappe, etanooli ja väävelhappe kuumutatud segule lisasime vesinikkloriidhapet ja võtsime pealmisest kihist lahust katseklaasi. Kroomisegu lisamine muutis lahuse värvi kollaseks (joonis \@ref(fig:chrome-mix) leheküljel `r render_pageref(reference = "fig:chrome-mix")`). Loksutamise tulemusel segu roheliseks ei muutunud, mis ei kinnita teooriat. Põhjuseks võib olla, et segu kuumenes kümne minuti asemel 20 minutit ja etanool jõudis lenduda.
+
+```{r label = "chrome-mix", echo=FALSE, fig.cap = "Värvitusse etanooli, etaanhappe, väävelhappe ja vesinikkloriidhappe sekku tilgub kroomisegu, mis muudab lahuse kollaseks."}
+include_external_graphics("rmd/8/8-kroomisegu.png")
+
+```

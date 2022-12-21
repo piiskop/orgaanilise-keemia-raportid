@@ -7,8 +7,18 @@
 
 (ref:a2013-e) @a2013_e
 
+(ref:a2015-188) @a2015_188
+
+(ref:a44) @a44
+
+(ref:alcohols) @alcohols
+
 (ref:chemistrylearner-2020-baeyers) @chemistrylearner_2020_baeyers
 
 (ref:clark-2013-ring) @clark_2013_ring
+
+(ref:clark-2019-the) @clark_2019_the
+
+(ref:fenoolftaleiin) @fenoolftaleiin
 
 (ref:haynes-2014-crc) @haynes_2014_crc

@@ -163,6 +163,10 @@ Bensiini ja etanooli eksperimendi ollus ei olnudki alul lilla, vaid oligi roosa 
 
 ## Areenid
 
+### Teooria
+
+Mida rohkem on tsüklilisel ühendil hüdroksüülrühmasid, seda tumedamaks lahus raudkloriidi lisamisel värvub.
+
 ### Eesmärgid
 
 Kontrollitud eksperimentaalselt, et
@@ -171,7 +175,7 @@ Kontrollitud eksperimentaalselt, et
 
 2. hüdroksübenseen reageerib lämmastikhappega,
 
-3. hüdroksübenseen reageerib raudkloriidiga, resortsiin mitte.
+3. hüdroksübenseeni reageerimisel raudkloriidiga värvub lahus mitte nii tumedaks kui resortsiini reageerimisel raudkloriidiga.
 
 ### Tööriistad
 
@@ -268,7 +272,7 @@ Benseen kaaliumpermanganaadiga ei reageerivat.
 
 Tolueeni reageerimine kaaliumpermanganaadiga:
 
-$$\chemfig{*6(-=-=(-\ce{CH3})-=)}\ce{+ 2KMnO4 ->}\chemfig{*6(-=-=(-\ce{COOK})-=)}\ce{+ 2MnO2 + KOH + H2O}.$$
+$$\chemfig{*6(-=-=(-\ce{CH3})-=)}\ce{+ 2KMnO4 ->}\underbrace{\chemfig{*6(-=-=(-\ce{COOK})-=)}}_\text{kaaliumbensoaat}\ce{+ 2MnO2 + KOH + H2O}.$$
 
 Fenooli ja lämmastikhappe segu kuumutamisel lahus muutus tumedamaks (joonised \@ref(fig:phenol-hno3-before) leheküljel `r render_pageref(reference = "fig:phenol-hno3-before")` ja \@ref(fig:phenol-hno3-after) leheküljel `r render_pageref(reference = "fig:phenol-hno3-after")`).
 
@@ -316,6 +320,10 @@ Hüdroksübenseen reageeris raudkloriidiga niimoodi:
 $$\ce{3} \chemfig{*6(-=-=(-\ce{OH})-=)} \ce{+ FeCl3 ->} \chemfig{*6(-=-(-O-[:30]Fe(-[:90]O(-[:90]*6(-=-=-=)))-[:-30]O-[:-30]*6(-=-=-=))=-=)} \ce{+ 3HCl}.$$
 
 ## Halogeeniühendid
+
+### Teooria
+
+Polaarne aine lahustab polaarset, mittepolaarne mittepolaarset. Bensiin on mittepolaarne aine, vesi on polaarne aine - seega omavahel ei segune.
 
 ### Eesmärk
 

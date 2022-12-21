@@ -57,7 +57,7 @@ Vesi ja tärpentin ($\ce{C10H6}$, `r render_with_emojis(text = "(ref:haynes-2014
 
 Vesi ja triklorometaan ($\ce{HCCl3}$, alkaan) omavahel ei lahustu, sest hüdrofiilseid osi triklorometaanis pole. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-520)")` väidab, et vesi ja triklorometaan on omavahel vähe lahustuvad.
 
-Vesi ja bensiin ($\ce{C5-C12}$, `r render_with_emojis(text = "(ref:haynes-2014-crc)")` ei kirjelda bensiini eraldi ühendina) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja bensiin ($\ce{C5-C12}$, `r render_with_emojis(text = "(ref:haynes-2014-crc)")` ei kirjelda bensiini eraldi ühendina) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. Vesi on ka polaarne, bensiin mittepolaarne aine - seega ei lahustu omavahel.
 
 Vee ja 1,2,3-propaantriool (glütserool, gro, $\ce{HOCH2C(OH)H2CH(OH)}$, $\chemfig{HO-[:30]-[:-30](-[:-90]OH)-[:30]-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-285)")`, alkohol) omavahelise lahustuvuse kohta ei tea mitte midagi väita, sest juhendis puudub teave, milline on glütserooli valem. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-284)")` väidab, et vesi ja 1,2,3-propaantriool omavahel segunevad.
 
