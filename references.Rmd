@@ -5,6 +5,8 @@
 \hyphenpenalty=10000
 \fontspec{Symbola}
 
+(ref:a19890) @a19890
+
 (ref:a2013-e) @a2013_e
 
 (ref:a2015-188) @a2015_188
@@ -12,6 +14,10 @@
 (ref:a44) @a44
 
 (ref:alcohols) @alcohols
+
+(ref:avito) @avito
+
+(ref:bureau-1974-the) @bureau_1974_the
 
 (ref:chemistrylearner-2020-baeyers) @chemistrylearner_2020_baeyers
 
@@ -21,4 +27,14 @@
 
 (ref:fenoolftaleiin) @fenoolftaleiin
 
+(ref:functions) @functions
+
 (ref:haynes-2014-crc) @haynes_2014_crc
+
+(ref:mettler) @mettler
+
+(ref:reserved-refracto) @reserved_refracto
+
+(ref:simple) @simple
+
+(ref:simple-dirk) @simple_dirk

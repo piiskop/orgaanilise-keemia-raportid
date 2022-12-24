@@ -49,6 +49,8 @@ local({
   })
 })
 
+options(OutDec = ",")
+
 if (!require("librarian")) {
   install.packages("librarian", dependencies = TRUE)
 }
@@ -218,3 +220,16 @@ render_color <- function(color, text) {
 
 # Sissejuhatus {.unnumbered}
 
+See raport siin kirjeldab kõiki eksperimente, mida sooritasime Tallinna Ülikooli kursuse *Orgaaniline keemia I* raames vahemikus septembrist detsembrini 2022.
+
+Täielikult on kirjeldatud eksperimendid, mis on juhendis tähistatud 1-9. Eksperimendid 10-12 on kirjeldatud osaliselt.
+
+Tööde kestel jäädvustasin eksperimentide osi audiovisuaalselt, mis võimaldas raportit ilmestada piltidega tulemustest. Sellist pildimaterjali on veel palju, millega meeleldi täiendaksin eksperimentide 10-12 kirjeldusi, kus on need kõik puudu, sest semestri ülekoormuse tõttu ei ole ma jõudnud seda veel teha.
+
+Eksperimentide kirjeldused jaotasin vastavalt juhendi struktuurile ja järjekorrale. Sisemine struktuur hõlmab üldiselt teooriat, eesmärke, tööriistade ja ainete loendeid ning tulemuste kirjeldusi. Vastused juhendis olevatele küsimustele on paigutatud loogilisse kohta vastava osa juures eksperimendi kirjelduses.
+
+Kirjeldusstiilis kasutan mina- ja meie-vormi, et oleks selge, kes mida tegi. mulle üldse ei meeldi anonüümne stiil *teadlased avastasid* või umbisikuline stiil *avastati*, sest need lükkavad nii tegija kui viitaja vastutusest kõrvale.
+
+Kasutan raportis võimalusel Système Internationali (SI) ühikuid, kuid mõnes juhus paremaks hoomamiseks SI-väliseid või tuletatud SI ühikuid. Nt kui termomeetri näit oli Celsiuse kraadides, siis viitasin sellele termomeetri näidule samades ühikutes ja mitte kelvinites.
+
+Raport on abiks orgaanilise keemia vastavate teemade mõistmisel, meeldetuletuseks, kuidas mingeid eksperimente tegime, samuti abiks seotud teemade õpetamiseks ettevalmistamises.
