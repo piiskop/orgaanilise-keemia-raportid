@@ -233,3 +233,5 @@ Kirjeldusstiilis kasutan mina- ja meie-vormi, et oleks selge, kes mida tegi. mul
 Kasutan raportis võimalusel Système Internationali (SI) ühikuid, kuid mõnes juhus paremaks hoomamiseks SI-väliseid või tuletatud SI ühikuid. Nt kui termomeetri näit oli Celsiuse kraadides, siis viitasin sellele termomeetri näidule samades ühikutes ja mitte kelvinites.
 
 Raport on abiks orgaanilise keemia vastavate teemade mõistmisel, meeldetuletuseks, kuidas mingeid eksperimente tegime, samuti abiks seotud teemade õpetamiseks ettevalmistamises.
+
+mina olen peacecop kalmer: ja minu üliõpilaskood on *210951MLLB.LT*.

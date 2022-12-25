@@ -767,6 +767,16 @@ include_external_graphics("rmd/8/8-kroomisegu.png")
 
 ## Destillatsioon
 
+### Eesmärgid
+
+1. Arusaam, mis on destillatsioon.
+
+2. Oskus destilleerida.
+
+3. Oskus mõõta murdenäitajat.
+
+4. Oskus hinnata destillaati murdenäitaja kaudu.
+
 ### Teooria
 
 Destilleerimisega eraldatakse üksteisest aineid, mille aurustumistemperatuurid on erinevad. Kui aurustumistemperatuurid on väga erinevad, minimaalselt kümmekond kelvinit, siis saab kasutada lihtdestillatsiooni, muidu on vajalik kasutada fraktsionaalset destilleerimist. Viimase puhul lisatakse destillatsiooniaparatuuri toru, milles on klaasipulgad, et suurendada toru pinda, mis tagab mitmekordse aurustumise ja kondenseerumise, et väljuks ikkagi õige aine.
@@ -1042,11 +1052,15 @@ Mõõtsime destilleeritud vee murdumisnäitajaks 1,3332 ja atsetooni omaks 1,360
 
 ## Luminestsens
 
+### Eesmärk
+
+
+
 ### Teooria
 
-Punane veresool ja naatriumhüdroksiid on luminooli oksüdeerumise juures katalüsaatorid. Kas on?
+Tuleb välja, et luminool lahustub paremini aluselises keskkonnas, mida pakub naatriumhüdroksiid `r render_with_emojis(text = "((ref:liquid), 0:42)")`. Punane veresool on luminooli oksüdeerumise juures katalüsaator `r render_with_emojis(text = "((ref:liquid), 2:44)")`.
 
-Kui on vaja pimedas lühiajaliselt ümbruskonda või mingit vormi nähtavaks teha, siis saab luminooli oksüdeerumisreaktsiooni selleks praktiliselt kasutada.
+Kui on vaja pimedas lühiajaliselt ümbruskonda või mingit vormi nähtavaks teha, siis saab luminooli oksüdeerumisreaktsiooni selleks praktiliselt kasutada. Nt soetasin aastas 2017 hulganisti helkivaid pulki, mida saab helendama panna, neid painutades, et nendega vertikaalseid koopaid valgustada, kuhu kaalusin sisenemist.
 
 ### Töövahendid
 
@@ -1086,21 +1100,49 @@ Töö osad:
 
 2. Lahustasime 240 ml vees.
 
-3. Lisasime 0,1 g luminooli.
+3.  Lisasime 0,1 g luminooli (joonised \@ref(fig:luminol) leheküljel `r render_pageref(reference = "fig:luminol")`, \@ref(fig:unmixed-solutions) leheküljel `r render_pageref(reference = "fig:unmixed-solutions")` ja \@ref(fig:mixed-solutions) leheküljel `r render_pageref(reference = "fig:mixed-solutions")`).
 
-4. Tühja 300 ml keeduklaasi mõõtsime 2,5 g punast veresoola - $\ce{K3[Fe(CN)6]}$.
+    ```{r label = "luminol", echo=FALSE, fig.cap = "Nii näeb välja 0,1 g luminooli. Mõõtmiseks kasutasime täppiskaalu, filterpaberit ja spaatlit."}
+include_external_graphics("rmd/10/10-luminool.png")
 
-5. Lahustasime 240 ml vees.
+    ```
 
-6. Lisasime 5 ml 3-% $\ce{H2O2}$ vesilahust.
+4.  Tühja 300 ml keeduklaasi mõõtsime 2,5 g punast veresoola - $\ce{K3[Fe(CN)6]}$ (joonis \@ref(fig:bloodsalt) leheküljel `r render_pageref(reference = "fig:bloodsalt")`).
+
+    ```{r label = "bloodsalt", echo=FALSE, fig.cap = "Keeduklaasis on 2,5 g punast veresoola."}
+include_external_graphics("rmd/10/10-veresool.png")
+
+    ```
+
+5. Lahustasime 240 ml vees (joonis \@ref(fig:adding-water-to-bloodsalt) leheküljel `r render_pageref(reference = "fig:adding-water-to-bloodsalt")`).
+
+    ```{r label = "adding-water-to-bloodsalt", echo=FALSE, fig.cap = "Keeduklaasis olevale veresoolale lisasime paagist demineraliseeritud vett."}
+include_external_graphics("rmd/10/10-veresool-vesi.png")
+
+    ```
+
+6. Lisasime 5 ml 3-% $\ce{H2O2}$ vesilahust (joonised \@ref(fig:unmixed-solutions) leheküljel `r render_pageref(reference = "fig:unmixed-solutions")` ja \@ref(fig:mixed-solutions) leheküljel `r render_pageref(reference = "fig:mixed-solutions")`).
+
+    ```{r label = "unmixed-solutions", echo=FALSE, fig.cap = "Pildi vaataja poolt vasemal asuvas keeduklaasis on kokkusegamata valgete kristallidena naatriumhüdroksiid, vesi ja kollase pulbrina luminool, paremal asuvas keeduklaasis veresool ja vesi."}
+include_external_graphics("rmd/10/10-naoh-vesi-luminool-veresool-vesi.png")
+
+    ```
+
+    ```{r label = "mixed-solutions", echo=FALSE, fig.cap = "Pildi vaataja poolt vasemal asuvas keeduklaasis on kokkusegatud naatriumhüdroksiid, vesi ja luminool, paremal asuvas keeduklaasis veresool ja vesi."}
+include_external_graphics("rmd/10/10-naoh-vesi-luminool-veresool-vesi-segatud.png")
+
+    ```
 
 7. Tühja 300 ml keeduklaasi valasime 80 ml sammul 3 valmistatud lahust.
 
 8. õpetaja tekitas pimeda ruumi.
 
-9. Pimedas ruumis lisasime 80 ml sammul 6 valmistatud lahust.
+9.  Pimedas ruumis lisasime 80 ml sammul 6 valmistatud lahust (joonis \@ref(fig:bloodsalt-into-luminol) leheküljel `r render_pageref(reference = "fig:bloodsalt-into-luminol")`). Juhendi järgi pidime saaduslahust segama klaaspulgaga, kuid õpetaja keelitas meid seda mitte tegema ja me eirasime selles osas juhendit, kuna pigem tuleb usaldada õpetajat, kes oli reaalne inimene kohapeal ja vähemalt teoreetiliselt piisavate oskuste ja teadmistega.
 
-10. Segasime klaaspulgaga.
+    ```{r label = "bloodsalt-into-luminol", echo=FALSE, fig.cap = "Valades pimedas ruumis veresoola lahust luminooli ja naatriumhüdroksiidi lahusesse hakkas saaduslahus helesiniselt helenduma.", out.height = "90%"}
+include_external_graphics("rmd/10/10-veresool-luminooli.png")
+
+    ```
 
 11. Tühja 300 ml keeduklaasi valatakse 80 ml sammul 3 valmistatud lahust.
 
@@ -1110,23 +1152,30 @@ Töö osad:
 
 14. Pimedas ruumis lisasime 80 ml sammul 6 valmistatud lahust.
 
-15. Segasime klaaspulgaga.
+15. Segasime klaaspulgaga (joonis \@ref(fig:bloodsalt-into-fluoresceine) leheküljel `r render_pageref(reference = "fig:bloodsalt-into-fluoresceine")`).
+
+    ```{r label = "bloodsalt-into-fluoresceine", echo=FALSE, fig.cap = "Valades pimedas ruumis veresoola lahust luminooli ja naatriumhüdroksiidi lahusesse, kuhu oli eelnevalt lisatud fluorestseiini, hakkas saaduslahus heleroheliselt helenduma. Näha on ka, et ilmestus lilla lõik väljaspool lahust olevas ruumis. Kas see oli meie tegevuse tulemus, mida sa lugejana arvad või hindad, kirjuta kommentaarina GitHubis!"}
+include_external_graphics("rmd/10/10-veresool-fluorestseiini.png")
+
+    ```
 
 16. Sammul 3 valmistatud lahuse jäägile lisasime 3 tilka fenoolftaleiini.
 
-17. õpetaja tekitas pimeda ruumi.
+17. õpetaja tekitas pimeda ruumi (joonis \@ref(fig:moment-before-pouring-into-phenolphtalein) leheküljel `r render_pageref(reference = "fig:moment-before-pouring-into-phenolphtalein")`).
 
-18. Pimedas ruumis lisasime sammul 6 valmistatud lahuse jäägi.
+    ```{r label = "moment-before-pouring-into-phenolphtalein", echo=FALSE, fig.cap = "Et oleks selge, et vahetult enne lahuste kokkuvalamist oli tõesti pime, siis selleks on see foto."}
+include_external_graphics("rmd/10/10-hetk-enne-fenoolftaleiini-sisse-valamist.png")
 
-19. Segasime klaaspulgaga.
+    ```
 
-### Tulemused
+18. Pimedas ruumis lisasime sammul 6 valmistatud lahuse jäägi (joonis \@ref(fig:pouring-into-phenolphtalein) leheküljel `r render_pageref(reference = "fig:pouring-into-phenolphtalein")`). karl ennustas, et saaduslahus hakkab helenduma roosalt.
 
-Luminooli ja vesinikperoksiidi lahuste segunemine andis tulemuseks helesinise luminestsentsi.
+    ```{r label = "pouring-into-phenolphtalein", echo=FALSE, fig.cap = "Fenoolftaleiiniga segatud naatriumhüdroksiidi ja luminooli segusse veresoola segu valamise tulemusena hakkas saadussegu helenduma üsna heledalt siniselt."}
+include_external_graphics("rmd/10/10-fenoolftaleiini-sisse-valamine.png")
 
-Luminooli ja vesinikperoksiidi lahuste ning fluorestseiini segunemine andis tulemuseks helerohelise helenduse pimedas ruumis.
+    ```
 
-Luminooli ja vesinikperoksiidi lahuste ning fenoolftaleiini segunemine andis tulemuseks sügavsinise luminestsentsi.
+19. Juhendis on kirjas, et saaduslahust pidanuksime segama klaaspulgaga. meie seda ei teinud. Ei tea, miks. mina olin kaameramees. karl, kas sinu *fail*? Kas see üldse oleks midagi muutnud? Miks me eelmist segu segasime, aga üleeelmist mitte? Kas taas piisas valamisest? Nii palju küsimusi on õhus rippumas. Kes selgitab nüüd ära, kuidas need küsimused õhus rippuda saavad, kas küsimused on gaasilises faasis? Milline oleks küsimuse vedel või tahke faas? Kumb on võimsam, kas vedel või tahke? Kes on kõvem tegelane, kas too, kes lõi vedelaks, või too, kelle junn läks jahedaks ja seega tahkeks? Või hoopis gaasilisest vedelaks? Need on küsimused, millele tuleb meil tänapäeva keemias otsida vastuseid. Küsimused, mille faas on teadmata. Arvan, et tsüaniid olid happeline ja võitis.
 
 ## Kristalse orgaanilise aine süntees, puhastamine ja uurimine
 
