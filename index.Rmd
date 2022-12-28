@@ -177,10 +177,17 @@ render_font <- function(text, to_italic = TRUE) {
 #' This function renders the given text having emojis correctly because it uses a font that supports them. That font can't display anything in bold nor italic.
 #' 
 #' @param text the given text that contains emojis
+#' @param escape Do we need to double-escape because we call the function from a table generation function?
 #' 
 #' @returns the input text with the emoji font
-render_with_emojis <- function(text) {
-  return(paste("\\fontspec{Symbola}", text, "\\fontspec{DejaVu Serif}{}", sep = ""))
+render_with_emojis <- function(text, escape = FALSE) {
+  
+  if (escape) {
+    return(paste("\\\\fontspec{Symbola}", text, "\\\\fontspec{DejaVu Serif}{}", sep = ""))
+  } else {
+    return(paste("\\fontspec{Symbola}", text, "\\fontspec{DejaVu Serif}{}", sep = ""))
+  }
+
 }
 
 #' This function renders a reference to a page as it cannot be used in the web output.
@@ -222,7 +229,9 @@ render_color <- function(color, text) {
 
 See raport siin kirjeldab kõiki eksperimente, mida sooritasime Tallinna Ülikooli kursuse *Orgaaniline keemia I* raames vahemikus septembrist detsembrini 2022.
 
-Täielikult on kirjeldatud eksperimendid, mis on juhendis tähistatud 1-9. Eksperimendid 10-12 on kirjeldatud osaliselt.
+Täielikult on kirjeldatud eksperimendid, mis on juhendis tähistatud 1-11. Eksperiment 12 on kirjeldatud osaliselt.
+
+Algusse sättisin üldise reeglistiku, milles on peamiselt valemid ja tuletuskäigud.
 
 Tööde kestel jäädvustasin eksperimentide osi audiovisuaalselt, mis võimaldas raportit ilmestada piltidega tulemustest. Sellist pildimaterjali on veel palju, millega meeleldi täiendaksin eksperimentide 10-12 kirjeldusi, kus on need kõik puudu, sest semestri ülekoormuse tõttu ei ole ma jõudnud seda veel teha.
 

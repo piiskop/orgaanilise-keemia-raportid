@@ -3,6 +3,7 @@ new_session: false
 delete_merged_file: true
 rmd_files: [
   "index.Rmd",
+  "rmd/rules.Rmd",
   "rmd/general-principles.Rmd",
   "rmd/hydrocarbons.Rmd",
   "rmd/organic-compounds-containing-oxygen.Rmd",

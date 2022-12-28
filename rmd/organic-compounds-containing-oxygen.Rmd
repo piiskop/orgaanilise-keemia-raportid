@@ -805,24 +805,6 @@ tuleohtlikud ning nende aurud võivad aparatuurist välja sattudes süttida. Kui
 
 Destillatsiooni on audiovisuaalselt kirjeldanud `r render_with_emojis(text = "(ref:simple)")`.
 
-Valguse kiirus vaakumis:
-
-```{r label = "speed-of-light"}
-speed_of_light_in_vacuum <- 299792458
-
-```
-
-
-```{=tex}
-\begin{align}
-c = `r speed_of_light_in_vacuum` \mathrm{\frac{m}{s}}
-(\#eq:speed-of-light-in-vacuum)
-\end{align}
-
-```
-
-`r render_with_emojis(text = "((ref:bureau-1974-the), p. 127)")`.
-
 Murdumisnäitaja $n$ on valguse kiiruse suhe vaakumis ($c_o$, \@ref(eq:speed-of-light-in-vacuum)) ja meediumis ($c$):
 
 ```{=tex}
@@ -1054,7 +1036,7 @@ Mõõtsime destilleeritud vee murdumisnäitajaks 1,3332 ja atsetooni omaks 1,360
 
 ### Eesmärk
 
-
+Eksperimentaalselt tekitatud kolm erinevat luminestsentsi.
 
 ### Teooria
 
@@ -1181,17 +1163,115 @@ include_external_graphics("rmd/10/10-fenoolftaleiini-sisse-valamine.png")
 
 ### Teooria
 
+Bensaldehüüdi ehk benseenkarboksaldehüüdi `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-34)")` valem on \@ref(eq:benzaldehyde):
+
+```{=tex}
+\begin{align}
+\chemfig{*6(-=-(-[:30]=[:-30]\ce{O})=-=)}
+(\#eq:benzaldehyde)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-35)")`. Aine lahustub vähesel määral vees, seguneb etanooliga, dietüüleetriga, lahustub väga hästi atsetoonis ja benseenis. Sulamistemperatuur on $\qty{-57,12 \pm 0,05}{\degreeCelsius}$, keemistemperatuur on $\qty{178,7 \pm 0,4}{\degreeCelsius}$, millest järelduvalt on see aine inimesele sobilikes elamistingimustes vedel. Murdumisnäitaja on 1,5463 $\qty{20}{\degreeCelsius}$ juures.
+
+```{r label = "benzaldehyde"}
+M_benzenecarboxaldehyde <- 7 * table_of_molar_masses["$\\ce{C}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"] + 6 * table_of_molar_masses["$\\ce{H}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"] + table_of_molar_masses["$\\ce{O}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"]
+mass_concentration_of_benzenecarboxaldehyde <- convert_from_g_per_cm3_to_kg_per_m3(g_per_cm3 = 1.0401)
+
+```
+
+Järelikult on benseenkarboksaldehüüdi molaarmass $\qty{`r as.character(M_benzenecarboxaldehyde)`}{\kg\per\mol}$.
+
+Benseenkarboksaldehüüdi tihedus on $\qty{25}{\degreeCelsius}$ juures $\qty{`r as.character(mass_concentration_of_benzenecarboxaldehyde)`}{\kg\per\metre\cubed}$.
+
+2-propanooni valem on \@ref(eq:acetone):
+
+```{=tex}
+\begin{align}
+\chemfig{-[:30](=[:90]\ce{O})-[:-30]}
+(\#eq:acetone)
+\end{align}
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-5)")`. Aine seguneb vees, etanoolis, etaanhappes, benseenis ja kloroformis `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-4)")`. Sulamistemperatuur on $\qty{-94,9 \pm 0,4}{\degreeCelsius}$, keemistemperatuur on $\qty{56,08 \pm 0,07}{\degreeCelsius}$, millest järelduvalt on see aine inimesele sobilikes elamistingimustes vedel. Murdumismänigaja on 1,3588 $\qty{20}{\degreeCelsius}$ juures.
+
+```{r label = "acetone-molar-mass"}
+M_acetone <- 3 * table_of_molar_masses["$\\ce{C}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"] + 6 * table_of_molar_masses["$\\ce{H}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"] + table_of_molar_masses["$\\ce{O}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"]
+mass_concentration_of_acetone <- convert_from_g_per_cm3_to_kg_per_m3(g_per_cm3 = .7845)
+
+```
+
+Järelikult on 2-propanooni molaarmass $\qty{`r as.character(M_acetone)`}{\kg\per\mol}$.
+
+2-propanooni tihedus on $\qty{25}{\degreeCelsius}$ juures $\qty{`r as.character(mass_concentration_of_acetone)`}{\kg\metre\cubed}$.
+
+Kui panna kokku benseenkarboksaldehüüd ja 2-propanoon, on protsess selgitatav võrrandiga \@ref(eq:benzenkarboxaldehyde-and-acetone) leheküljel `r render_pageref(reference = "eq:benzenkarboxaldehyde-and-acetone")`:
+
+```{=tex}
+\begin{align}
+2 \chemfig{*6(-=-(-[:30]=[:-30]\ce{O})=-=)} + \chemfig{-[:30](=[:90]\ce{O})-[:-30]} \ce{->[NaOH]} \\
+\chemfig{*6(-=-(-[:30]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:-30](*6(-=-=-=)))=-=)} \ce{+ 2H2O},
+(\#eq:benzenkarboxaldehyde-and-acetone)
+\end{align}
+
+```
+
+milles naatriumhüdroksiid on katalüsaator.
+
+```{r label = "calculating-for-benzencarboxaldehyde"}
+n_benzencarboxaldehyde <- .05
+m_benzencarboxaldehyde <- calculate_m(M_B = M_benzenecarboxaldehyde, n_B = n_benzencarboxaldehyde)
+V_benzencarboxaldehyde <- calculate_V_by_molar_mass_and_amount_and_mass_concentration(M_B = M_benzenecarboxaldehyde, n_B = n_benzencarboxaldehyde, mass_concentration = mass_concentration_of_benzenecarboxaldehyde)
+
+```
+
+Vastavalt molaarmassi valemile massi ja hulga kaudu \@ref(eq:molar-mass-by-mass-and-amount) pidanuks meil benseenkarboksaldehüüdi kuluma $\qty{`r as.character(m_benzencarboxaldehyde)`}{\kg}$, kui see olnuks tahke. Aine oli siiski vedelas faasis, mistõttu pipeteerisime benseenkarboksaldehüüdi $\qty{`r as.character(V_benzencarboxaldehyde)`}{\metre\cubed}$.
+
+```{r label = "calculating-for-acetone"}
+n_acetone <- .025
+m_acetone <- calculate_m(M_B = M_acetone, n_B = n_acetone)
+V_acetone <- calculate_V_by_molar_mass_and_amount_and_mass_concentration(M_B = M_acetone, n_B = n_acetone, mass_concentration = mass_concentration_of_acetone)
+
+```
+
+Vastavalt molaarmassi valemile massi ja hulga kaudu \@ref(eq:molar-mass-by-mass-and-amount) pidanuks meil 2-propanooni kuluma $\qty{`r as.character(m_acetone)`}{\kg}$, kui see olnuks tahke. Aine oli siiski vedelas faasis, mistõttu pipeteerisime 2-propanooni $\qty{`r as.character(V_acetone)`}{\metre\cubed}$.
+
 Sünteesitud dibensalatsetoon sisaldab lisandeid, mis eemaldatakse ümberkristallimisega.
 
 Filtreerimises kasutatakse külma etanooli, kuna see ei lahustu.
 
+Saadus 1,5-difenüül-1,4-pentadieen-3-oon ei lahustu vees, lahustub kergelt etanoolis ning piisavalt 2-propanoonis ja kloroformis `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-232)")`. Lagunemistemperatuuriks sulamise mõttes on märgitud $\qty{113}{\degreeCelsius}$. Inimesele sobilikes elamistingimustes on aine plaatide või lehtedena atsetoonis või etüülatsetaadis.
 
-```{r label = "geometry", echo=FALSE, fig.cap = "cis, cis; cis, trans; trans, trans."}
-include_external_graphics("rmd/cis.jpg")
+```{r label = "calculating-for-dibenzalacetone"}
+M_dibenzalacetone <- 17 * table_of_molar_masses["$\\ce{C}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"] + 14 * table_of_molar_masses["$\\ce{H}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"] + table_of_molar_masses["$\\ce{O}$", "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"]
+mass_concentration_of_acetone <- convert_from_g_per_cm3_to_kg_per_m3(g_per_cm3 = .7845)
+n_dibenzalacetone <- .025
+m_dibenzalacetone <- calculate_m(M_B = M_dibenzalacetone, n_B = n_dibenzalacetone)
 
 ```
 
-Sulamistemperatuuri saab määrata nii vesi- kui õlivanniga. Õlil on kõrgem keemistemperatuur kui veel, mistõttu sobib õli kõrgema sulamistemperatuuriga ainete sulamistemperatuuri määramiseks.
+Teoreetiliselt pidanuksime tootma 1,5-difenüül-1,4-pentadieen-3-ooni $\qty{`r as.character(m_dibenzalacetone)`}{\kg}$.
+
+1,5-difenüül-1,4-pentadieen-3-oonil olevat kolm iseomeeri, millest üks ehk trans-trans-isomeer on esitatud võrrandis \@ref(eq:benzenkarboxaldehyde-and-acetone) leheküljel `r render_pageref(reference = "eq:benzenkarboxaldehyde-and-acetone")`. Ülejäänud kaks isomeeri: cis-trans-isomeer ja cis-cis-isomeer on esitatud vastavalt skeemil \@ref(eq:cis-trans) leheküljel `r render_pageref(reference = "eq:cis-trans")` ja \@ref(eq:cis-cis) leheküljel `r render_pageref(reference = "eq:cis-cis")`.
+
+```{=tex}
+\begin{align}
+\chemfig{*6(-=-(-[:30]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:90](*6(-=-=-=)))=-=)}.
+(\#eq:cis-trans)
+\end{align}
+
+```
+
+```{=tex}
+\begin{align}
+\chemfig{*6(-(-[:-90]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:90](*6(-=-=-=)))=-=-=)}.
+(\#eq:cis-cis)
+\end{align}
+
+```
+
+Sulamistemperatuuri saab määrata nii vesi- kui õlivanniga. Õlil on kõrgem keemistemperatuur kui veel, mistõttu sobib õli kõrgema sulamistemperatuuriga ainete sulamistemperatuuri määramiseks. Vesivanni kasutades dibensalatsetooni sulamistemperatuuri määrata ei saa, sest selleks ajaks, kui dibensalatsetoon sulama hakkab, oleks vesi juba ära auranud.
 
 ### Töövahendid
 
@@ -1215,7 +1295,7 @@ Sulamistemperatuuri saab määrata nii vesi- kui õlivanniga. Õlil on kõrgem k
 
 10. Veejoa pump filtreerimiseks.
 
-11. Kaks 500 ml keeduklaasi pulbri kogumiseks ja jahutamiseks.
+11. Kaks 600 ml keeduklaasi pulbri kogumiseks ja jahutamiseks.
 
 12. Kaks 300 ml keeduklaasi mõõtmiseks ja hoiustamiseks.
 
@@ -1241,6 +1321,8 @@ Sulamistemperatuuri saab määrata nii vesi- kui õlivanniga. Õlil on kõrgem k
 
 23. Statiiv termomeetri hoidmiseks.
 
+24. Tõmbekapp, et mitte kahjustatud saada.
+
 ### Ained
 
 1. Bensaldehüüd.
@@ -1261,12 +1343,11 @@ Töö teostasin koos ragne kalmeti ja gisela angelaga.
 
 Töö osad:
 
-1. 50 ml suuruses keeduklaasi pistsime 0,05 mooli bensaldehüüdi (molekulmass 106,
-ρ = 1,04 g/ml).
+1. 50 ml suuruses keeduklaasi pistsime 0,05 mooli bensaldehüüdi.
 
 2. Märkisime üles bensaldehüüdi täpse koguse.
 
-3. Lisasime 0,025 mooli atsetooni (molekulmass 58, ρ = 0,79 g/ml).
+3. Lisasime 0,025 mooli atsetooni.
 
 4. Märkisime üles atsetooni täpse koguse.
 
@@ -1274,138 +1355,482 @@ Töö osad:
 
 6. Lisasime 5 g $\ce{NaOH}$.
 
-7. Lisatakse 40 ml etanooli.
+7. Lisasime 40 ml etanooli.
 
-8. Jahutasime segu 20 °C.
+8.  Jahutasime segu 20 °C'ni (joonis \@ref(fig:naoh-etoh) leheküljel `r render_pageref(reference = "fig:naoh-etoh")`).
+
+    ```{r label = "naoh-etoh", echo=FALSE, fig.cap = "Vee, naatriumhüdroksiidi ja etanooli segu jahtumas.", out.height = "96%"}
+include_external_graphics("rmd/11/11-naoh-etoh.png")
+
+    ```
 
 9. Pool bensaldehüüdi ja atsetooni segust, mille koguse märkisime üles sammul 4, valasime sammul 8 käsitletud nõusse.
 
-10. Segasime magnetsegajaga 15
-minutit. Segu muutus paari minuti kestel häguseks ja tekkis
-kollakas sade.
+10. Segasime magnetsegajaga 15 minutit (joonis \@ref(fig:naoh-etoh-benzenecarboxaldehyde-acetone) leheküljel `r render_pageref(reference = "fig:naoh-etoh-benzenecarboxaldehyde-acetone")`).
 
-11. Valasime sisse kogu
-allesjäänud
-bensaldehüüdi ja atsetooni segu sammul 4 käsitletud anumast. Et
-anuma seintelt kogu bensaldehüüdi ja atsetooni segu
-kätte saada, pesime sammul 4 käsitletud anumat väikese koguse etanooliga ja valasime selle sammul 4 käsitletud anumasse.
+    ```{r label = "naoh-etoh-benzenecarboxaldehyde-acetone", echo=FALSE, fig.cap = "Vesi, naatriumhüdroksiid, etanool, benseenkarboksaldehüüd ja atsetoon segunemise alguses kell 12:57."}
+include_external_graphics("rmd/11/11-naoh-etoh-atsetoon.png")
 
-12. Segu segasime magnetsegajaga 20 minutit.
+    ```
 
-13. Kogusime kollase sademe Büchneri filtri abil
-(vaakum tekitati veejoapumba abil).
+    Segu muutus paari minuti kestel häguseks ja tekkis kollakas sade (joonised \@ref(fig:naoh-etoh-benzenecarboxaldehyde-acetone-darker) leheküljel `r render_pageref(reference = "fig:naoh-etoh-benzenecarboxaldehyde-acetone-darker")`, \@ref(fig:naoh-etoh-benzenecarboxaldehyde-acetone-darkest) leheküljel `r render_pageref(reference = "fig:naoh-etoh-benzenecarboxaldehyde-acetone-darkest")` ja \@ref(fig:naoh-etoh-benzenecarboxaldehyde-acetone-ready) leheküljel `r render_pageref(reference = "fig:naoh-etoh-benzenecarboxaldehyde-acetone-ready")`).
 
-14. Sademe asetasime suuremasse keeduklaasi (500 ml).
+    ```{r label = "naoh-etoh-benzenecarboxaldehyde-acetone-darker", echo=FALSE, fig.cap = "Vee, naatriumhüdroksiidi, etanooli, benseenkarboksaldehüüdi ja atsetooni magnetsegajaga segunemise esimese minuti hetk."}
+include_external_graphics("rmd/11/11-naoh-etoh-atsetoon-tumedam.png")
 
-15. Lisasime 300 ml vett.
+    ```
 
-16. Segasime tugevalt
-klaaspulgaga (kuna $\ce{NaOH}$ lahustub vees, saab nii \$ce{NaOH}$ sademest eemaldada, dibensalatsetoon
-vees ei lahustu).
+    ```{r label = "naoh-etoh-benzenecarboxaldehyde-acetone-darkest", echo=FALSE, fig.cap = "Vee, naatriumhüdroksiidi, etanooli, benseenkarboksaldehüüdi ja atsetooni magnetsegajaga segamise neljanda minuti hetk. Segu meenutab greibimahla."}
+include_external_graphics("rmd/11/11-naoh-etoh-atsetoon-tumedaim.png")
 
-17. Dibensalatsetoon eraldasime uuesti Büchneri filtri abil.
+    ```
 
-18. Et sademest võimalikult palju vett kätte
-saada, vajutasime sadet veejoapumba töötamise ajal Büchneri filtri peal ettevaatlikult korgitükiga.
+    ```{r label = "naoh-etoh-benzenecarboxaldehyde-acetone-ready", echo=FALSE, fig.cap = "Vee, naatriumhüdroksiidi, etanooli, benseenkarboksaldehüüdi ja atsetooni magnetsegajaga segunemise järel."}
+include_external_graphics("rmd/11/11-naoh-etoh-atsetoon-valmis.png")
 
-19. Paigutasime dibensalatsetooni tühja Erlenmeyeri kolbi.
+    ```
 
-20. Lisasime etanooli, kuni tekkis paks kristallide „pudru“ (etanooli ei tohi liiga palju lisada).
+11. Valasime sisse kogu allesjäänud bensaldehüüdi ja atsetooni segu sammul 4 käsitletud anumast (joonis \@ref(fig:benzenecarboxaldehyde-acetone-all-in) leheküljel `r render_pageref(reference = "fig:benzenecarboxaldehyde-acetone-all-in")`).
 
-21. Kolbi lisasime kapillaari tagamaks ühtlasemat keemist.
+    ```{r label = "benzenecarboxaldehyde-acetone-all-in", echo=FALSE, fig.cap = "Ülejäänud benseenkarboksaldehüüdi ja atsetooni segu lisamine sekku, kus on juba sademetükkidena 1,5-difenüül-1,4-pentadieen-3-ooni."}
+include_external_graphics("rmd/11/11-atsetoon-naoh-etoh-sisse.png")
+
+    ```
+
+    Et anuma seintelt kogu bensaldehüüdi ja atsetooni segu kätte saada, pidanuksime pesema sammul 4 käsitletud anumat väikese koguse etanooliga ja valama selle sammul 4 käsitletud anumasse. Audiovisuaalselt salvestiselt ei suutnud ma seda tegevust tuvastada.
+
+12. Segu segasime magnetsegajaga 20 minutit (joonis \@ref(fig:dibenzalacetone-ready) leheküljel `r render_pageref(reference = "fig:dibenzalacetone-ready")`).
+
+    ```{r label = "dibenzalacetone-ready", echo=FALSE, fig.cap = "1,5-difenüül-1,4-pentadieen-3-ooni valmimise viimase 30 sekundi hetk. Segu meenutab apelsinimahla."}
+include_external_graphics("rmd/11/11-dibensalatsetoon-valmis.png")
+
+    ```
+
+13. Kogusime kollase sademe Büchneri filtri abil (vaakumi tekitasime veejoapumba abil, joonised \@ref(fig:filtering) leheküljel `r render_pageref(reference = "fig:filtering")` ja  \@ref(fig:lemon-pulp-apple-juice) leheküljel `r render_pageref(reference = "fig:lemon-pulp-apple-juice")`).
+
+    ```{r label = "filtering", echo=FALSE, fig.cap = "Büchneri filtri abil kuivatasime 1,5-difenüül-1,4-pentadieen-3-ooni. Pildi vaataja poolt paremal olev parem käsi keerab lahti veejoa, mis tekitab vaakumi, voolikus ja kolvis, mille tõttu imetakse kolbi läbi lehtrisse asetatud filterpaberi õhk ja koos sellega vesi, nii et filtraat koguneb kolbi ja lehtril asuvale paberfiltrile jääb kuivatatud aine - sade. Laual on näha ka vasak käsi, kes aitab toetada inimkeha, et kraanikeeramine oleks mugav. Kummikindad kaitsevad käsi nakatumast Covid-19'sse, mis võib väljuda Wi-Fi võrgu kaudu laual lebavast nutitelefonist, mida ei olnud Telia esindajad nõus välja vahetama, kuigi söögiaugu kate ei püsi alati suletuna, nii et suu on ohus."}
+include_external_graphics("rmd/11/11-filterdamine.png")
+
+    ```
+
+    ```{r label = "lemon-pulp-apple-juice", echo=FALSE, fig.cap = "Tundus, nagu kuivataksime sidrunipulbrit ja filtraadiks on õunamahl."}
+include_external_graphics("rmd/11/11-lemon-pulp-apple-juice.png")
+
+    ```
+
+14. Sademe asetasime suuremasse keeduklaasi (600 ml, joonis \@ref(fig:lemon-powder) leheküljel `r render_pageref(reference = "fig:lemon-powder")`).
+
+    ```{r label = "lemon-powder", echo=FALSE, fig.cap = "Sademe kraapisime keeduklaasi. Sade meenutas sidrunipulbrit."}
+include_external_graphics("rmd/11/11-lemon-powder.png")
+
+    ```
+
+15. Lisasime 300 ml vett (joonis \@ref(fig:adding-300-ml-water) leheküljel `r render_pageref(reference = "fig:adding-300-ml-water")`).
+
+    ```{r label = "adding-300-ml-water", echo=FALSE, fig.cap = "Lisasime 1,5-difenüül-1,4-pentadieen-3-ooni sademele 300 ml vett."}
+include_external_graphics("rmd/11/11-adding-300-ml-water.png")
+
+    ```
+
+16. Segasime tugevalt klaaspulgaga (kuna $\ce{NaOH}$ lahustub vees, saab nii $\ce{NaOH}$ sademest eemaldada, dibensalatsetoon
+vees ei lahustu, joonis \@ref(fig:solving-naoh) leheküljel `r render_pageref(reference = "fig:solving-naoh")`).
+
+    ```{r label = "solving-naoh", echo=FALSE, fig.cap = "Segasime tugevalt klaaspulgaga segu, et naatriumhüdroksiid lahustada ja see hiljem filtreerimisega eemaldada."}
+include_external_graphics("rmd/11/11-solving-naoh.png")
+
+    ```
+
+17. Dibensalatsetoon eraldasime uuesti Büchneri filtri abil (joonised \@ref(fig:second-filtering) leheküljel `r render_pageref(reference = "fig:second-filtering")`, \@ref(fig:creme-of-egg) leheküljel `r render_pageref(reference = "fig:creme-of-egg")` ja \@ref(fig:birch-sap) leheküljel `r render_pageref(reference = "fig:birch-sap")`).
+
+    ```{r label = "second-filtering", echo=FALSE, fig.cap = "Alustasime teist filterdamist pärast seda, kui esimese filterdamise järel olime lisanud vaid vett ja seganud. Filtraati tilkus nagu vahtra- või kasemahla, ainult et meie tegime justkui sidrunimahla.", out.height = "90%"}
+include_external_graphics("rmd/11/11-teine-filterdamine.png")
+
+    ```
+
+    ```{r label = "creme-of-egg", echo=FALSE, fig.cap = "Jõudsime punkti, milles *munakreemist*..."}
+include_external_graphics("rmd/11/11-munakreem.png")
+
+    ```
+
+    ```{r label = "birch-sap", echo=FALSE, fig.cap = "... saime *kasemahla*."}
+include_external_graphics("rmd/11/11-kasemahl.png")
+
+    ```
+
+18. Et sademest võimalikult palju vett kätte saada, vajutasime sadet veejoapumba töötamise ajal Büchneri filtri peal ettevaatlikult korgitükiga (joonis \@ref(fig:cork) leheküljel `r render_pageref(reference = "fig:cork")`.
+
+    ```{r label = "cork", echo=FALSE, fig.cap = "ragne pressis korgiga 1,5-difenüül-1,4-pentadieen-3-oonile, et seda tõhusamalt veest vabastada."}
+include_external_graphics("rmd/11/11-cork.png")
+
+    ```
+
+19. Paigutasime dibensalatsetooni tühja Erlenmeyeri kolbi (joonis \@ref(fig:dibensalacetone-into-bulb) leheküljel `r render_pageref(reference = "fig:dibensalacetone-into-bulb")`.
+
+    ```{r label = "dibensalacetone-into-bulb", echo=FALSE, fig.cap = "ragne eemaldamas filtreeritud 1,5-difenüül-1,4-pentadieen-3-ooni tühja Erlenmeyeri kolbi selle aine kuumutamiseks. Nüüd nägi dibensalatsetoon välja nagu munavõi."}
+include_external_graphics("rmd/11/11-dibensalatsetaadi-eemaldamine-filtrist.png")
+
+    ```
+
+20. Lisasime etanooli, kuni tekkis paks kristallide „pudru“ (etanooli ei tohi liiga palju lisada, joonis \@ref(fig:adding-etoh) leheküljel `r render_pageref(reference = "fig:adding-etoh")`).
+
+    ```{r label = "adding-etoh", echo=FALSE, fig.cap = "Lisasime etanooli ja 1,5-difenüül-1,4-pentadieen-3-oon kujunes justkui mannapudruks."}
+include_external_graphics("rmd/11/11-adding-etoh.png")
+
+    ```
+
+21. Kolbi lisasime kapillaari tagamaks ühtlasemat keemist (joonis \@ref(fig:capillary) leheküljel `r render_pageref(reference = "fig:capillary")`.
+
+    ```{r label = "capillary", echo=FALSE, fig.cap = "gisela angela puistas putru kapillaari, et suurendada pinda, millele mullid kinnituvad."}
+include_external_graphics("rmd/11/11-kapillaar.png")
+
+    ```
 
 22. Kuumutasime segu pliidil keemiseni.
 
-23. Keevasse segusse lisasime pidevalt väikestes kogustes etanooli, kuni kõik kristallid lahustusid
-(oluline oli ära tabada selline hetk, mil etanooli kogus kolvis oli täpselt nii suur, et kõik kristallid
-selles lahustusid – väikseim etanooli kogus, milles kristallid lahustuvad).
+23. Keevasse segusse lisasime pidevalt väikestes kogustes etanooli, kuni kõik kristallid lahustusid (oluline oli ära tabada selline hetk, mil etanooli kogus kolvis oli täpselt nii suur, et kõik kristallid selles lahustusid – väikseim etanooli kogus, milles kristallid lahustuvad, joonised \@ref(fig:potato-mash) leheküljel `r render_pageref(reference = "fig:potato-mash")`, \@ref(fig:smashed-eggs) leheküljel `r render_pageref(reference = "fig:smashed-eggs")`, \@ref(fig:cabbage) leheküljel `r render_pageref(reference = "fig:cabbage")`, \@ref(fig:adding-more-etoh) leheküljel `r render_pageref(reference = "fig:adding-more-etoh")`, \@ref(fig:dissolved-dibenzalacetone) leheküljel `r render_pageref(reference = "fig:dissolved-dibenzalacetone")`, \@ref(fig:even-more-etoh) leheküljel `r render_pageref(reference = "fig:even-more-etoh")` ja \@ref(fig:almost-done) leheküljel `r render_pageref(reference = "fig:almost-done")`).
 
-24. Segul lasime aeglaselt jahtuda ja kristalluda.
+    ```{r label = "potato-mash", echo=FALSE, fig.cap = "Kuumusel $\\qty{180}{\\degreeCelsius}$ paistis segu juba kartulipüreena."}
+include_external_graphics("rmd/11/11-kartulipuder.png")
 
-25. Kui kristalle rohkem ei
-tekkinud, jahutasime segu toatemperatuurini jahedas vesivannis.
+    ```
 
-26. Jätkasime jahutamist alla toatemperatuuri termoskastis jäätükkide vahel.
+    ```{r label = "smashed-eggs", echo=FALSE, fig.cap = "Kui juba rohkem kristalle oli lahustunud, näis segu koogelmooglina."}
+include_external_graphics("rmd/11/11-koogelmoogel.png")
 
-27. Kristallid
-eraldasime Büchneri filtri abil.
+    ```
 
-28. Kristalle pesime filtril väikeste koguste külma etanooliga.
+    ```{r label = "cabbage", echo=FALSE, fig.cap = "Peagi nägi 1,5-difenüül-1,4-pentadieen-3-ooni ja etanooli segu välja nagu hapukapsavedeliku preparaat, mille sees elu käib."}
+include_external_graphics("rmd/11/11-hapukapsas.png")
 
-29. Ümberkristallitud dibensalatsetooni asetasime Petri tassile kaheks nädalaks kuivama.
+    ```
 
-30. Mõõtsime ja lasin arvutada sünteesitud dibensalatsetooni massi.
+    ```{r label = "adding-more-etoh", echo=FALSE, fig.cap = "Oli vaja veel lisada etanooli ja tekkis küsimus, kas niimoodi etanooliga saab ka ummistunud veresooni puhastada."}
+include_external_graphics("rmd/11/11-adding-more-etoh.png")
+
+    ```
+
+    ```{r label = "dissolved-dibenzalacetone", echo=FALSE, fig.cap = "Ometi paistis kogu 1,5-difenüül-1,4-pentadieen-3-oon olevat lahustunud."}
+include_external_graphics("rmd/11/11-lahustunud-dibensalatsetoon.png")
+
+    ```
+
+    ```{r label = "even-more-etoh", echo=FALSE, fig.cap = "Aga veel ei olnud. Vaja oli veel etanooliga kaasa aidata."}
+include_external_graphics("rmd/11/11-even-more-etoh.png")
+
+    ```
+
+    ```{r label = "almost-done", echo=FALSE, fig.cap = "Kui me enam 1,5-difenüül-1,4-pentadieen-3-ooni laaste ei näinud, tõstsime kolvi pliidilt. Peal oli siiski pilveke ujumas, mille mainimise peale gisela angela otsustas segu korraks pliidile tagasi panna. Asetasimegi ja lisasime ka etanooli, ent tõstsime uuesti ära. õpetaja selgitas, et pilveke tähendab kristalliseerumist jahtumisel."}
+include_external_graphics("rmd/11/11-peaaegu-valmis.png")
+
+    ```
+
+24. Segul lasime aeglaselt jahtuda ja kristalluda (joonised \@ref(fig:cooling) leheküljel `r render_pageref(reference = "fig:cooling")`, \@ref(fig:further-cooling) leheküljel `r render_pageref(reference = "fig:further-cooling")`, \@ref(fig:crystals) leheküljel `r render_pageref(reference = "fig:crystals")` ja \@ref(fig:crystals-like-ice) leheküljel `r render_pageref(reference = "fig:crystals-like-ice")`).
+
+    ```{r label = "cooling", echo=FALSE, fig.cap = "Kui enam 1,5-difenüül-1,4-pentadieen-3-ooni laaste näha polnud, lasime segul jahtuda ja kristalluda."}
+include_external_graphics("rmd/11/11-jahtumine.png")
+
+    ```
+
+    ```{r label = "further-cooling", echo=FALSE, fig.cap = "Jahtumine jätkus."}
+include_external_graphics("rmd/11/11-jahtus-edasi.png")
+
+    ```
+
+    ```{r label = "crystals", echo=FALSE, fig.cap = "Kristallid tekkisid."}
+include_external_graphics("rmd/11/11-kristallid.png")
+
+    ```
+
+    ```{r label = "crystals-like-ice", echo=FALSE, fig.cap = "Peagi nägid kristallid välja nagu jäätükid."}
+include_external_graphics("rmd/11/11-kristallid-kui-tahke-vesi.png")
+
+    ```
+
+25. Kui kristalle rohkem ei tekkinud, jahutasime segu toatemperatuurini jahedas vesivannis (joonis \@ref(fig:waterbath) leheküljel `r render_pageref(reference = "fig:waterbath")`).
+
+    ```{r label = "waterbath", echo=FALSE, fig.cap = "Kui kristalle rohkem ei tekkinud, nägi segu veel rohkem karamelliseeritud munakreemi moodi välja ja vajas parema maitse saavutamiseks jahutamist jahedas vesivannis toatemperatuurini."}
+include_external_graphics("rmd/11/11-vesivann.png")
+
+    ```
+
+26. Jätkasime jahutamist alla toatemperatuuri termoskastis jäätükkide vahel (joonis \@ref(fig:on-ice) leheküljel `r render_pageref(reference = "fig:on-ice")`).
+
+    ```{r label = "on-ice", echo=FALSE, fig.cap = "Jätkasime jahutamist alla toatemperatuuri jäätükkide vahel. Sealt võis tekkida ideid ragne kohviku jaoks."}
+include_external_graphics("rmd/11/11-on-ice.jpg")
+
+    ```
+
+27. Kristallid eraldasime Büchneri filtri abil, mille ettevalmistamist saab näha joonistel \@ref(fig:watering-filter) leheküljel `r render_pageref(reference = "fig:watering-filter")`, \@ref(fig:pressing-filter) leheküljel `r render_pageref(reference = "fig:pressing-filter")` ja \@ref(fig:third-filtering) leheküljel `r render_pageref(reference = "fig:third-filtering")`.
+
+    ```{r label = "watering-filter", echo=FALSE, fig.cap = "Et filterpaber paremini filtri külge kinni jääks, niisutas ragne seda demineraliseeritud veega."}
+include_external_graphics("rmd/11/11-watering-filter.png")
+
+    ```
+
+    ```{r label = "pressing-filter", echo=FALSE, fig.cap = "ragne pressis sõrmedega filterpaberi Büchneri filtrisse, et paber kõik augud kenasti kataks."}
+include_external_graphics("rmd/11/11-pressing-filter.png")
+
+    ```
+
+    ```{r label = "third-filtering", echo=FALSE, fig.cap = "Spaatli abil kraapis ragne kolvist segu Büchneri filtrile."}
+include_external_graphics("rmd/11/11-kolmas-filterdamine.png")
+
+    ```
+
+28. Kristalle pesime filtril väikeste koguste külma etanooliga (joonised \@ref(fig:cleaning-with-etoh) leheküljel `r render_pageref(reference = "fig:cleaning-with-etoh")`, \@ref(fig:mixture-with-etoh) leheküljel `r render_pageref(reference = "fig:mixture-with-etoh")`, \@ref(fig:third-dipping) leheküljel `r render_pageref(reference = "fig:third-dipping")`, \@ref(fig:three-minutes-later) leheküljel `r render_pageref(reference = "fig:three-minutes-later")` ja \@ref(fig:six-minutes-later) leheküljel `r render_pageref(reference = "fig:six-minutes-later")`).
+
+    ```{r label = "cleaning-with-etoh", echo=FALSE, fig.cap = "ragne loputas kolbi külma etanooliga, et kolvist jäägid kätte saada, ning lisas loputusvedeliku filtrile."}
+include_external_graphics("rmd/11/11-loputamine-etanooliga.png")
+
+    ```
+
+    ```{r label = "mixture-with-etoh", echo=FALSE, fig.cap = "Segule lisasime külma etanooli, et tõhusamalt filterdada. Külm etanool ei reageeri."}
+include_external_graphics("rmd/11/11-segu-etanooliga.png")
+
+    ```
+
+    ```{r label = "third-dipping", echo=FALSE, fig.cap = "Tilkumine kolmandas filterdamises etanooli mõju all.", out.height = "96%"}
+include_external_graphics("rmd/11/11-kolmas-tilkumine.png")
+
+    ```
+
+    ```{r label = "three-minutes-later", echo=FALSE, fig.cap = "Kolm minutit hiljem nägi olukord välja selline.", out.height = "96%"}
+include_external_graphics("rmd/11/11-3-minutit-hiljem.png")
+
+    ```
+
+    ```{r label = "six-minutes-later", echo=FALSE, fig.cap = "Omakorda kolm minutit hiljem nägi kuivatatav aine välja selline."}
+include_external_graphics("rmd/11/11-6-minutit-hiljem.jpg")
+
+    ```
+
+29. Ümberkristallitud dibensalatsetooni asetasime Petri tassile kaheks nädalaks kuivama (joonised \@ref(fig:to-petri) leheküljel `r render_pageref(reference = "fig:to-petri")`, \@ref(fig:comparison) leheküljel `r render_pageref(reference = "fig:comparison")` ja \@ref(fig:two-weeks-later) leheküljel `r render_pageref(reference = "fig:two-weeks-later")`).
+
+    ```{r label = "to-petri", echo=FALSE, fig.cap = "ragne kuivatatud 1,5-difenüül-1,4-pentadieen-3-ooni Petri tassile kraapimas."}
+include_external_graphics("rmd/11/11-petri-tassile.png")
+
+    ```
+
+    ```{r label = "comparison", echo=FALSE, fig.cap = "Kolme rühma inimeste toodetud 1,5-difenüül-1,4-pentadieen-3-ooni Petri tassidel võrdluses. meie toode on pildi vaataja poolt vaadatuna kõige parempoolsem. Paremäärmuslane."}
+include_external_graphics("rmd/11/11-tassid.png")
+
+    ```
+
+    ```{r label = "two-weeks-later", echo=FALSE, fig.cap = "Kaks nädalat hiljem nägi meie valmistatud 1,5-difenüül-1,4-pentadieen-3-oon välja selline, kui ragne asetas Petri tassi kaalule, et välja selgitada uus mass, sest vahepeal oli vett välja auranud."}
+include_external_graphics("rmd/11/11-week-later.png")
+
+    ```
+
+30. Mõõtsime (joonis \@ref(fig:weighing) leheküljel `r render_pageref(reference = "fig:weighing")`) ja lasin arvutada sünteesitud dibensalatsetooni massi.
+
+    ```{r label = "weighing", echo=FALSE, fig.cap = "Omavalistatud 1,5-difenüül-1,4-pentadieen-3-oon kaalul."}
+include_external_graphics("rmd/11/11-kaalumine.png")
+
+    ```
 
 31. Lasin arvutada teoreetilise dibensalatsetooni massi (võttes aluseks kasutatud bensaldehüüdi ja atsetooni
 kogused).
 
 32. Lasin arvutada saagise protsendimäära.
 
-33. Tõestasime keemiliselt, kas tegemist oli küllastunud või küllastumata ühendiga.
+33. Lisasime tühja katseklaasi ühe milliliitri etanooli.
 
-34. Määrasime ühendi sulamistemperatuuri.
+34. Lisasime spaatliga kaks tükikest 1,5-difenüül-1,4-pentadieen-3-ooni (joonised \@ref(fig:dibenzalacetone-into-acetone) leheküljel `r render_pageref(reference = "fig:dibenzalacetone-into-acetone")` ja \@ref(fig:dibenzalacetone-in-acetone) leheküljel `r render_pageref(reference = "fig:dibenzalacetone-in-acetone")`).
 
-35. Uurisime dibensalatsetooni spektrofotomeetriliselt.
+    ```{r label = "dibenzalacetone-into-acetone", echo=FALSE, fig.cap = "Kaks sellist tükikest 1,5-difenüül-1,4-pentadieen-3-ooni nagu spaatlil lisas ragne katseklaasis olevasse etanooli."}
+include_external_graphics("rmd/11/11-dibensalatsetoon-atsetooni.png")
+
+    ```
+
+    ```{r label = "dibenzalacetone-in-acetone", echo=FALSE, fig.cap = "1,5-difenüül-1,4-pentadieen-3-ooni tükikesed lebavad katseklaasis olevas etanooli põhjas."}
+include_external_graphics("rmd/11/11-dibensalatsetoon-atsetoonis.png")
+
+    ```
+
+35. Sulgesime katseklaasi korgiga.
+
+36. Loksutasime katseklaasi, et 1,5-difenüül-1,4-pentadieen-3-oon etanoolis lahustuks, mille tulemus on näha joonisel \@ref(fig:after-shaking) leheküljel `r render_pageref(reference = "fig:after-shaking")`.
+
+    ```{r label = "after-shaking", echo=FALSE, fig.cap = "Pärast loksutamist olid 1,5-difenüül-1,4-pentadieen-3-ooni tükikesed etanoolis lahustunud."}
+include_external_graphics("rmd/11/11-after-shaking.png")
+
+    ```
+
+37. Eemaldasime katseklaasilt korgi.
+
+38. Lisasime ühe milliliitri $\qty{5}{\percent}$'list $\ce{Na2CO3}$, mille tulemus on näha joonisel \@ref(fig:na2co3) leheküljel `r render_pageref(reference = "fig:na2co3")`.
+
+    ```{r label = "na2co3", echo=FALSE, fig.cap = "Pärast naatriumkarbonaadi lisamist oli segu hägune."}
+include_external_graphics("rmd/11/11-na2co3.png")
+
+    ```
+
+39. Lisasime kolm tilka $\qty{0,5}{\percent}$ $\ce{KMnO4}$.
+
+40. Sulgesime katseklaasi korgiga.
+
+41. Loksutasime katseklaasi ja tulemus on näha joonisel \@ref(fig:after-adding-potassium-permanganate) leheküljel `r render_pageref(reference = "fig:after-adding-potassium-permanganate")`.
+
+    ```{r label = "after-adding-potassium-permanganate", echo=FALSE, fig.cap = "Pärast kaaliumpermanganaadi lisamist 1,5-difenüül-1,4-pentadieen-3-ooni, etanooli ja naatriumkarbonaadi segule oli saaduslahus kollaselt hägune."}
+include_external_graphics("rmd/11/11-after-adding-potassium-permanganate.png")
+
+    ```
+
+42. Põletasime tühja kapillaari ühe otsa kinni (joonised \@ref(fig:burning-capillary) leheküljel `r render_pageref(reference = "fig:burning-capillary")` ja \@ref(fig:after-burning-capillary) leheküljel `r render_pageref(reference = "fig:after-burning-capillary")`).
+
+    ```{r label = "burning-capillary", echo=FALSE, fig.cap = "ragne põletamas kapillaari üht otsa kinni, et saaks kapillaari kasutada silindrina."}
+include_external_graphics("rmd/11/11-burning-capillary.png")
+
+    ```
+
+    ```{r label = "after-burning-capillary", echo=FALSE, fig.cap = "ragne imetlemas kinnipõletatud otsaga kapillaari."}
+include_external_graphics("rmd/11/11-after-burning-capillary.png")
+
+    ```
+
+43. Toppisime kapillaari 1,5-difenüül-1,4-pentadieen-3-ooni (joonis \@ref(fig:filling-capillary) leheküljel `r render_pageref(reference = "fig:filling-capillary")`).
+
+    ```{r label = "filling-capillary", echo=FALSE, fig.cap = "ragne surub kapillaari lahtist otsa vastu 1,5-difenüül-1,4-pentadieen3-ooni täites sellega kapillaari."}
+include_external_graphics("rmd/11/11-dibensalatsetoon-kapillaari.png")
+
+    ```
+
+44. Koputasime kapillaari kinnise otsaga vastu lauda, et 1,5-difenüül-1,4-pentadieen-3-oon liiguks kapillaari põhja välja (joonised \@ref(fig:knocking) leheküljel `r render_pageref(reference = "fig:knocking")` ja \@ref(fig:filled-capillary) leheküljel `r render_pageref(reference = "fig:filled-capillary")`).
+
+    ```{r label = "knocking", echo=FALSE, fig.cap = "ragne toksib kapillaari kinnist otsa vastu lauda, et kollane puru kapillaari põhja vajuks."}
+include_external_graphics("rmd/11/11-toksimine.png")
+
+    ```
+
+    ```{r label = "filled-capillary", echo=FALSE, fig.cap = "Kapillaari põhjas on piisavalt 1,5-difenüül-1,4-pentadieen-3-ooni, et saaks selle faasimuutust jälgida."}
+include_external_graphics("rmd/11/11-kapillaar-ainega.png")
+
+    ```
+
+45. Valasime keeduklaasi parafiiniõli.
+
+46. Asetasime keeduklaasi parafiiniõliga elektrilisele magnetsegamisvõimekusega pliidile.
+
+47. Termomeetri kinnitasime statiivi käpa külge niimoodi, et selle elavhõbedareservuaar ulatus õli sisse, ent ei puudutanud keeduklaasi, ja et skaala oli nähtaval.
+
+48. Termomeetri elavhõbedareservuaari külge kinnitasime kummirõngaga kapillaari, nii et selle suletud ots oli all ja et kapillaari täidetud osa oli ümbritsetud õliga, kuid kapillaari sisse ei tohtinud õli minna.
+
+49. Paigutasime keeduklaasi magnetsegaja.
+
+50. Lülitasime pliidi sisse, nii et see hakkas kütma ja segama õli uuritava aine ümber (joonis \@ref(fig:heating) leheküljel `r render_pageref(reference = "fig:heating")`).
+
+    ```{r label = "heating", echo=FALSE, fig.cap = "Termomeeter on paigutatud niimoodi, et selle skaala oleks näha ja et selle sensor asuks täielikult õlis, kuid ei puudutaks õlireservuaari. Sensori külge on kinnitatud kapillaar uuritava ainega. Keeduklaasis on magnetsegaja, mille abil seade, millele keeduklaas on paigutatud, segab õli. See seade on ühtlasi pliit ja kuumutab õli. Vaja on jälgida, millal uuritav aine sulab, et selle järgi määrata sulamistemperatuur."}
+include_external_graphics("rmd/11/11-termomeeter.png")
+
+    ```
+
+51. Jälgisime ühtaegu temperatuuri ja 1,5-difenüül-1,4-pentadieen-3-ooni faasi (joonis \@ref(fig:waiting-for-melting) leheküljel `r render_pageref(reference = "fig:waiting-for-melting")`). Kui oli märgata fraktsionaalset sulamist, tuli registreerida sulamise algtemperatuur (joonis \@ref(fig:melting-starts) leheküljel `r render_pageref(reference = "fig:melting-starts")`). Kui oli märgata, et kogu aine on sulanud, tuli registreerida sulamise lõpptemperatuur (joonis \@ref(fig:melting-ends) leheküljel `r render_pageref(reference = "fig:melting-ends")`).
+
+    ```{r label = "waiting-for-melting", echo=FALSE, fig.cap = "1,5-difenüül-1,4-pentadieen-3-oon peab hakkama sulama, et saaks temperatuuri registreerida. Ilma suurenduseta on seda jälgida väga piinarikas."}
+include_external_graphics("rmd/11/11-waiting-for-melting.png")
+
+    ```
+
+    ```{r label = "melting-starts", echo=FALSE, fig.cap = "Sulamine algab."}
+include_external_graphics("rmd/11/11-melting-starts.png")
+
+    ```
+
+    ```{r label = "melting-ends", echo=FALSE, fig.cap = "Sulamine on lõppenud."}
+include_external_graphics("rmd/11/11-melting-ends.png")
+
+    ```
+
+52. Täppiskaaluga kaalusime tühja keeduklaasi $\qty{0,006}{\g}$ 1,5-difenüül-1,4-pentadieen-3-ooni (joonis \@ref(fig:weighing-dibenzalacetone) leheküljel `r render_pageref(reference = "fig:weighing-dibenzalacetone")`).
+
+    ```{r label = "weighing-dibenzalacetone", echo=FALSE, fig.cap = "Juhendasin ragnet kasutama täppiskaalu. Alul mõõtis ta keeduklaasi 1,5-difenüül-1,4-pentadieen-3-ooni liiga palju. Siis ta valas osa tagasi ja nii saime sobiliku koguse."}
+include_external_graphics("rmd/11/11-dibensalatsetooni-kaalumine.png")
+
+    ```
+
+53. Lisasime $\qty{22}{\ml}$ etanooli (joonis \@ref(fig:adding-etoh-to-dibenzalacetone) leheküljel `r render_pageref(reference = "fig:adding-etoh-to-dibenzalacetone")`).
+
+    ```{r label = "adding-etoh-to-dibenzalacetone", echo=FALSE, fig.cap = "ragne mõõtis pika pipetiga etanooli 1,5-difenüül-1,4-pentadieen-3-oonile sekka.", out.height = "90%"}
+include_external_graphics("rmd/11/11-etanooli-lisamine-dibensalatsetoonile.png")
+
+    ```
+
+54. Segasime klaaspulgaga.
+
+55. Võtsime sellest lahusest $\qty{1}{\ml}$ tühja keeduklaasi.
+
+56. Sinna keeduklaasi, kuhu eelmisel sammul sisu tekitasime, lisasime $\qty{20}{ml}$ etanooli.
+
+57. Keeduklaasi, kuhu viimati etanooli lisasime, sisu segasime.
+
+58. Täitsime kaks tühja küvetti etanooliga.
+
+59. Täitsime ühe tühja küveti sammul 57 segatud seguga (joonis \@ref(fig:filling-cuvette) leheküljel `r render_pageref(reference = "fig:filling-cuvette")`).
+
+    ```{r label = "filling-cuvette", echo=FALSE, fig.cap = "ragne pipeteerimas küvetti segu, milles on nii etanooli kui 1,5-difenüül-1,4-pentadieen-3-ooni."}
+include_external_graphics("rmd/11/11-pipetiga-sisse.png")
+
+    ```
+
+60. õpetaja pistis ainult etanooliga küveti *SHIMADZU* spektrofotomeetrisse, sättis neeldumisspektri vahemikku $\qtyrange{200}{400}{\nm}$ lainepikkust ja käivitas *Baseline*'i mõõtmise. Sellega tuvastatakse etanooli lainepikkus. Seejärel pistis ta masinasse küveti 1,5-difenüül-1,4-pentadieen-3-ooni lahusega ja *Start*is selle mõõtmise. Saime teada aine lainepikkuse ja *Abs.*'i. 
 
 ### Tulemused
 
-```{r}
-m_Petri <- 105.03
-m <- 110.54
-m_after <- 107.64
+Benseenkarboksaldehüüd lõhnas martsipani järele.
+
+```{r label = "yield-of-dibenzalacetone"}
+m_Petri <- 105.03e-3
+m <- 110.54e-3
+m_after <- 107.64e-3
 
 m_dibenzalacetone_before <- m - m_Petri
 m_dibenzalacetone_after <- m_after - m_Petri
 
-M_H <- 1.008
-M_C <- 12.011
-M_O <- 15.999
-M_dibenzalacetone <- 17 * M_C + 14 * M_H + M_O
+yield <- calculate_yield(m_experimental = m_dibenzalacetone_after, m_theoretical = m_dibenzalacetone)
 
-n_dibenzalacetone <- .025
-m_dibenzalacetone <- M_dibenzalacetone * n_dibenzalacetone
-m_dibenzalacetone
+```
 
-yield <- m_dibenzalacetone_after / m_dibenzalacetone
-yield
+Tühi Petri tass kaalus $\qty{`r as.character(m_Petri)`}{\kg}$. 1,5-difenüül-1,4-pentadieen-3-ooni mass koos Petri tassi massiga pärast kaht nädalat ootamist oli $\qty{`r as.character(m_after)`}{\kg}$. Saagis oli $\num{`r as.character(yield)`}$.
 
+```{r}
 density <- 1.1 # g / l
 c_theoretical <- n_dibenzalacetone * density / m_dibenzalacetone
 c_theoretical # mol / l
 
 ```
 
-Reaktiivid olid kaks osa bensaldehüüdi ja üks osa atsetooni.
+Etanooli me ei kasutanud dibensalatsetooni sünteesimiseks. Kasutasime dibensalatsetooni lahustamiseks, et saada tahkest ainest jäägid kätte. Kasutasime just nii palju, kui palju oli vaja täielikuks lahustamiseks. Muidu oleks mingi muu aine tekkida võinud. Liiga vähese etanooli kasutamine poleks võimaldanud kõikvõimalikke jääkaineid lahtistada. Kui ümberkristallitavaid kristalle filtrida kuumalt, võib juhtuda, et etanool lagundab dibensalatsetooni mingiks muuks aineks.
 
-Saadused olid üks osa 1,5-difenüül-1,4-pentadieen-3-ooni ja kaks osa vett.
+Sünteesitud dibensalatsetooni vette asetamine ja segamine oli vajalik selleks, et sademest naatriumhüdroksiid kätte saada, mis vees lahustub, sellal kui dibensalatsetoon vees ei lahustu.
 
-Kuna atsetooni oli 0,025 mooli, siis 1,5-difenüül-1,4-pentadieen-3-ooni oli ka 0,025 mooli.
+Küllastuvuse tõestamine lõppes meil kollase hägusa lahusega.
 
-Lasin välja arvutada saagise ja selleks oli `r yield`.
+Sulamine algas temperatuuri $\qty{109}{\degreeCelsius}$ juures ja lõppes temperatuuri $\qty{111}{\degreeCelsius}$ juures. Ei saavutatud seda temperatuuri, mis on märgitud käsiraamatus.
 
-Küllastuvuse tõestamine lõppes meil kollase läbipaistva lahusega.
+```{r label = "c-spekter"}
+A <- 2.246
+molar_decadic_absorption_coefficient <- 34300
+l <- convert_from_cm_to_m(1)
+c_spekter <- calculate_c_by_molar_decadic_absorption_coefficient(A = A, molar_decadic_absorption_coefficient = molar_decadic_absorption_coefficient, l = l)
+wavelength <- 332e-9
 
-```{r}
-melting_point_start <- 109
-melting_point_end <- 111.5
 ```
 
-```{r}
+Lainepikkuse $\qty{`r as.character(wavelength)`}{\m}$ juures oli 1,5-difenüül-1,4-pentadieen-3-ooni kümnendneelduvus $\num{`r as.character(A)`}$. Juhendis on esitatud, et selle aine molaarne ekstinktsioonitegur lainepikkuse $\qty{330}{\nm}$ juures on $\num{34300}$. Ühik on jäetud märkimata, seega eeldan, et ühik on Système Internationale's. Küveti läbimõõt oli $\qty{`r as.character(l)`}{\m}$. Nende andmete põhjal oli vastavalt Lambert-Beeri seadusele (\@ref(eq:molar-decadic-absorption-coefficient) leheküljel `r render_pageref(reference = "eq:molar-decadic-absorption-coefficient")`) lahuse kontsentratsioon $\qty{`r as.character(c_spekter)`}{\mol\per\metre\cubed}$.
+
+Praktiline ultraviolettlainete vahemik on $\qtyrange{190}{400}{\nm}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-7)")`. 1,5-difenüül-1,4-pentadieen-3-ooni neelduvuse maksimum oli selles vahemikus. Kuna see neelab hästi ultraviolettkiirgust, ka seda, mis saabub Päikesest, saab seda kasutada kaitseainena päikesekreemides. See sobib päikesekreemi ka seetõttu, et koostis on püsiv ja seega ka toime on püsiv `r render_with_emojis(text = "((ref:why))").
+
+Keeruline on seletada, miks 1,5-difenüül-1,4-pentadieen-3-oon meile kahvatukollasena paistab. See tähendab, et aine neelab järelikult vastasvärvi, mis on kuskil sinise värvi lainealas. Ometi on maksimum ultraviolettkiirguse alas, mis tähendaks, et me peaksime ainet nägema hoopis helerohelisena.
+
+```{r label = "c-kaalutud"}
+mass_concentration_of_dibenzalacetone <- convert_from_g_per_ml_to_kg_per_m3(1.1)
+c_kaalutud <- calculate_c_by_mass_concentration(n = n_dibenzalacetone, mass_concentration = mass_concentration_of_dibenzalacetone, m = m_dibenzalacetone)
+
 ```
 
+1,5-difenüül-1,4-pentadieen-3-ooni massikontsentratsiooni ei suutnud ma ise leida. See polnud ka juhendis kirjas. õpetaja selle siiski kuskilt leidis, nii et see on $\qty{`r as.character(mass_concentration_of_dibenzalacetone)`}{\kg\per\metre\cubed}$. Valmistatud esmase dibensalatsetooni lahuse kontsentratsioon oli $\qty{`r as.character(c_kaalutud)`}{\mol\per\metre\cubed}$. Valmistatud ja spektrofotograafi sisestatud viimase dibensalatsetooni lahuse kontsentratsioon oli vastavalt juhendile $\qty{5.8e-2}{\mol\per\metre\cubed}$.
 
-```{r}
-wavelength <- 332e-9 # m
-abs <- 2.246
-epsilon_lambda <- 34300 # l / mol / cm
-l <- 1 # cm
-c <- abs / epsilon_lambda / l
-c
-```
-
-Teoreetiline `r c_theoretical`, tegelik `r c`.
-
-`r wavelength` vastab kahvatukollasele alale valgusspektris.
+Paistab, et kõik koguste kontsentratsioonid on üksteise suhtes väga erinevad.
 
 ## Aspiriini süntees ja eraldamine
 

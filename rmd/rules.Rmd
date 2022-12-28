@@ -1,0 +1,714 @@
+# Üldreeglid
+
+## Saagis
+
+```{r label = "calculate-yield"}
+#' This function calculates a yield.
+#' 
+#' @param m_experimental the experimental value
+#' @param m_theoretical the theoretical value
+#' 
+#' @returns the yield
+calculate_yield <- function(m_experimental, m_theoretical) {
+  return(m_experimental / m_theoretical)
+}
+
+```
+
+```{=tex}
+\begin{align}
+\text{saagis} = \frac{m_\text{tegelik}}{m_\text{teoreetiline}}.
+(\#eq:yield)
+\end{align}
+
+```
+
+Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{M}{M}},
+(\#eq:dimensional-analysis-for-yield)
+\end{align}
+
+```
+
+millest johtuvalt ühik on 1.
+
+## Aeg
+
+```{r label = "delta-nu-cs"}
+delta_nu_cs <- 9192631770
+
+```
+
+$\ce{^133Cs}$ aatomi häirimatu põhioleku hüperpeensiirdesageduse fikseeritud arvväärtus:
+
+```{=tex}
+\begin{align}
+\Delta(\nu_\text{Cs}) = 9 192 631 770 \frac{1}{\mathrm{s}}
+(\#eq:delta-nu-cs)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:bureau-1974-the), p. 130)")`.
+
+Avaldan avaldisest \@ref(eq:delta-nu-cs) sekundi:
+
+```{=tex}
+\begin{align}
+\mathrm{s} = \frac{9 192 631 770}{\Delta(\nu_\text{Cs})}
+(\#eq:second)
+\end{align}
+
+```
+
+Aja mõõtühik Système Internationale's on sekund.
+
+sekund
+: kestus 9 192 631 770 kiirgusperioodi, mis vastab $\ce{^133Cs}$ aatomi häirimatu põhiseisundi kahe ülipeene taseme vahelisele üleminekule
+
+## Vahemaa
+
+Valguse kiirus vaakumis:
+
+```{r label = "speed-of-light"}
+speed_of_light_in_vacuum <- 299792458
+delta_nu_cs_over_speed_of_light_in_vacuum_over <- delta_nu_cs / speed_of_light_in_vacuum
+reciprocal_of_speed_of_light_in_vacuum <- 1 / speed_of_light_in_vacuum
+
+```
+
+```{=tex}
+\begin{align}
+c = `r speed_of_light_in_vacuum` \mathrm{\frac{m}{s}}
+(\#eq:speed-of-light-in-vacuum)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:bureau-1974-the), p. 127)")`.
+
+Avaldan valguskiiruse vaakumis valemist \@ref(eq:speed-of-light-in-vacuum) meetri ning asendan sekundi avaldisest \@ref(eq:second):
+
+```{=tex}
+\begin{align}
+\mathrm{m} = \frac{c \mathrm{s}}{`r speed_of_light_in_vacuum`} = \frac{c \times \frac{9 192 631 770}{\Delta(\nu_\text{Cs})}}{`r speed_of_light_in_vacuum`} = \frac{`r delta_nu_cs_over_speed_of_light_in_vacuum_over` \times c}{\Delta(\nu_\text{Cs})}
+(\#eq:meter)
+\end{align}
+
+```
+
+Vahemaa mõõtühik Système Internationale's on meeter.
+
+meeter
+: vahemaa, mille valgus läbib vaakumis `r reciprocal_of_speed_of_light_in_vacuum` sekundi kestel
+
+Asukoha vektor
+
+```{=tex}
+\begin{align}
+\vec{r} := x \cdot \vec{i} + y \cdot \vec{j} + z \cdot \vec{k},
+(\#eq:r)
+\end{align}
+```
+
+kus $x$, $y$ ja $z$ on Descartes'i ruumi koordinaadid `r render_with_emojis("((ref:haynes-2014-crc), p. 2-1)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{L},
+(\#eq:dimensional-analysis-for-r)
+\end{align}
+```
+
+mistõttu ühik on $m$.
+
+## Kiirus
+
+kiirus
+: vahemaa muutumise kiirus ajas `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-67)")`
+
+Kiiruse vektor:
+
+```{=tex}
+\begin{align}
+\vec{v} := \frac{\mathrm{d}(\vec{r})}{\mathrm{d}(t)},
+(\#eq:v)
+\end{align}
+```
+
+kus $\vec{r}$ on asukoha vektor ja *t* on kestus `r render_with_emojis("((ref:haynes-2014-crc), p. 2-1)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{L}{T}},
+(\#eq:dimensional-analysis-for-v)
+\end{align}
+```
+
+mistõttu ühik on $\frac{m}{s}$.
+
+## Kiirendus
+
+kiirendus
+: kiiruse muutumise kiirus aja suhtes `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-44)")`
+
+Kiirenduse vektor:
+
+```{=tex}
+\begin{align}
+\vec{a} := \frac{\mathrm{d}(\vec{v})}{\mathrm{d}(t)},
+(\#eq:a)
+\end{align}
+```
+
+kus $\vec{v}$ on kiiruse vektor ja *t* on kestus `r render_with_emojis("((ref:haynes-2014-crc), p. 2-2)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{\frac{L}{T}}{T} = \frac{L}{T^2}},
+(\#eq:dimensional-analysis-for-a)
+\end{align}
+```
+
+mistõttu ühik on $\frac{m}{s^2}$.
+
+## Mass
+
+mass
+: aine kogus `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-58)")`
+
+mass
+: vastupidavus kiirendusele
+
+Plancki konstant:
+
+```{r label = "planck-constant"}
+h <- 6.62607015e-34
+scalar_of_kg <- delta_nu_cs / h / delta_nu_cs_over_speed_of_light_in_vacuum_over^2
+
+```
+
+```{=tex}
+\begin{align}
+h = 6,626 070 15 × 10^{-34} \mathrm{\frac{kg \times m^2}{s}}
+(\#eq:planck-constant)
+\end{align}
+```
+
+`r render_with_emojis(text = "((ref:bureau-1974-the), p. 131)")`.
+
+Avaldan avaldisest \@ref(eq:planck-constant) kilogrammi:
+
+```{=tex}
+\begin{align}
+\mathrm{kg} &= 6,626 070 15 × 10^{34} \frac{h \mathrm{s}}{\mathrm{m^2}} = 6,626 070 15 × 10^{34} \frac{h \times \frac{9 192 631 770}{\Delta(\nu_\text{Cs})}}{(\frac{`r delta_nu_cs_over_speed_of_light_in_vacuum_over` \times c}{\Delta(\nu_\text{Cs})})^2} \\
+&= `r scalar_of_kg` \times \frac{h \times \Delta(\nu_\text{Cs})}{c^2}.
+(\#eq:kilogram)
+\end{align}
+```
+
+## Massikontsentratsioon (massi tihedus)
+
+```{r label = "calculate-V"}
+#' This function calculates the volume of a substance, given its mass concentration, and its mass.
+#'
+#' @param density the mass concentration
+#' @param m_B the mass
+#' 
+#' @returns the volume
+calculate_V <- function(density, m_B) {
+  return(m_B / density)
+}
+
+```
+
+```{=tex}
+\begin{align}
+γ_\mathrm{B} := \frac{m_\mathrm{B}}{V}
+(\#eq:mass-concentration)
+\end{align}
+```
+
+[@haynes_2014_crc, p. 2-8].
+
+Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{M}{L^3}},
+(\#eq:dimensional-analysis-for-mass-concentration)
+\end{align}
+```
+
+millest johtuvalt on ühik $\unit{\kilogram\per\cubic\metre}$.
+
+Massikontsentratsiooni konverteerimine grammidest kuupsentimeetri kohta kilogrammidesse kuupmeetri kohta on näidatud avaldises \@ref(eq:mass-concentration-conversion-from-g-per-cm3-to-kg-per-m3):
+
+```{=tex}
+\begin{align}
+\qty{1}{\g\per\cm\cubed} \times \qty{0,001}{\kg\per\g} \times \qty{1e6}{\cm\cubed\per\metre\cubed} = \qty{1000}{\kg\metre\cubed}.
+(\#eq:mass-concentration-conversion-from-g-per-cm3-to-kg-per-m3)
+\end{align}
+```
+
+```{r label = "coversion-from-g-per-cm3-to-kg-per-m3"}
+#' This function converts a mass concentration from grams per cubic centimeters to kilograms per cubic meters.
+#' 
+#' @param g_per_cm3 the mass concentration in grams per cubic centimeters
+#' 
+#' @returns the mass concentration in kilograms per cubic meters
+convert_from_g_per_cm3_to_kg_per_m3 <- function(g_per_cm3) {
+  return(g_per_cm3 * 1e-3 * 1e6)
+}
+
+```
+
+## Elektromagnetiline kiirgus
+
+Molaarne (dekaadne) neeldumistegur:
+
+```{=tex}
+\begin{align}
+\epsilon = \frac{A}{c \cdot l},
+(\#eq:molar-decadic-absorption-coefficient)
+\end{align}
+
+```
+
+milles $A$ on kümnendabsorptsioon, $c$ on koguse kontsentratsioon ja $l$ on lahusekihi paksus `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-6)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{1}{\frac{N}{L^3} \cdot L} = \frac{L^2}{N}},
+(\#eq:dimensional-analysis-for-molar-decadic-absorption-coefficient)
+\end{align}
+
+```
+
+millest johtuvalt on ühik $\unit{\meter\squared\per\mol}$.
+
+```{r label = "calculate-c-by-molar-decadic-absorption-coefficient"}
+#' This function calculates the amount concentration if the molar decadic absorption coefficient is given.
+#' 
+#' @param A the decadic absorption
+#' @param molar_decadic_absorption_coefficient the molar decadic absorption coefficient
+#' @param l the length of the cuvette the substance is in
+#' 
+#' @returns the amount concentration
+calculate_c_by_molar_decadic_absorption_coefficient <- function(A, molar_decadic_absorption_coefficient, l) {
+  return(A / molar_decadic_absorption_coefficient / l)
+}
+
+```
+
+## Aine hulk
+
+Elementaarüksus:
+
+1. aatom,
+
+2. molekul,
+
+3. ioon,
+
+4. elektron,
+
+5. mis tahes muu osake või osakeste rühm `r render_with_emojis(text = "((ref:bureau-1974-the), p. 134)")`.
+
+aine hulk
+: määratletud elementaarüksuste arvu mõõt
+
+Mool on aine hulga ühik.
+
+```{r label = "avogadro-constant"}
+N_A <- 6.02214076e23
+
+```
+
+Avogadro konstant:
+
+```{=tex}
+\begin{align}
+N_\text{A} = 6,022 140 76 × 10^{23} \pm 4.4 × 10^{−8} \frac{1}{\mathrm{mol}}
+(\#eq:avogadro-constant)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:bureau-1974-the), p. 127)")`.
+
+Avaldan Avogadro konstandist (\@ref(eq:avogadro-constant)) mooli:
+
+```{=tex}
+\begin{align}
+\text{mol} = \frac{6,022 140 76 × 10^{23} \pm 4.4 × 10^{−8}}{N_\text{A}}.
+(\#eq:mole)
+\end{align}
+
+```
+
+Sellest johtuvalt on mool selline aine hulk, milles on $6,022 140 76 × 10^{23}$ määratletud elementaarüksust.
+
+Seega üldiselt aine hulk:
+
+```{=tex}
+\begin{align}
+n_\text{B} = \frac{N_\text{B}}{N_\text{A}},
+(\#eq:amount)
+\end{align}
+
+```
+
+kus $N$ on üksuste arv (nt molekulid, aatomid,
+ioonid, valemiühikud) ja $N_\text{A}$ on Avogadro konstant (\@ref(eq:avogadro-constant)) `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-8)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{1}{\frac{1}{N}} = N},
+(\#eq:dimensional-analysis-for-amount)
+\end{align}
+
+```
+
+millest johtuvalt on ühik mool.
+
+```{r label = "carbon"}
+M_12C <- .012
+A_12C <- 12
+M_u <- M_12C / A_12C
+
+```
+
+Avogadro arvu väärtus on valitud selline, et üks mool süsinik-12 kaaluks $`r M_12C` \pm 4,5 \times 10^{-10} \mathrm{kg}$. See on seega süsinik-12 molaarmass ja ühtlasi ainus molaarmass, mis on standardselt fikseeritud, et muud molaarmassid oleksid esitatud selle suhtes. Seega nii palju kaalub Avogadro arv süsinik-12 aatomeid. Süsinik-12's on `r A_12C` nukleoni. Kui jagada süsinik-12 molaarmass süsinik-12 nukleonide arvuga, saame teada, kui palju kaalub üks mool ehk Avogadro arv süsinik-12 nukleone:
+
+```{=tex}
+\begin{align}
+M_\text{u} = \frac{M(\ce{^12C})}{A(\ce{^12C})} = \frac{\qty{`r as.character(M_12C)`}{\kg\per\mole}}{\num{`r as.character(A_12C)`}} = \qty{`r as.character(M_u)`}{\kg\per\mol},
+(\#eq:molar-mass-constant)
+\end{align}
+
+```
+
+milles $M_\text{u}$ on molaarmassi konstant konverteerimaks grammidest kilogrammideks ja näitab siis ka ühtlasi, kui palju kaalub üks mool ehk Avogadro arv süsinik-12 nukleone.
+
+Ühe süsinik-12 nukleoni massi väljaarvutamiseks tuleb Avogadro arvu süsinik-12 nukleonide mass jagada Avogadro arvuga:
+
+```{r label = "unified-atomic-mass-constant"}
+m_u <- M_u / N_A
+m_u
+
+```
+
+```{=tex}
+\begin{align}
+m_\text{u} = \frac{M_\text{u}}{N_\text{A}} = \frac{\qty{`r as.character(M_u)`}{\kg\per\mol}}{\qty{`r as.character(N_A)`}{\per\mole}} &= \qty{`r as.character(m_u)`}{\kg} \\
+&= \qty{1}{\dalton}
+(\#eq:unified-atomic-mass-constant)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:bureau-1974-the), p. 287)")`, milles $m_\text{u}$ on ühtne aatommassi konstant ja näitab, kui palju kaalub üks süsinik-12 nukleon keskmiselt.
+
+Süsinik-12 aatomi keskmise massi saame, kui korrutame süsinik-12 nukleoni keskmise massi nuklonide arvuga ühes süsinik-12 aatomis:
+
+```{r label = "atomic-mass-of-12C"}
+m_12C <- m_u * A_12C
+
+```
+
+```{=tex}
+\begin{align}
+m(\ce{^12C}) &= m_\text{u} \cdot A(\ce{^12C}) = \qty{`r as.character(m_u)`}{\kg} \times \num{`r as.character(A_12C)`} \\
+&= \qty{`r as.character(m_12C)`}{\kg} = \qty{`r as.character(A_12C)`}{\dalton}.
+(\#eq:mass-of-12C)
+\end{align}
+
+```
+
+Elemendi $X$ suhteline aatommass on elemendi aatomi massi ja ühtse aatommassi konstandi suhe:
+
+```{=tex}
+\begin{align}
+A_\text{r}(X) = \frac{m(X)}{m_\text{u}}
+(\#eq:relative-atomic-mass)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 1-8)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{M}{M}},
+(\#eq:dimensional-analysis-for-relative-atomic-mass)
+\end{align}
+
+```
+
+millest johtuvalt on ühik 1.
+
+Kuna vastavalt tuletuskäigule \@ref(eq:unified-atomic-mass-constant) $m_\text{u} = \qty{1}{\dalton}$, siis
+
+```{=tex}
+\begin{align}
+A_\text{r}(X) = \frac{m(X)}{\qty{1}{\dalton}},
+(\#eq:relative-atomic-mass-shorter)
+\end{align}
+
+```
+
+millest johtuvalt on suhteline aatommass sama mis elemendi aatommassi skalaar. Perioodilisussüsteemi tabelites on aatommassid esitatud kas daltonites või ilma ühikuta. Piisab, kui võtta vaid aatommassi arvväärtus ja seda kasutada suhtelise aatommassina, et arvutada molaarmass:
+
+```{=tex}
+\begin{align}
+M(X) = A_\text{r}(X) \cdot M_\text{u}.
+(\#eq:molar-mass)
+\end{align}
+
+```
+
+```{r}
+convert_from_Ar_to_M <- function(A_r) {
+  return(A_r * M_u)
+}
+
+```
+
+Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{1 \times \frac{M}{N} = \frac{M}{N}},
+(\#eq:dimensional-analysis-for-molar-mass)
+\end{align}
+
+```
+
+millest johtuvalt on ühik $\unit{\kg\per\mol}$.
+
+Kui korrutada ühes moolis olevate aatomite arv ühe aatomi massiga, saame mooli kogu massi ehk molaarmassi:
+
+```{=tex}
+\begin{align}
+M(X) = m(X) \cdot N_\text{A}.
+(\#eq:molar-mass-by-atomic-mass-and-avogadro)
+\end{align}
+
+```
+
+Dimensioonanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{M \cdot \frac{1}{N} = \frac{M}{N}},
+(\#eq:dimensional-analysis-for-molar-mass-by-atomic-mass-and-avogadro)
+\end{align}
+
+```
+
+millest johtuvalt on ühik $\mathrm{\frac{kg}{mol}}$.
+
+```{r label = "molar-masses", echo=FALSE, eval=TRUE}
+librarian::shelf(c(
+  "kableExtra"
+))
+
+relative_atomic_masses <- c(
+  1.008,
+  12.01,
+  16
+)
+
+relative_atomic_masses_with_footnotes <- paste(relative_atomic_masses, footnote_marker_number(1:3))
+
+molar_masses <- convert_from_Ar_to_M(relative_atomic_masses)
+
+table_of_molar_masses <- data.frame(
+  relative_atomic_masses_with_footnotes = relative_atomic_masses_with_footnotes,
+  molar_masses = molar_masses
+)
+
+colnames(table_of_molar_masses) <- c(
+  "Suhteline aatommass",
+  "$\\frac{\\text{Molaarmass}}{\\unit{\\kg\\per\\mol}}$"
+)
+
+rownames(table_of_molar_masses) <- c(
+  "$\\ce{H}$",
+  "$\\ce{C}$",
+  "$\\ce{O}$"
+)
+
+print_table(
+  table = table_of_molar_masses,
+  caption = "Valitud elementide molaarmassid.",
+  digits = 6,
+    footnotes = c(
+      render_with_emojis(text = "(ref:haynes-2014-crc), p. 4-8", escape = TRUE),
+      render_with_emojis(text = "(ref:haynes-2014-crc), p. 4-17", escape = TRUE),
+      render_with_emojis(text = "(ref:haynes-2014-crc), p. 4-25", escape = TRUE)
+  )
+)
+
+```
+
+Molaarmass massi ja aine koguse järgi:
+
+```{r label = "calculate-m"}
+#' This function calculates the mass of a substance, by its molar mass, and amount.
+#'
+#' @param M_B the molar mass of the substance
+#' @param n_B the amount of the substance
+#' 
+#' @returns the mass of the substance
+calculate_m <- function(M_B, n_B) {
+  return(M_B * n_B)
+}
+
+```
+
+```{=tex}
+\begin{align}
+M_\text{B} = \frac{m}{n_\text{B}}
+(\#eq:molar-mass-by-mass-and-amount)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-8)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\frac{M}{N},
+(\#eq:dimensional-analysis-for-molar-mass-by-mass-and-amount)
+\end{align}
+
+```
+
+millest johtuvalt on ühik $\mathrm{\frac{kg}{mol}}$.
+
+Aine ruumala saab arvutada, kui on lisaks teada selle aine massikontsentratsioon. Avaldan valemist \@ref(eq:mass-concentration) ruumala ja asendan sellesse massi valemist \@ref(eq:molar-mass-by-mass-and-amount):
+
+```{r label = "calculate-V-by-molar-mass-and-amount-and-mass-concentration"}
+#' This function calculates the volume of a substance, given its molar mass, amount, and mass concentration.
+#' 
+#' @param M_B the molar mass
+#' @param n_B the amount
+#' @param mass_concentration the mass concentration
+#' 
+#' @returns the volume
+calculate_V_by_molar_mass_and_amount_and_mass_concentration <- function(M_B, n_B, mass_concentration) {
+  return(M_B * n_B / mass_concentration)
+}
+
+```
+
+```{=tex}
+\begin{align}
+V = \frac{m_B}{γ_\mathrm{B}} = \frac{M_\text{B} \cdot n_\text{B}}{γ_\mathrm{B}}.
+(\#eq:volume)
+\end{align}
+
+```
+
+Dimensioonanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{\frac{M}{N} \cdot N}{\frac{M}{L^3}} = L^3},
+(\#eq:dimensional-analysis-for-volume)
+\end{align}
+
+```
+
+millest johtuvalt on ühik kuupmeeter.
+
+Koguse kontsentratsioon:
+
+```{=tex}
+\begin{align}
+c_\text{B} = \frac{n_\text{B}}{V}
+(\#eq:amount-concentration)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-8)")`. Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{N}{L^3}},
+(\#eq:dimensional-analysis-for-amount-concentration)
+\end{align}
+
+```
+
+millest johtuvalt on ühik $\unit{\mol\per\metre\cubed}$.
+
+Täiendan koguse kontsentratsiooni valemit \@ref(eq:amount-concentration) leheküljel `r render_pageref(reference = "eq:amount-concentration")` asendades sellesse ruumala massikontsentratsiooni valemist \@ref(eq:mass-concentration) leheküljel `r render_pageref(reference = "eq:mass-concentration")`:
+
+```{=tex}
+\begin{align}
+c_\text{B} = \frac{n_\text{B}}{\frac{m_\text{B}}{γ_\mathrm{B}}} = \frac{n_\text{B} \cdot γ_\mathrm{B}}{m_\text{B}}.
+(\#eq:amount-concentration-by-mass-concentration)
+\end{align}
+
+```
+
+```{r label = "calculate-c-by-mass-concentration"}
+#' This function calculates the amount concentration for a substance whose mass concentration is given.
+#' 
+#' @param n the amount of the substance
+#' @param mass_concentration the mass concentration of the substance
+#' @param m the mass of the substance
+#' 
+#' @returns the amount concentration
+calculate_c_by_mass_concentration <- function(n, mass_concentration, m) {
+  return(n * mass_concentration / m)
+}
+
+```
+
+## Ühikutevaheline konverteerimine
+
+```{=tex}
+\begin{align}
+\unit{cm} \times \qty{1e-2}{\m\per\cm} = \qty{1e-2}{m}.
+(\#eq:conversion-from-cm-to-m)
+\end{align}
+```
+
+```{r label = "convert-from-cm-to-m"}
+#' This function converts from centimeters to meters.
+#' 
+#' @param cm the length in centimeters
+#' 
+#' @returns the length in meters
+convert_from_cm_to_m <- function(cm) {
+  return(cm * 1e-2)
+}
+
+```
+
+```{=tex}
+\begin{align}
+\unit{\g\per\ml} \times \qty{1e-3}{\kg\per\g} \times \qty{1e6}{\ml\per\m\cubed} = \qty{1e3}{\kg\per\metre\cubed}.
+(\#eq:conversion-from-g-per-ml-to-kg-per-m3)
+\end{align}
+```
+
+```{r label = "convert-from-g-per-ml-to-kg-per-m3"}
+#' This function converts from grams per milliliter to kilograms per cubic meter.
+#' 
+#' @param g_per_ml the mass concentration in grams per milliliter
+#' 
+#' @returns the mass concentration in kilograms per cubic meter
+convert_from_g_per_ml_to_kg_per_m3 <- function(g_per_ml) {
+  return(g_per_ml * 1e3)
+}
+
+```
