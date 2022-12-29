@@ -6,6 +6,12 @@ rmd_files: [
   "rmd/rules.Rmd",
   "rmd/general-principles.Rmd",
   "rmd/hydrocarbons.Rmd",
-  "rmd/organic-compounds-containing-oxygen.Rmd",
+  "rmd/alcohols.Rmd",
+  "rmd/oxycompounds.Rmd",
+  "rmd/carboxylcompounds.Rmd",
+  "rmd/destillation.Rmd",
+  "rmd/luminescence.Rmd",
+  "rmd/synthesis-purification-and-investigation-of-crystalline-organic-matter.Rmd",
+  "rmd/synthesis-and-isolation-of-aspirin.Rmd",
   "references.Rmd"
 ]

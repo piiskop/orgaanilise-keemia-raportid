@@ -1,0 +1,482 @@
+# Karboksüülühendid
+
+## Teooria
+
+Happe ja aluse vahelise reaktsiooni tulemusena tekib sool.
+
+Etaanhappe ja naatriumhüdroksiidi omavahelise reageerimise tulemusena
+tekivad naatriumetanaat ja vesi:
+
+$$\ce{CH3COOH + NaOH -> CH3COONa + H2O}.$$
+
+Soola ja happe vahelise reaktsiooni tulemusena tekivad uus hape ja uus
+sool.
+
+Naatriumetanaadi ja väävelhappe omavahelise reaktsiooni tulemusena
+tekivad etaanhape ja naatriumsulfaat:
+
+$$\ce{2CH3COONa + H2SO4 -> 2CH3COOH + Na2SO4}.$$
+
+Etaanhappe ja etanooli reageerimises toimib väävelhape katalüsaatorina:
+
+$$\ce{CH3COOH + C2H5OH ->[\text{conc.} H2SO4]} \underbrace{\ce{CH3COOC2H5}}_{\text{etüületanaat}} + \ce{H2O}.$$
+
+Etüületanaadi hüdrolüüsi tulemusel naatriumhüdroksiidiga tekivad
+karboksüülhappe sool naatriumetanaat ja alkohol etanool:
+
+$$\ce{CH3COOC2H5 + NaOH -> CH3COONa + CH3CH2OH}.$$
+
+Alkoholi olemasolu puhul muutub kroomisegu oranž värvus 2-3 sekundi
+jooksul roheliseks. Etanool oksüdeerub kroomisegu toimel
+karboksüülhappeks:
+
+```{=tex}
+\begin{align}
+\ce{3CH3CH2OH + 4CrO3 + 6HCl -> 3CH3COOH + 2CrCl3 + 9H2O}.
+(\#eq:ethanol-to-ethanate)
+\end{align}
+```
+Oksüdeerija võtab oksüdeeritavalt elektrone, mille tulemusel oksüdeerija
+oksüdatsiooniaste langeb ja redutseerija oksüdatsiooniaste tõuseb.
+Võrrandis \@ref(eq:ethanol-to-ethanate) on $\ce{CrO3}$ oksüdeerija ning
+langetab kroomi oksüdatsiooniastet, mis on $\ce{CrCl3}$'s väiksem.
+Redutseerija on etanool suurendades radikaali oksüdatsiooniastet, mis on
+kõrgem etanaadis.
+
+Fenoolftaleiiniga saab kindlaks teha ilmselt aluselist keskkonda.
+Fenoolftaleiini värvus aluselises keskkonnas on roosa
+`r render_with_emojis(text = "((ref:fenoolftaleiin))")`.
+
+Nii fenoolftaleiini kui fluorestseiini saamiseks kasutatakse ftaalhapet
+ja väävelhapet. Mõlemal on spetsiifiline värvus.
+
+## Eesmärgid
+
+1.  Võrreldud karboksüülhapete tugevusi omavahel ja teiste hapetega.
+
+2.  Praktiseeritud karboksüülhapete soolade saamine ja lagundamine.
+
+3.  Praktiseeritud estri tekitamine.
+
+4.  Praktiseeritud estri hüdrolüüsimine.
+
+5.  Praktiseeritud fenoolftaleiini saamine.
+
+6.  Praktiseeritud fluorestseiini saamine.
+
+## Töövahendid
+
+Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
+
+1.  Kaheksa madalat katseklaasi segamiseks.
+
+2.  Katseklaaside alus, et ei peaks käes hoidma.
+
+3.  Täppiskaal, et kaaluda.
+
+4.  Pipett, et mõõta.
+
+5.  Keeduklaas, et selles vett hoida.
+
+6.  Tõmbekapp, et mürgistust mitte saada.
+
+7.  Spaatel, et tahket ainet tõsta.
+
+8.  Destilleeritud vesi pH sensori puhastamiseks.
+
+9.  Keeduklaas destilleeritud vee jaoks.
+
+10. Majapidamispaber kuivatamiseks.
+
+11. Filterpaber filtreerimiseks.
+
+12. Trehtel filtreerimiseks.
+
+Muude töö osade jaoks:
+
+1.  Seitse korgiga katseklaasi, et aineid kokku segada.
+
+2.  Katseklaaside alus, et ei peaks käes hoidma.
+
+3.  Pliit, et soojendada.
+
+4.  Kolm 100 ml keeduklaasi, et soojendada vesivannis, mõõta ja
+    lahustada.
+
+5.  Vesi, et soojendada vesivannis.
+
+6.  Spaatel tahke aine tõstmiseks.
+
+7.  Klaaspulk segamiseks.
+
+8.  Kaks lahuse indikaatorpaberit ja legend pH taseme mõõtmiseks.
+
+9.  200-300 ml keeduklaasi, et lahustada.
+
+10. Tõmbekapp, et mitte mürgistust saada.
+
+11. Kolm pipetti mõõtmiseks.
+
+## Ained
+
+Karboksüülhapete tugevuse võrdlemiseks omavahel ja teiste hapetega
+vajalikud ainete loend on tabelis \@ref(tab:comparison-of-acids).
+
+Muude töö osade jaoks:
+
+1.  Kontsentreeritud etaanhape.
+
+2.  5 % $\ce{NaOH}$.
+
+3.  10 % $\ce{H2SO4}$.
+
+4.  Bensoehape.
+
+5.  Etanool.
+
+6.  Kontsentreeritud väävelhape.
+
+7.  Ftaalhape või ftaalhappeanhüdriid.
+
+8.  Fenool.
+
+9.  Vesi.
+
+10. Kange $\ce{NaOH}$.
+
+11. Resortsinool.
+
+12. 20 % $\ce{NaOH}$.
+
+13. 10 % $\ce{HCl}$.
+
+14. Atsetoon.
+
+15. Kroomisegu.
+
+## Töö käik
+
+Töö teostasin karl salumetsaga.
+
+Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
+
+1.  Katseklaasi asetasime 0,5 ml (vedelat) või 0,5 g (tahket) uuritavat
+    hapet.
+
+2.  Lisasime 5 ml vett.
+
+3.  Loksutasime.
+
+4.  Tahke happe puhul lahuse enne pH-meetriga mõõtmist filtreerisime.
+
+5.  Saadud lahuse pH-d uurisime universaalindikaatorpaberi abil.
+
+6.  Saadud lahuse pH'd uurisime pH-meetri abil.
+
+Ülejäänud töö osad:
+
+1.  Katseklaasi asetasime 2 tilka kontsentreeritud etaanhapet.
+
+2.  Lisasime tilkhaaval 5 % $\ce{NaOH}$ lahust.
+
+3.  Loksutasime, kuni etaanhappe lõhn kadus
+
+4.  Lisasime 1 ml 10 % $\ce{H2SO4}$ lahust. Tekkis uuesti etaanhappe
+    lõhn.
+
+5.  Tühja katseklaasi asetasime 0,1 g bensoehapet.
+
+6.  Lisasime tilkhaaval 5 % $\ce{NaOH}$ lahust.
+
+7.  Loksutasime, kuni bensoehape täielikult lahustus.
+
+8.  Lisasime 1 ml 10 % $\ce{H2SO4}$ lahust. Tekkis bensoehappe valge
+    sade.
+
+9.  Tühja katseklaasi valasime 0,5 ml etaanhapet.
+
+10. Lisasime 1 ml etanooli.
+
+11. Lisasime 3 tilka kontsentreeritud $\ce{H2SO4}$.
+
+12. Soojendatakse ettevaatlikult.
+
+13. Jälgisime etaanhappe lõhna kadumist ja meeldiva puuviljalõhna
+    (essentsi) tekkimist.
+
+14. Tühja katseklaasi võtsime tuletikupea suuruse hulga ftaalhapet.
+
+15. Lisasime kahekordse koguse kristalset fenooli.
+
+16. Tõmbekapis lisasime 5 tilka kontsentreeritud $\ce{H2SO4}$.
+
+17. Segasime klaaspulgaga.
+
+18. Kuumutasime, kuni katseklaasi sisu muutus punakaks.
+
+19. Lasime jahtuda.
+
+20. Lisasime veidi vett.
+
+21. Segasime.
+
+22. Kallasime osa lahust 100 ml tühja keeduklaasi.
+
+23. Lisasime 50 ml vett.
+
+24. Lisasime kanget $\ce{NaOH}$ lahust kuni punase värvuse tekkeni.
+
+25. Mõõtsime lahuse pH indikaatorpaberiga.
+
+26. Lisasime 10-% $\ce{HCl}$.
+
+27. Mõõtsime lahuse pH indikaatorpaberiga.
+
+28. Tühja katseklaasi võtsime tuletikupea suuruse koguse ftaalhapet.
+
+29. Lisasime kahekordse koguse resortsinooli.
+
+30. Tõmbekapis lisasime 3-4 tilka kontsentreeritud $\ce{H2SO4}$.
+
+31. Segasime klaaspulgaga.
+
+32. Kuumutasime, kuni sisu muutus punakaks.
+
+33. Lasime jahtuda.
+
+34. Kallasime segu 200-300 ml keeduklaasi.
+
+35. Lisasime 150-200 ml vett.
+
+36. Segasime.
+
+37. Lisasime 6,5 ml 10 % $\ce{NaOH}$ lahust.
+
+38. Täheldasime.
+
+39. Lisasime keeduklaasi 10-% $\ce{HCl}$.
+
+40. 5 tilka sammul 13 mainitud estrit viisime tühja katseklaasi.
+
+41. Lisasime 1 ml $\ce{NaOH}$ kontsentreeritud lahust.
+
+42. Soojendasime vesivannil 10 minutit.
+
+43. Jälgisime estri lõhna kadumist.
+
+44. Tekkinud alkoholi tõestamiseks neutraliseerisime reaktsioonisegu
+    ettevaatlikult kümne tilga 10-% $\ce{HCl}$-ga.
+
+45. Võtsime pealmisest kihist 2 tilka tühja katseklaasi.
+
+46. Lisasime 1 ml atsetooni.
+
+47. Lisasime ühe tilga kroomisegu.
+
+48. Loksutasime.
+
+## Tulemused
+
+pH mõõtmiste tulemused on esitatud tabelis
+\@ref(tab:comparison-of-acids). Näeme, et kõige tugevamad happed on
+anorgaanilised happed. Alkoholid paistavad olevat nõrgad happed.
+
+```{r label = "comparison-of-acids", echo=FALSE}
+acids <- c(
+  "conc. $\\ce{HCl}$",
+  "conc. $\\ce{H2SO4}$",
+  "99,3-\\% $\\ce{CH3COOH}$",
+  "$\\ce{HO(O)CC(O)OH}$",
+  "$\\ce{C6H5(OH)}$",
+  "$\\ce{CH3CH2OH}$"
+)
+
+is_hard <- c(
+  0,
+  0,
+  0,
+  1,
+  1,
+  0
+)
+
+pH_paper <- c(
+  1,
+  1,
+  3,
+  1,
+  3,
+  7
+)
+
+pH_meter <- c(
+  NA,
+  .66,
+  2.2,
+  1.1,
+  3.5,
+  3.15
+)
+
+pH <- data.frame(acids = acids, is_hard = is_hard, pH_paper = pH_paper, pH_meter = pH_meter)
+
+colnames(pH) <- c(
+  "Uuritav hape, millele on lisatud 5 ml vett",
+  "Kas tahke?",
+  "pH indikaatorpaberiga",
+  "pH-meetri näit"
+)
+
+librarian::shelf(c(
+  "dplyr",
+  "kableExtra"
+))
+
+print_table(
+  table = pH,
+  caption = "Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega."
+) %>%
+  column_spec(1, width = "12em") %>%
+  column_spec(3, width = "8em")
+
+```
+
+Etaanhappe katseklaasist peale loksutamist oli tõesti etaanhappe lõhn
+kadunud, mis naases, kui olime sinna lisanud väävelhapet.
+
+Naatriumhüdroksiidiga lahustunud bensoehappele (joonis
+\@ref(fig:benzoic-acid-with-naoh) leheküljel
+`r render_pageref(reference = "fig:benzoic-acid-with-naoh")`) piisas
+vaid ühe tilga väävelhappe lisamisest, et tekiks sade (joonis
+\@ref(fig:sodiumethanate-with-h2so4) leheküljel
+`r render_pageref(reference = "fig:sodiumethanate-with-h2so4")`).
+
+```{r label = "benzoic-acid-with-naoh", echo=FALSE, fig.cap = "Bensoehape lahustunud naatriumhüdroksiidi toimel."}
+include_external_graphics("rmd/8/8-bensoehape.png")
+
+```
+
+```{r label = "sodiumethanate-with-h2so4", echo=FALSE, fig.cap = "Ühe tilga väävelhappe lisamine lahustunud bensoehappesse põhjustas valge naatriumsulfaadi sademe tekkimise."}
+include_external_graphics("rmd/8/8-bensoehape-h2so4.png")
+
+```
+
+Mõneminutise etaanhappe, etanooli ja väävelhappe segu kuumutamise järel
+tekkis roiskunud, käärinud puuvilja lõhn, mis minu jaoks ei ole meeldiv.
+
+Fenool räigelt lehkas.
+
+Nii fenooli (joonis \@ref(fig:phthalic-form-phenol-h2so4) leheküljel
+`r render_pageref(reference = "fig:phthalic-form-phenol-h2so4")`) kui
+resortsinooliga (joonis \@ref(fig:phthalic-form-resorcinol-h2so4)
+leheküljel
+`r render_pageref(reference = "fig:phthalic-form-resorcinol-h2so4")`)
+oli ftaalhappe ja väävelhappe segu helepruun.
+
+```{r label = "phthalic-form-phenol-h2so4", echo=FALSE, fig.cap = "Klaaspulgaga kokku tambitud ftaalhape, fenool ja väävelhape oli pruun.", out.height="90%"}
+include_external_graphics("rmd/8/8-ftaalhape-fenool-h2so4.png")
+
+```
+
+```{r label = "phthalic-form-resorcinol-h2so4", echo=FALSE, fig.cap = "Klaaspulgaga kokku tambitud ftaalhape, resortsinool ja väävelhape oli pruun.", out.height="90%"}
+include_external_graphics("rmd/8/8-ftaalhape-resortsinool-h2so4.png")
+
+```
+
+Kuumutamise järel olid mõlemad segud punased (joonis
+\@ref(fig:phthalic-form-h2so4-after-heating) leheküljel
+`r render_pageref(reference = "fig:phthalic-form-h2so4-after-heating")`).
+
+```{r label = "phthalic-form-h2so4-after-heating", echo=FALSE, fig.cap = "Pliidil vesivannis kuumutades muutus ftaalhappe, fenooli ja väävelhappe segu punaseks (pildi vaataja poolt vasemas katseklaasis). Sama juhtus ftaalhappe, resortsinooli ja väävelhappe segu kuumutamisega (pildi vaataja poolt paremal katseklaasis).", out.height="80%"}
+include_external_graphics("rmd/8/8-ftaalhape-h2so4-kuumutatuna.png")
+
+```
+
+Pärast veidi vee lisamist ja loksutamist oli fenoolilahus heledam kui
+enne (joonis \@ref(fig:after-some-water) leheküljel
+`r render_pageref(reference = "fig:after-some-water")`).
+
+```{r label = "after-some-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pärast kuumutamisejärgset veidikese vee lisamist ja loksutamist."}
+include_external_graphics("rmd/8/8-veidi-vett.png")
+
+```
+
+Pärast 50 ml vee lisamist osale fenoolilahusele oli tulemussegu värvitu
+(joonis \@ref(fig:after-more-water) leheküljel
+`r render_pageref(reference = "fig:after-more-water")`).
+
+```{r label = "after-more-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segust osa pärast 50 ml vee lisamist."}
+include_external_graphics("rmd/8/8-50ml-vett.png")
+
+```
+
+Juba esimene tilk kanget naatriumhüdroksiidi värvus fenoolilahuses
+roosaks (joonis \@ref(fig:naoh) leheküljel
+`r render_pageref(reference = "fig:naoh")`).
+
+```{r label = "naoh", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu põhja on jõudnud esimene tilk naatriumhüdroksiidi."}
+include_external_graphics("rmd/8/8-naoh.png")
+
+```
+
+pH indikaatorpaberiga mõõdetud aluselisus oli vahetult pärast
+naatriumhüdroksiidi lisamist fenoolilahusesse 8 (joonis
+\@ref(fig:phenol-naoh-measuring-ph) leheküljel
+`r render_pageref(reference = "fig:phenol-naoh-measuring-ph")`),
+vahetult pärast 10-% vesinikkloriidhappe lisamist 13 (joonis
+\@ref(fig:phenol-measuring-ph) leheküljel
+`r render_pageref(reference = "fig:phenol-measuring-ph")`). Seega
+sõltumata sellest, kas lisada fenoolftaleiini alust või hapet, oli
+lõpplahus aluseline.
+
+```{r label = "phenol-naoh-measuring-ph", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pH mõõtmine vahetult pärast naatriumhüdroksiidi lisamist."}
+include_external_graphics("rmd/8/8-fenool-ph-mõõtmine.png")
+
+```
+
+```{r label = "phenol-measuring-ph", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pH mõõtmine. Pildi vaataja poolt vasakult paremale: pH indikaatorpaberite legend, pH indikaatorpaber vahetult pärast naatriumhüdroksiidi lisamist, pH indikaatorpaber vahetult pärast vesinikkloriidhappe lisamist ja segu ise."}
+include_external_graphics("rmd/8/8-fenool-ph.png")
+
+```
+
+Pärast ftaalhappe, resortsinooli ja väävelhappe segu jahtumist kallasime
+selle keeduklaasi ja lisasime vee, mille tulemusel muutus segu
+kollaseks. Segasime (joonis \@ref(fig:risorcinol-mixing) leheküljel
+`r render_pageref(reference = "fig:risorcinol-mixing")`).
+
+```{r label = "risorcinol-mixing", echo=FALSE, fig.cap = "Ftaalhappe, risortsinooli ja väävelhappe kuumutamisjärgse jahtunud segu segamine veega.", out.height="80%"}
+include_external_graphics("rmd/8/8-resortsiin-vesi.png")
+
+```
+
+Segule naatriumhüdroksiidi lisamine tekitas erksavärvilise rohelise ala
+(joonis \@ref(fig:risorcinol-naoh) leheküljel
+`r render_pageref(reference = "fig:risorcinol-naoh")`).
+
+```{r label = "risorcinol-naoh", echo=FALSE, fig.cap = "Ftaalhappe, risortsinooli ja väävelhappe kuumutamisjärgse jahtunud segu, millesse oli lisatud vett, täiendamine naatriumhüdroksiidiga."}
+include_external_graphics("rmd/8/8-risorcinol-naoh.png")
+
+```
+
+Segule happe lisamine tegi segu heledamaks (joonis
+\@ref(fig:risorcinol-hcl) leheküljel
+`r render_pageref(reference = "fig:risorcinol-hcl")`).
+
+```{r label = "risorcinol-hcl", echo=FALSE, fig.cap = "Ftaalhappe, risortsinooli ja väävelhappe kuumutamisjärgse jahtunud segu, millesse oli lisatud vett ja naatriumhüdroksiidi, täiendamine vesinikkloriidhappega."}
+include_external_graphics("rmd/8/8-risorcinol-hcl.png")
+
+```
+
+Etaanhappe, etanooli ja väävelhappe kuumutatud segule lisasime
+vesinikkloriidhapet ja võtsime pealmisest kihist lahust katseklaasi.
+Kroomisegu lisamine muutis lahuse värvi kollaseks (joonis
+\@ref(fig:chrome-mix) leheküljel
+`r render_pageref(reference = "fig:chrome-mix")`). Loksutamise tulemusel
+segu roheliseks ei muutunud, mis ei kinnita teooriat. Põhjuseks võib
+olla, et segu kuumenes kümne minuti asemel 20 minutit ja etanool jõudis
+lenduda.
+
+```{r label = "chrome-mix", echo=FALSE, fig.cap = "Värvitusse etanooli, etaanhappe, väävelhappe ja vesinikkloriidhappe sekku tilgub kroomisegu, mis muudab lahuse kollaseks."}
+include_external_graphics("rmd/8/8-kroomisegu.png")
+
+```

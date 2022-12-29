@@ -1,0 +1,351 @@
+# Destillatsioon
+
+## Eesmärgid
+
+1.  Arusaam, mis on destillatsioon.
+
+2.  Oskus destilleerida.
+
+3.  Oskus mõõta murdenäitajat.
+
+4.  Oskus hinnata destillaati murdenäitaja kaudu.
+
+## Teooria
+
+Destilleerimisega eraldatakse üksteisest aineid, mille
+aurustumistemperatuurid on erinevad. Kui aurustumistemperatuurid on väga
+erinevad, minimaalselt kümmekond kelvinit, siis saab kasutada
+lihtdestillatsiooni, muidu on vajalik kasutada fraktsionaalset
+destilleerimist. Viimase puhul lisatakse destillatsiooniaparatuuri toru,
+milles on klaasipulgad, et suurendada toru pinda, mis tagab mitmekordse
+aurustumise ja kondenseerumise, et väljuks ikkagi õige aine.
+
+Destillatsiooniaparatuuri näidis on esitatud joonisel
+\@ref(fig:distillation-setup) leheküljel
+`r render_pageref(reference = "fig:distillation-setup")`. Elektriline
+kolvisoojendaja ümbritseb optimaalselt ümarkolbi, milles asub
+eraldatavate vedelike segu. Kolbi ei tasu segu rohkem valada kui kuni
+pooleni kolvi mahust, sest muidu võib keemisel ka see osa vedelikku
+pritsida Liebig'i jahutisse, mida me selle keemistemperatuuri juures
+väljutada ei soovi. Kolvi suue on
+tihedalt ühendatud Liebig'i jahutiga, mille kolvi vastas olev avaus on
+korgiga suletud, sest muidu lenduks aurustuv vedelik sealtkaudu välja.
+Oluline on, et korgist kolvi põhjani oleks torustik vertikaalselt otse,
+sest nii eraldub soovitud aur kõige kindlamini. Seda osa, mis on topitud
+kolvi sisse, hoiab statiivi külge kinnitatud käpp, millega saab
+reguleerida kolvi kõrguse selliseks, et see oleks vaid millimeeter
+soojendist. Kui kolb puudutab soojendit, võib tekkida kolbi liigne
+pinge. Kui kolb on soojendist liiga kaugel, peame kasutama
+soojendamiseks rohkem energiat. Veel parem oleks kolb termiliselt
+isoleerida. Kolvi ja korgi vaheline külgtoru keerdub vertikaalseks,
+mille otsa on kinnitatud termomeeter. Juhendis on kirjas, et termomeetri
+elavhõbedareservuaar peab asetsema $\qtyrange{10}{15}{\mm}$ destillatsioonikolvi külgtorust madalamal. Tegelikult on mõeldud mitte kolvi
+külgtoru, vaid jahuti kaldtoru ülemist avaust, sest füüsiliselt pole ka
+võimalik seda paaki sättida kolvi külgtorust madalamale, kui see kõvera
+külgtoru sees on ja kui see termomeeter just painduv ei ole. Joonisel
+\@ref(fig:distillation-setup) leheküljel
+`r render_pageref(reference = "fig:distillation-setup")` on elavhõbeda
+osa täpselt külgtoru kohal, mis on liiga kõrge asend. Allapoole kaldu
+olevas külgtorus on neli avaust, mis on kõrgemalt madalamale jahutusvee
+väljalaske ava, jahutusvee sisselaske ava, vaakumi regulaator ja ava,
+mille kaudu destillaat väljub jahutist. Jahutusvee väljalaske avaga
+ühendatakse voolik, millega juhitakse jahutusvedelik ära, nt valamusse.
+Jahutusvee sisselaske avaga ühendatakse voolik, mille teine ots on
+ühendatud jaheda vee allikaga, nt kraaniga. Jahutusvee toru ümbritseb
+destillaadi kondenseerumistoru. Destillaadi väljumisava alla asetatakse
+nõu, kuhu kogutakse destillaat.
+
+```{=tex}
+\begin{landscape}
+```
+```{r label = "distillation-setup", echo=FALSE, fig.cap = "Destillatsiooniaparatuuri näidis. Joonisel on tähistatud aparatuuri eri osad. Vesi ja atsetoon on näidisained, mille võib asendada muude sobilike ainetega. Vaakumpumpa me ei kasutanud, mistõttu oli ka vaakumregulaator irrelevantne.", out.width="74%"}
+include_external_graphics("rmd/9/9-destillatsiooniaparatuur.png")
+
+```
+
+```{=tex}
+\end{landscape}
+```
+Elektriline soojendaja reguleeritakse esialgu mingile keskmisele
+võimsusele, et ikka soojusenergiat eralduks ja et ka liiga kiiresti
+temperatuur ei tõuseks. Pärast vastavalt vajadusele reguleeritakse
+eraldatava soojusenergia hulka ajas. Destillatsioon peab toimuma
+piisavalt aeglaselt, et kõik aurud jõuaksid jahutis kondenseeruda:
+paljud orgaanilised ained on tuleohtlikud ning nende aurud võivad
+aparatuurist välja sattudes süttida. Kui vedelike segule lisatakse
+soojust, siis selle temperatuur tõuseb, mis kestab, kuni madalama
+aurustumistemperatuuriga vedelik hakkab faasi vahetama vedelast
+gaasiliseks. Selle vedeliku aur tõuseb kolvist külgtorusse ja jõuab
+termomeetrini, mis näitab aurustumistemperatuuri. **Termomeetri õige asend on oluline tagamaks võimalikult täpset aurustumistemperatuuri täheldamist ja registreerimist.** **Kui termomeetri
+vedeliku paak oleks jahuti kaldtorust kõrgemal, siis jõuaks aur
+külgtorusse, enne kui puudutaks paaki, mis tähendaks, et vedelik
+aurustunuks justkui madalama temperatuuriga, kui õige on.** Faasinihke
+kestel temperatuur ei muutu. Aur liigub jahuti külgtorusse, mida
+ümbritsev jahutusvesi jahutab auru, nii et see kondenseerub ja valgub
+destillaadi väljalaske ava kaudu kogumisnõusse. Destillatsiooni
+algtemperatuur on esimese tilga ilmumise hetke temperatuur.
+Jahutusvedelik liigub madalamalt kõrgemale, sest niimoodi täitub kogu
+ümbritsev toru gravitatsiooni tõttu jahutusveega, muidu voolaks
+jahutusvesi ainult kondenseerumistoru all
+`r render_with_emojis(text = "((ref:simple), 19:57)")`. Kui kogu vastava
+aurustumistemperatuuri juures aurustunud vedelik on jahuti kaudu välja
+tilkunud või nirisenud, hakkab termomeetri näit suurenema, sest kolbi
+järelejäänud vedeliku keemistemperatuur on suurem. Faasi üleminek on
+toimunud ja järgneb temperatuuri tõus lisanduva soojusenergia tõttu.
+Temperatuur tõuseb kuni järgmise vedeliku aurustumistemperatuurini ja
+edasi kordub samasugune protsess nagu eelmise vedeliku puhul. Kogumisnõu
+võiks selle temperatuuritõusu kestel välja vahetada, sest muidu
+kogunevad mõlemad vedelikud kokku.
+
+Destillatsiooni on audiovisuaalselt kirjeldanud
+`r render_with_emojis(text = "(ref:simple)")`.
+
+Atsetooni
+sulamistemperatuur on vastavalt
+`r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-1, 3-4")`
+$\qty{56,08 \pm 0,07}{\degreeCelsius}$.
+
+## Töövahendid
+
+1.  $\qty{250}{\ml}$ destillatsioonikolb.
+
+2.  Kapillaar.
+
+3.  Jahuti.
+
+4.  Elektriline kolvisoojendaja. meie kasutasime SELECTA soojendit
+    *FIBROMAN-N* (joonis \@ref(fig:fibroman-n) leheküljel
+    `r render_pageref(reference = "fig:fibroman-n")`), mida siinse lause
+    kirjutamise hetkes on võimalik osta Moskvast uuena
+    `r render_with_emojis(text = "((ref:avito))")`. Seadet müüakse
+    hinnaga $\num{19890}$ ₽, mis vastavalt
+    `r render_with_emojis(text = "(ref:a19890)")` on umbes $\num{300}$ EUR.
+
+    ```{r label = "fibroman-n", echo=FALSE, fig.cap = "ragne kalmet tundis huvi, kui palju elektrisoojendi maksta võiks. Selgus, et 300-400 EUR'ga saaks sellise kätte."}
+    include_external_graphics("rmd/9/9-fibroman-n.png")
+
+    ```
+
+5.  Statiiv, et selle külge kinnitada käpp.
+
+6.  Käpp, et hoida kolbi.
+
+7.  Viis $\qty{50}{\ml}$ keeduklaasi.
+
+8.  Nutitelefon ajamõõtmiseks.
+
+9.  Refraktomeeter murdumisnäitajate mõõtmiseks.
+
+10. Majapidamispaber refraktomeetri kuivatamiseks.
+
+## Ained
+
+1.  Destilleeritud vesi.
+
+2.  Atsetoon.
+
+## Töö käik
+
+Töö teostasin ragne kalmetiga.
+
+Töö osad:
+
+1.  Selleks ajaks, kui mina tööle asusin, oli lihtdestillatsiooni
+    aparatuur juba vastavalt teooriaosale koostatud.
+
+2.  $\qty{250}{\ml}$ destillatsioonikolvi valasime $\qty{50}{\ml}$ destilleeritud vett.
+
+3.  Destillatsioonikolvi valasime $\qty{50}{\ml}$ atsetooni.
+
+4.  Segusse lisasime kapillaari.
+
+5.  Kolvi ühendasime jahutiga.
+
+6.  Reguleerisime kolvi kõrguse (joonis
+    \@ref(fig:regulating-bulb) leheküljel
+    `r render_pageref(reference = "fig:regulating-bulb")`).
+
+    ```{r label = "regulating-bulb", echo=FALSE, fig.cap = "Pildil on näha meie kolvi lõplik asend küttekeha suhtes."}
+    include_external_graphics("rmd/9/9-termomeetri-sättimine.png")
+
+    ```
+
+7.  Segu kuumutasime keemiseni elektrilise kolvisoojendajaga.
+
+8.  Pöörasime tähelepanu termomeetri asendile aparatuuris (joonis
+    \@ref(fig:position-of-bulb-of-thermometer) leheküljel
+    `r render_pageref(reference = "fig:position-of-bulb-of-thermometer")`).
+
+    ```{r label = "position-of-bulb-of-thermometer", echo=FALSE, fig.cap = "Termomeetri elavhõbeda paak on liiga kõrgel. Osa auru jõuab paagi alt jahutisse pugeda."}
+    include_external_graphics("rmd/9/IMG_20221123_131912.jpg")
+
+    ```
+
+9.  Panime jahutustoru avatud otsa alla keeduklaasi (joonis
+    \@ref(fig:positioning-beaker) leheküljel
+    `r render_pageref(reference = "fig:positioning-beaker")`).
+
+    ```{r label = "positioning-beaker", echo=FALSE, fig.cap = "õpetaja sättimas oma käe järgi esimest keeduklaasi jahutustoru all, millest on tilk suundumas keeduklaasi."}
+    include_external_graphics("rmd/9/9-keeduklaasi-sättimine.png")
+
+    ```
+
+10. Registreerisime destillatsiooni algtemperatuuri (joonis
+    \@ref(fig:thermometer) leheküljel
+    `r render_pageref(reference = "fig:thermometer")`) ja esimese minuti
+    tilkade langemise arvu.
+
+    ```{r label = "thermometer", echo=FALSE, fig.cap = "Tegin foto termomeetri näidust veidi peale seda, kui mõistsin, et ragne oli mulle teada andnud, et esimene tilk atsetooni tilkus keeduklaasi."}
+    include_external_graphics("rmd/9/IMG_20221123_124917.jpg")
+
+    ```
+
+11. Registreerisime keemistemperatuuri, esimese minuti tilkade langemise
+    arvu ja ajakulu iga $\qty{10}{\ml}$ destillaadi kogumise järel eraldi
+    keeduklaasidesse.
+
+12. Refraktomeetriga määrasime iga proovi ($\qty{10}{\ml}$ destillaadi)
+    murdumisnäitaja (joonis \@ref(fig:measuring-refraction) leheküljel
+    `r render_pageref(reference = "fig:measuring-refraction")`).
+
+    ```{r label = "measuring-refraction", echo=FALSE, fig.cap = paste("meie kasutada oli METTLER TOLEDO *Refracto 30P* seeria refraktomeeter. Selle seeria refraktomeetreid ei toodeta enam aastast 2003. Nüüd toodetakse selle asemel seeria *Refractometer 30PX* refraktomeetreid. ", render_with_emojis(text = "((ref:reserved-refracto))"), ". Üks selline uue seeria refraktomeeter maksab Prantsusmaa kaudu tellides 3270 EUR, kuhu pole arvestatud teadmata suuruses saatekulu ", render_with_emojis(text = "((ref:mettler))"), ". Parasjagu on ragne kallamas refraktomeetrisse atsetooni kolmanda proovi keeduklaasist.", sep = "")}
+    include_external_graphics("rmd/9/9-toledo.png")
+
+    ```
+
+13. Sammudel 10-12 kogutud andmed kandsime tabelisse
+    \@ref(tab:distilling) leheküljel
+    `r render_pageref(reference = "tab:distilling")`.
+
+14. Võrdluseks määrasime destilleeritud vee ja atsetooni
+    murdumisnäitajad.
+
+## Tulemused
+
+Tabelisse \@ref(tab:distilling) leheküljel
+    `r render_pageref(reference = "tab:distilling")` on kantud destillatsiooni andmed.
+
+```{r label = "distilling", echo=FALSE}
+quantity_of_distillate <- c(
+  "1 tilk",
+  "$\\qty{10}{\\ml}$",
+  "$\\qty{20}{\\ml}$",
+  "$\\qty{30}{\\ml}$",
+  "$\\qty{40}{\\ml}$",
+  "$\\qty{50}{\\ml}$"
+)
+
+temperature <- c(
+  54,
+  61,
+  61,
+  61,
+  61,
+  61
+)
+
+time <- c(
+  "0:00",
+  "2:53",
+  "2:38",
+  "3:04",
+  "2:37",
+  "5:53"
+)
+
+drops_first_min <- c(
+  NA,
+  78,
+  86,
+  73,
+  63,
+  55
+)
+
+librarian::shelf(c(
+  "lubridate"
+))
+
+drops <- round(as.numeric(ms(time)) / 60 * drops_first_min)
+
+refraction <- c(
+  NA,
+  1.362,
+  1.3619,
+  1.3618,
+  1.3621,
+  1.3621
+)
+
+speed_of_light <- speed_of_light_in_vacuum / refraction
+
+distilling <- data.frame(
+  quantity_of_distillate = quantity_of_distillate,
+  temperature = temperature,
+  time = time,
+  drops_first_min = drops_first_min,
+  drops,
+  refraction = refraction,
+  speed_of_light = speed_of_light
+)
+
+colnames(distilling) <- c(
+  "Destillaadi hulk kokku",
+  "$\\frac{\\text{Keemistemperatuur}}{\\mathrm{\\celsius}}$",
+  "$\\frac{\\text{Aeg esimese tilga ilmumisest}}{\\mathrm{min}}$",
+  "$\\frac{\\text{Tilku esimeses minutis}}{\\mathrm{\\frac{tilk}{min}}}$",
+  "Tilku",
+  "Murdumisnäitaja",
+  "$\\frac{\\text{Valguse kiirus meediumis}}{\\mathrm{\\frac{m}{s}}}$"
+)
+
+librarian::shelf(c(
+  "dplyr",
+  "kableExtra"
+))
+
+print_table(
+  table = distilling,
+  caption = "Atsetooni ja vee segu lihtdestillatsioon."
+) %>%
+  column_spec(1, width = "5em") %>%
+  landscape()
+
+```
+
+Huvitav asjaolu on, et tilkade arv oli eri keeduklaasides lõpuks erinev,
+kuigi kogu vedeliku kogus oli sama. Kas võib olla, et tilgad olidki väga
+erineva suurusega? Täheldada saame ka, et destillaadi kogumisaeg
+varieerus võrdlemisi palju. Kui juhendis on kirjas, et minutis pidanuks
+tilkuma 20 tilka, siis meie tilkade eraldumise kiirus oli selle
+mitmekordne.
+
+Joonisel \@ref(fig:graph-for-distilling) leheküljel
+`r render_pageref(reference = "fig:graph-for-distilling")` on esitatud
+**aurustumistemperatuuri sõltuvus destillaadi kogusest**. meie täheldasime, et destillaat hakkas
+kogunema juba $\qty{55}{\degreeCelsius}$ juures. Seejärel temperatuur veel tõusis ja jäi
+püsima $\qty{61}{\degreeCelsius}$ juures.
+
+```{r label = "graph-for-distilling", echo=FALSE, fig.cap="Aurustumistemperatuuri sõltuvus destillaadi kogusest."}
+librarian::shelf(c(
+  "ggplot2",
+  "latex2exp"
+))
+
+ggplot(data = distilling, aes(x = `Destillaadi hulk kokku`, y = `$\\frac{\\text{Keemistemperatuur}}{\\mathrm{\\celsius}}$`)) +
+  geom_point(shape = 23, color = "#008000", fill = "#ff6600", size = 3) +
+  labs(x = "Destillaadi hulk kokku", y = TeX("$\\frac{Keemistemperatuur}{\\degree C}$"))
+
+```
+
+**Joonist murdumisnäitajatega pole mõtet teha, sest kolme tüvenumbri
+täpsusega need üksteisest ei erinenud.**
+
+Mõõtsime destilleeritud vee murdumisnäitajaks $\num{1,3332}$ ja atsetooni omaks
+$\num{1,3604}$. Destillaat sisaldas ainult atsetooni ja igas $\qty{10}{\ml}$ destillaadis
+oli atsetoonile vastav murdumisnäitaja. **Kui destillaadi murdumisnäitaja
+olnuks atsetooni murdumisnäitajast väiksem, olnuks tegemist juba vee ja
+atsetooni seguga või ainult veega.** Nt kui me poleks peale viimase
+keeduklaasi $\qty{10}{\ml}$ täitumist destillatsiooni lõpetanud, tõusnuks
+aurustumistemperatuur vee omani ja keeduklaasi oleks lisandunud
+veetilku.

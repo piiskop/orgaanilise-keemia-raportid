@@ -41,4 +41,6 @@
 
 (ref:simple-dirk) @simple_dirk
 
+(ref:what) @what
+
 (ref:why) @why

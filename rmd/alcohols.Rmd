@@ -1,0 +1,177 @@
+# Alkoholid
+
+## Teooria
+
+Kui 1,2,3-propaantriool segada vaskhüdroksiidiga, tekib vaskglütseraat
+(joonis \@ref(fig:copper-glycerate) leheküljel
+`r render_pageref(reference = "fig:copper-glycerate")`).
+
+```{r label = "copper-glycerate", echo=FALSE, fig.cap = paste("Glütserooli reageerimisel vaskhüdroksiidiga tekib vaskglütseraat ", render_with_emojis(text = "((ref:alcohols))"), ".", sep = "")}
+include_external_graphics("rmd/6/P44R20.jpeg")
+
+```
+
+õpetaja kirjutas joonisel \@ref(fig:copper-glycerate) leheküljel
+`r render_pageref(reference = "fig:copper-glycerate")` oleva
+reaktsioonivõrrandi asemel tahvlile teistsuguse reaktsioonivõrrandi, mis
+tundub kummaline, sest selles osaleb vask üksnes katalüsaatoris, kuid
+eksisteerib saaduses, ning hapnikuaatomid on kolme sidemega. Kuna mul
+puudub arusaamine, kuidas nii saab olla, siis seda teisendit ma oma
+raportis ei esita.
+
+Primaarsel alkoholil on hüdroksüülrühm süsiniku küljes, mis on seotud
+ainult ühe süsinikuga.
+
+Etanool on primaarne alkohol. Järelikult oksüdeerub etanool
+$\ce{CH3-CH2-OH}$ kõigepealt aldehüüdiks etanaal $\ce{CH3-CHO}$ ja siis
+karboksüülhappeks etaanhape $\ce{CH3-COOH}$.
+
+Naatriumi lisamisel etanoolile tekivad naatriumetoksiid ja vesinik:
+
+$$\ce{2CH3CH2OH(l) + 2Na(s) -> 2CH3CH2ONa(aq) + H2(g)} \text{`r render_with_emojis(text = "((ref:clark-2019-the))")`}.$$
+
+Naatrium on vesinikust tegusam ja lükkab vesiniku välja võttes viimase
+positsiooni endale.
+
+## Eesmärgid
+
+Oskus tekitada
+
+1.  vaskglütseraadi,
+
+2.  alkoholist aldehüüdi ja karboksüülhapet,
+
+3.  naatriumetoksiidi.
+
+## Töövahendid
+
+1.  Kuus katseklaasi, et nendesse lahuseid tekitada.
+
+2.  Katseklaaside alus, et ei peaks katseklaasi kogu aeg käega hoidma.
+
+3.  Keeduklaas, et sellest etanooli mõõta.
+
+4.  Spaatel naatriumi urgitsemiseks ja lõikamiseks.
+
+5.  Majapidamispaber, et sinna õline naatriumitükk heita.
+
+## Ained
+
+1.  5 % $\ce{CuSO4}$.
+
+2.  5 % $\ce{NaOH}$.
+
+3.  Etanool.
+
+4.  Glütserool.
+
+5.  Butanool.
+
+6.  5 % $\ce{K2Cr2O7}$.
+
+7.  Kontsentreeritud $\ce{H2SO4}$.
+
+8.  Naatrium.
+
+## Töö käik
+
+Töö sooritasin marjuga, kes segas kokku vasksulfaadi ja
+naatriumhüdroksiidi ning loksutas ja kes toimetas ka kaaliumkromaadiga,
+mõõtis samuti etanooli, ning karl salumetsaga, kes jaotas vasksulfaadi
+ja naatriumhüdroksiidi segu kahte katseklaasi, toimetas tõmbekapis ja
+möllas naatriumiga.
+
+Töö osad:
+
+1.  Katseklaasi valasime 1 ml 5 % $\ce{CuSO4}$ lahust.
+
+2.  Lisasime 1 ml 5 % $\ce{NaOH}$ lahust. Tekib kahvatusinine mahukas
+    $\ce{Cu(OH)2}$ sade.
+
+3.  Katseklaasi sisu loksutasime.
+
+4.  Jagasime katseklaasi sisu kahte tühja katseklaasi.
+
+5.  Punktis 4 täidetud ühte katseklaasi lisasime 5 tilka etanooli.
+
+6.  Punktis 4 täidetud ühte katseklaasi, kuhu polnud lisatud etanooli,
+    lisasime 5 tilka glütserooli.
+
+7.  Tühja katseklaasi pipeteerisime 1 ml etanooli.
+
+8.  Tühja katseklaasi pipeteerisime 1 ml butanooli.
+
+9.  Sammul 7 mainitud katseklaasi lisasime veidi 5 % $\ce{K2Cr2O7}$
+    vesilahust.
+
+10. Sammul 8 mainitud katseklaasi lisasime veidi 5 % $\ce{K2Cr2O7}$
+    vesilahust.
+
+11. Sammul 7 mainitud katseklaasi lisasime tõmbekapis mõne tilga
+    kontsentreeritud $\ce{H2SO4}$.
+
+12. Sammul 8 mainitud katseklaasi lisasime tõmbekapis mõne tilga
+    kontsentreeritud $\ce{H2SO4}$.
+
+13. Keeduklaasi valasime etanooli.
+
+14. Keeduklaasist mõõtsime pipetiga 3 ml etanooli tühja katseklaasi.
+
+15. Asetasime sammul 14 mainitud katseklaasi väikese tüki (väikse
+    hernetera suurune) metallilist naatriumit. NB! Vältida vee sattumist
+    kontakti naatriumiga!
+
+## Tulemused
+
+Glütserool muutis lahuse tumedamaks (joonised
+\@ref(fig:dropping-glycerol) leheküljel
+`r render_pageref(reference = "fig:dropping-glycerol")` ja
+\@ref(fig:influence-of-glycerol) leheküljel
+`r render_pageref(reference = "fig:influence-of-glycerol")`).
+
+```{r label = "dropping-glycerol", echo=FALSE, fig.cap = "Glütserooli tilgutamine vasksulfaadi ja naatriumhüdroksiidi lahusesse."}
+include_external_graphics("rmd/6/6-glütserooli-tilgutamine.png")
+
+```
+
+```{r label = "influence-of-glycerol", echo=FALSE, fig.cap = "Glütserool muutis lahuse tumedamaks. Paremal on vasksulfaadi ja naatriumhüdroksiidi lahus etanooliga."}
+include_external_graphics("rmd/6/6-glütserooliga-etanooliga.png")
+
+```
+
+$\ce{K2Cr2O7}$ lisamise mõjul muutus etanool *Fanta*-sarnaseks, butanool
+hakkas meenutaba filtreeritud õunamahla (joonised
+\@ref(fig:dropping-k2cr2o7) leheküljel
+`r render_pageref(reference = "fig:dropping-k2cr2o7")` ja
+\@ref(fig:k2cr2o7-in-alcohol) leheküljel
+`r render_pageref(reference = "fig:k2cr2o7-in-alcohol")`).
+
+```{r label = "dropping-k2cr2o7", echo=FALSE, fig.cap = "Hetk enne kaaliumkromaadi tilga langemist butanooli. Vasemal on etanool juba osaliselt kaaliumkromaadiga segunenud."}
+include_external_graphics("rmd/6/6-k2cr2o7-butanooli.png")
+
+```
+
+```{r label = "k2cr2o7-in-alcohol", echo=FALSE, fig.cap = "Kaaliumkromaadi mõjul värvus etanool *Fanta*-sarnaseks (vasakul) ja butanool filtreeritud õunamahla sarnaseks (paremal)."}
+include_external_graphics("rmd/6/6-k2cr2o7-alkoholides.png")
+
+```
+
+Väävelhappe mõjul värvus etanoolisegu roheliseks, butanoolisegu siniseks
+(joonis \@ref(fig:h2so4-in-alcohol) leheküljel
+`r render_pageref(reference = "fig:h2so4-in-alcohol")`).
+
+```{r label = "h2so4-in-alcohol", echo=FALSE, fig.cap = "Väävelhape muutis etanoolisegu roheliseks (vasakul) ja butanoolisegu siniseks (paremal)."}
+include_external_graphics("rmd/6/6-väävelhape-alkoholis.png")
+
+```
+
+Vahetult pärast naatriumitüki lisamist etanooli tekkisid mullid ja segu
+meenutas *Kellukest*. Peagi tõusis põhja vajunud naatriumitükk heljuma
+ja seejärel ujuma ning näha oli ka lenduvat vesinikku (joonis
+\@ref(fig:na-in-ethanol) leheküljel
+`r render_pageref(reference = "fig:na-in-ethanol")`).
+
+```{r label = "na-in-ethanol", echo=FALSE, fig.cap = "Naatrium ägedalt reageerimas etanooliga. Auruna eraldub vesinik.", out.height = "90%"}
+include_external_graphics("rmd/6/6-na.png")
+
+```

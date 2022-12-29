@@ -82,7 +82,7 @@ reciprocal_of_speed_of_light_in_vacuum <- 1 / speed_of_light_in_vacuum
 
 ```{=tex}
 \begin{align}
-c = `r speed_of_light_in_vacuum` \mathrm{\frac{m}{s}}
+c = \qty{`r as.character(speed_of_light_in_vacuum)`}{\m\per\s}
 (\#eq:speed-of-light-in-vacuum)
 \end{align}
 
@@ -90,7 +90,7 @@ c = `r speed_of_light_in_vacuum` \mathrm{\frac{m}{s}}
 
 `r render_with_emojis(text = "((ref:bureau-1974-the), p. 127)")`.
 
-Avaldan valguskiiruse vaakumis valemist \@ref(eq:speed-of-light-in-vacuum) meetri ning asendan sekundi avaldisest \@ref(eq:second):
+Avaldan valguskiiruse vaakumis valemist \@ref(eq:speed-of-light-in-vacuum) leheküljel `r render_pageref(reference = "eq:speed-of-light-in-vacuum")` meetri ning asendan sekundi avaldisest \@ref(eq:second):
 
 ```{=tex}
 \begin{align}
@@ -267,6 +267,26 @@ convert_from_g_per_cm3_to_kg_per_m3 <- function(g_per_cm3) {
 ```
 
 ## Elektromagnetiline kiirgus
+
+Murdumisnäitaja $n$ on valguse kiiruse suhe vaakumis ($c_o$,
+avaldis \@ref(eq:speed-of-light-in-vacuum) leheküljel `r render_pageref(reference = "eq:speed-of-light-in-vacuum")`) ja meediumis ($c$):
+
+```{=tex}
+\begin{align}
+n = \frac{c_0}{c} = \frac{\qty{`r as.character(speed_of_light_in_vacuum)`}{\m\per\s}}{c}
+(\#eq:refraction-index)
+\end{align}
+```
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-5)")`.
+Dimensionaalanalüüs:
+
+```{=tex}
+\begin{align}
+\mathrm{\frac{\frac{L}{T}}{\frac{L}{T}}} = 1,
+(\#eq:dimensional-analysis-for-refraction-index)
+\end{align}
+```
+millest johtuvalt on ühik 1.
 
 Molaarne (dekaadne) neeldumistegur:
 
@@ -712,3 +732,35 @@ convert_from_g_per_ml_to_kg_per_m3 <- function(g_per_ml) {
 }
 
 ```
+
+```{=tex}
+\begin{align}
+\unit{\l\per\mol\cm} \times \qty{1e-3}{\m\cubed\per\l} \times \qty{1e2}{\cm\per\m} &= \\
+\qty{1e-1}{\m\cubed\per\mol\per\m} = \qty{1e-1}{\m\squared\per\mol}.
+(\#eq:convert-from-l-per-mol-per-cm-to-m2-per-mol)
+\end{align}
+```
+
+```{r label = "convert-from-l-per-mol-per-cm-to-m2-per-mol"}
+#' This function converts from liters per mole per centimeter to square meters per mole.
+#' 
+#' @param l_per_mol_per_cm the value in liters per mole per centimeter
+#' 
+#' @returns the value in square meters per mole
+convert_from_l_per_mol_per_cm_to_m2_per_mol <- function(l_per_mol_per_cm) {
+  return(l_per_mol_per_cm * 1e-1)
+}
+
+```
+
+## Vedeliku soojendamine
+
+Eraldatava segu sisse pannakse poorne tellisetükike
+või kapillaar, mis aitab ära hoida vedeliku ülekuumenemist ja vähendab
+vedeliku jahutisse paiskumise ohtu. Nimelt tekivad keemises mullid, mis
+kinnituvad tahkele pinnale. Kui kinnituspinda pole piisavalt, mullid
+suurenevad, kuni tõusevad vedeliku pinnale. Suured mullid hakkaksid
+kolbi loksutama ja vedelik hakkaks ebaühtlaselt keema. Kapillaar või muu
+poorne tükk lisab mullidele kinnituspinda hoides niimoodi ära suurte
+mullide tekkimise, kui seda kinnituspinda on piisavalt.
+`r render_with_emojis(text = "((ref:functions))")`.

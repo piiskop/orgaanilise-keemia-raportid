@@ -1,0 +1,92 @@
+# Aspiriini süntees ja eraldamine
+
+## Teooria
+
+```{r label = "aspirin", echo=FALSE, fig.cap = "Pikal seismisel avatud anumas omandab aspiriin tugeva äädikalõhna. See võib olla tingitud niiske õhuga reageerimisel tekkinud etaanhappest."}
+include_external_graphics("rmd/12-67.png")
+
+```
+
+## Töövahendid
+
+1.  Erlenmeyeri kolb.
+
+2.  Kaalud.
+
+3.  Kuumutusega magnetsegaja.
+
+4.  Büchneri lehter.
+
+5.  Büchneri kolb.
+
+6.  Paberfilter.
+
+7.  Vaakumpump.
+
+8.  Kaks keeduklaasi.
+
+9.  Vesivann.
+
+10. Katseklaasid.
+
+11. Õhukese kihi kromatograafilised plaadid.
+
+12. Voolutuskamber.
+
+13. Joodikamber.
+
+## Ained
+
+1.  Salitsüülhape.
+
+2.  Etaananhüdriid.
+
+3.  Kontsentreeritud $\ce{H3PO4}$.
+
+4.  Küllastunud $\ce{NaHCO3}$ vesilahus.
+
+5.  10 M $\ce{HCl}$ vesilahus.
+
+6.  Metanool.
+
+7.  Kontsentreeritud $\ce{H2SO4}$.
+
+8.  1-% $\ce{FeCl3}$ vesilahus.
+
+9.  Tundmatu proov.
+
+10. Atsetoon.
+
+11. Heksaan.
+
+## Töö käik
+
+1.  Aspiriini (atsetüülsalitsüülhappe) süntees.
+
+2.  Metüülsalitsülaadi (laanelilleõli) süntees.
+
+3.  Aspiriini puhtuse uurimine pH väärtuse ja raudkloriidi abil.
+
+4.  Dibensalatsetooni õhukese kihi kromatograafiline uurimine.
+
+## Tulemused
+
+```{r}
+m_aspirin <- 21.642
+
+```
+
+meie aspiriini kuivmass oli `r m_aspirin` g.
+
+```{r}
+m_71 <- 325
+yield_71 <- .6
+m_theoretical_71 <- m_71 / yield_71
+M_aspirin <- 180
+n_71 <- m_theoretical_71 / M_aspirin
+M_salicyl <- 138
+m_salicyl <- n_71 * M_salicyl
+
+```
+
+1 aspiriinitableti valmistamiseks kulub `r m_salicyl` mg salitsüülhapet.

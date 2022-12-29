@@ -227,7 +227,7 @@ render_color <- function(color, text) {
 
 # Sissejuhatus {.unnumbered}
 
-See raport siin kirjeldab kõiki eksperimente, mida sooritasime Tallinna Ülikooli kursuse *Orgaaniline keemia I* raames vahemikus septembrist detsembrini 2022.
+See raport siin kirjeldab kõiki eksperimente, mida sooritasime Tallinna Ülikooli kursuse *Orgaaniline keemia I* raames laura tomsoni juhendamise all ruumis T-211 vahemikus septembrist detsembrini 2022.
 
 Täielikult on kirjeldatud eksperimendid, mis on juhendis tähistatud 1-11. Eksperiment 12 on kirjeldatud osaliselt.
 
