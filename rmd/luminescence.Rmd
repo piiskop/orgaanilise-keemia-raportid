@@ -1,26 +1,12 @@
-# Luminestsens
+# Luminestsents
 
 ## Eesmärk
 
 Eksperimentaalselt tekitatud kolm erinevat luminestsentsi.
 
-## Teooria
-
-Tuleb välja, et luminool lahustub paremini aluselises keskkonnas, mida
-pakub naatriumhüdroksiid
-`r render_with_emojis(text = "((ref:liquid), 0:42)")`. Punane veresool
-on luminooli oksüdeerumise juures katalüsaator
-`r render_with_emojis(text = "((ref:liquid), 2:44)")`.
-
-Kui on vaja pimedas lühiajaliselt ümbruskonda või mingit vormi nähtavaks
-teha, siis saab luminooli oksüdeerumisreaktsiooni selleks praktiliselt
-kasutada. Nt soetasin aastas 2017 hulganisti helkivaid pulki, mida saab
-helendama panna, neid painutades, et nendega vertikaalseid koopaid
-valgustada, kuhu kaalusin sisenemist.
-
 ## Töövahendid
 
-1.  Neli 300 ml keeduklaasi mõõtmiseks ja testimiseks.
+1.  Neli $\qty{300}{\ml}$ keeduklaasi mõõtmiseks ja testimiseks.
 
 2.  Täppiskaal kaalumiseks.
 
@@ -48,36 +34,36 @@ valgustada, kuhu kaalusin sisenemist.
 
 ## Töö käik
 
-Töö teostasin karl salumetsaga.
+Töö teostasin karl salumetsaga. Töö teostamise aega ma ei registreerinud, mistõttu puudub mul kindel alus väitmaks, millal me selle töö tegime.
 
 Töö osad:
 
-1.  300 ml keeduklaasi mõõtsime 1 g $\ce{NaOH}$.
+1.  $\qty{300}{\ml}$ keeduklaasi mõõtsime $\qty{1}{\g}$ $\ce{NaOH}$.
 
-2.  Lahustasime 240 ml vees.
+2.  Lahustasime $\qty{240}{\ml}$ vees.
 
-3.  Lisasime 0,1 g luminooli (joonised \@ref(fig:luminol) leheküljel
+3.  Lisasime $\qty{0,1}{\g}$ luminooli (joonised \@ref(fig:luminol) leheküljel
     `r render_pageref(reference = "fig:luminol")`,
     \@ref(fig:unmixed-solutions) leheküljel
     `r render_pageref(reference = "fig:unmixed-solutions")` ja
     \@ref(fig:mixed-solutions) leheküljel
     `r render_pageref(reference = "fig:mixed-solutions")`).
 
-    ```{r label = "luminol", echo=FALSE, fig.cap = "Nii näeb välja 0,1 g luminooli. Mõõtmiseks kasutasime täppiskaalu, filterpaberit ja spaatlit."}
+    ```{r label = "luminol", echo=FALSE, fig.cap = "Nii näeb välja $\\qty{0,1}{\\g}$ luminooli. Mõõtmiseks kasutasime täppiskaalu, filterpaberit ja spaatlit."}
     include_external_graphics("rmd/10/10-luminool.png")
 
     ```
 
-4.  Tühja 300 ml keeduklaasi mõõtsime 2,5 g punast veresoola -
+4.  Tühja $\qty{300}{\ml}$ keeduklaasi mõõtsime $\qty{2,5}{\g}$ punast veresoola -
     $\ce{K3[Fe(CN)6]}$ (joonis \@ref(fig:bloodsalt) leheküljel
     `r render_pageref(reference = "fig:bloodsalt")`).
 
-    ```{r label = "bloodsalt", echo=FALSE, fig.cap = "Keeduklaasis on 2,5 g punast veresoola."}
+    ```{r label = "bloodsalt", echo=FALSE, fig.cap = "Keeduklaasis on $\\qty{2,5}{\\g}$ punast veresoola."}
     include_external_graphics("rmd/10/10-veresool.png")
 
     ```
 
-5.  Lahustasime 240 ml vees (joonis \@ref(fig:adding-water-to-bloodsalt)
+5.  Lahustasime $\qty{240}{\ml}$ vees (joonis \@ref(fig:adding-water-to-bloodsalt)
     leheküljel
     `r render_pageref(reference = "fig:adding-water-to-bloodsalt")`).
 
@@ -86,7 +72,7 @@ Töö osad:
 
     ```
 
-6.  Lisasime 5 ml 3-% $\ce{H2O2}$ vesilahust (joonised
+6.  Lisasime $\qty{5}{\ml}$ 3-% $\ce{H2O2}$ vesilahust (joonised
     \@ref(fig:unmixed-solutions) leheküljel
     `r render_pageref(reference = "fig:unmixed-solutions")` ja
     \@ref(fig:mixed-solutions) leheküljel
@@ -102,11 +88,11 @@ Töö osad:
 
     ```
 
-7.  Tühja 300 ml keeduklaasi valasime 80 ml sammul 3 valmistatud lahust.
+7.  Tühja 300-ml keeduklaasi valasime $\qty{80}{\ml}$ sammul 3 valmistatud lahust.
 
 8.  õpetaja tekitas pimeda ruumi.
 
-9.  Pimedas ruumis lisasime 80 ml sammul 6 valmistatud lahust (joonis
+9.  Pimedas ruumis lisasime $\qty{80}{\ml}$ sammul 6 valmistatud lahust (joonis
     \@ref(fig:bloodsalt-into-luminol) leheküljel
     `r render_pageref(reference = "fig:bloodsalt-into-luminol")`).
     Juhendi järgi pidime saaduslahust segama klaaspulgaga, kuid õpetaja
@@ -119,14 +105,14 @@ Töö osad:
 
     ```
 
-10. Tühja 300 ml keeduklaasi valatakse 80 ml sammul 3 valmistatud
+10. Tühja 300-ml keeduklaasi valasime $\qty{80}{\ml}$ sammul 3 valmistatud
     lahust.
 
 11. Lisasime mõned kristallid fluorestseiini.
 
 12. õpetaja tekitas pimeda ruumi.
 
-13. Pimedas ruumis lisasime 80 ml sammul 6 valmistatud lahust.
+13. Pimedas ruumis lisasime $\qty{80}{\ml}$ sammul 6 valmistatud lahust.
 
 14. Segasime klaaspulgaga (joonis \@ref(fig:bloodsalt-into-fluoresceine)
     leheküljel
@@ -160,14 +146,53 @@ Töö osad:
     ```
 
 18. Juhendis on kirjas, et saaduslahust pidanuksime segama klaaspulgaga.
-    meie seda ei teinud. Ei tea, miks. mina olin kaameramees. karl, kas
-    sinu *fail*? Kas see üldse oleks midagi muutnud? Miks me eelmist
-    segu segasime, aga üleeelmist mitte? Kas taas piisas valamisest? Nii
-    palju küsimusi on õhus rippumas. Kes selgitab nüüd ära, kuidas need
-    küsimused õhus rippuda saavad, kas küsimused on gaasilises faasis?
-    Milline oleks küsimuse vedel või tahke faas? Kumb on võimsam, kas
-    vedel või tahke? Kes on kõvem tegelane, kas too, kes lõi vedelaks,
-    või too, kelle junn läks jahedaks ja seega tahkeks? Või hoopis
-    gaasilisest vedelaks? Need on küsimused, millele tuleb meil
-    tänapäeva keemias otsida vastuseid. Küsimused, mille faas on
-    teadmata. Arvan, et tsüaniid olid happeline ja võitis.
+    meie seda ei teinud.
+
+## Tulemus
+
+Eesmärk saavutatud.
+
+## Ülesanded
+
+### Ülesanne 53
+
+#### Püstitus
+
+Milline osa on luminooli oksüdeerumise juures punasel veresoolal?
+
+#### Lahendus
+
+Punane veresool
+on luminooli oksüdeerumise juures katalüsaator
+`r render_with_emojis(text = "((ref:liquid), 2:44)")`.
+
+### Ülesanne 54
+
+#### Püstitus
+
+Milline osa on luminooli oksüdeerumise juures punasel naatriumhüdroksiidil?
+
+#### Lahendus
+
+Tuleb välja, et luminool lahustub paremini aluselises keskkonnas, mida
+pakub naatriumhüdroksiid
+`r render_with_emojis(text = "((ref:liquid), 0:42)")`.
+
+### Ülesanne 55
+
+#### Püstitus
+
+Kuidas on võimalik luminooli oksüdeerumisreaktsiooni erinevates eluvaldkondades
+rakendada?
+
+#### Lahendus
+
+Kui on vaja pimedas lühiajaliselt ümbruskonda või mingit vormi nähtavaks
+teha, siis saab luminooli oksüdeerumisreaktsiooni selleks praktiliselt
+kasutada. Nt soetasin aastas 2017 hulganisti helkivaid pulki, mida saab
+helendama panna, neid painutades, et nendega vertikaalseid koopaid
+valgustada, kuhu kaalusin sisenemist.
+
+Dekooris saab luminestsentsi kasutada.
+
+Teadusartiklite pealkirjadest saab lugeda, et luminooli oksüdeerumisreaktsiooni on võimalik kasutada veel meditsiinis ja kuritegude uurimises verejälgede tuvastamises.

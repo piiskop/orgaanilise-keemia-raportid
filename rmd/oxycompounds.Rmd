@@ -2,35 +2,6 @@
 
 ## Teooria
 
-Kui segada kokku naatriumhüdroksiid ja vaskvitriol, ladestub
-vaskhüdroksiid:
-
-$$\ce{2NaOH + CuSO4 -> Cu(OH)2 + Na2SO4} \text{`r render_with_emojis(text = "((ref:a44), 1:15 min)")`}.$$
-
-Kui lisada tekkinud vaskhüdroksiidi lahusele aldehüüd, siis hakkab
-toimuma reaktsioon, kuid toatemperatuuril toimub see aeglaselt
-`r render_with_emojis(text = "((ref:a44), 2:14 min)")`.
-
-Aldehüüd on redutseerija ja redutseerib komplekseeritud vask(II)iooni
-vask(I)oksiidiks:
-
-$$\ce{2Cu^2+}_\text{complexed}\ce{+2OH- + 2e- -> Cu2O + H2O}.$$
-
-Kuna lahus on aluseline, oksüdeerub aldehüüd ise vastava karboksüülhappe
-soolaks:
-
-$$\ce{RCHO + 3OH- -> RCOO- + 2H2O + 2e-}.$$
-
-Seetõttu on terve reaktsioon selline:
-
-$$\ce{2Cu^2+}_\text{complexed}\ce{+5OH- + RCHO -> Cu2O + 3H2O + RCOO-}. \text{`r render_with_emojis(text = paste("((ref:a2015-188))", ".", sep = ""))`}$$
-
-õpetaja kirjutas tahvlile reaktsioonivõrrandi, mille kohaselt tekib
-mitte vask(I)oksiid, vaid hoopis vask(I)hüdraat.
-
-Aldehüüd oksüdeerub kiiremini karboksüülhappeks kui alkohol, sest on
-vähem vaheetappe.
-
 Seistes võivad tekkida plahvatusohtlikud ühendid: hõbeamiinist
 ($\ce{AgNH2}$) tekib heli, löögi, soojuse või valguse mõjul äärmiselt
 plahvatav hõbenitriid ($\ce{Ag3N}$):
@@ -61,39 +32,39 @@ Võrreldud aldehüüdi ja alkoholi oksüdeerumise kiirus karboksüülhappeks.
 
 ## Ained
 
-1.  5 % $\ce{NaOH}$.
+1.  5-% $\ce{NaOH}$.
 
-2.  5 % $\ce{CuSO4}$.
+2.  5-% $\ce{CuSO4}$.
 
 3.  Formaliin.
 
 4.  Propanool.
 
-5.  10 % $\ce{AgNO3}$.
+5.  10-% $\ce{AgNO3}$.
 
-6.  25 % $\ce{NH3}$.
+6.  25-% $\ce{NH3}$.
 
 7.  Glükoos.
 
 ## Töö käik
 
-Töö tegin koos karl salumetsaga.
+Töö tegin koos karl salumetsaga 19. oktoobripäevas.
 
 Töö osad:
 
-1.  Katseklaasi valasime 1 ml 5 % $\ce{NaOH}$ lahust.
+1.  Katseklaasi valasime $\qty{1}{\ml}$ 5-% $\ce{NaOH}$ lahust.
 
-2.  Lisasime tilkhaaval 5 % $\ce{CuSO4}$ lahust, kuni tekkis
+2.  Lisasime tilkhaaval 5-% $\ce{CuSO4}$ lahust, kuni tekkis
     kahvatusinine $\ce{Cu(OH)2}$ sade.
 
-3.  Tühja katseklaasi valasime 1 ml 5 % $\ce{NaOH}$ lahust.
+3.  Tühja katseklaasi valasime $\qty{1}{\ml}$ 5-% $\ce{NaOH}$ lahust.
 
-4.  Lisasime tilkhaaval 5 % $\ce{CuSO4}$ lahust, kuni tekkis
+4.  Lisasime tilkhaaval 5-% $\ce{CuSO4}$ lahust, kuni tekkis
     kahvatusinine $\ce{Cu(OH)2}$ sade.
 
-5.  Tühja katseklaasi valasime 1 ml 5 % $\ce{NaOH}$ lahust.
+5.  Tühja katseklaasi valasime $\qty{1}{\ml}$ 5-% $\ce{NaOH}$ lahust.
 
-6.  Lisasime tilkhaaval 5 % $\ce{CuSO4}$ lahust, kuni tekkis
+6.  Lisasime tilkhaaval 5-% $\ce{CuSO4}$ lahust, kuni tekkis
     kahvatusinine $\ce{Cu(OH)2}$ sade.
 
 7.  Sammul 2 kasutatud katseklaasi lisasime mõne tilga uuritavat
@@ -130,18 +101,18 @@ Töö osad:
 
 21. Loputasime veega.
 
-22. Valasime sisse 2 ml 10 % $\ce{AgNO3}$ lahust.
+22. Valasime sisse $\qty{2}{\ml}$ 10-% $\ce{AgNO3}$ lahust.
 
-23. Lisasime 10 tilka 5 % $\ce{NaOH}$ lahust. Tekkis must sade
+23. Lisasime kümme tilka 5-% $\ce{NaOH}$ lahust. Tekkis must sade
     ($\ce{AgOH}$ ja $\ce{Ag2O}$).
 
-24. Lisasime tilkhaaval 25 % $\ce{NH3}$ vesilahust, kuni sade lahustus
+24. Lisasime tilkhaaval 25-% $\ce{NH3}$ vesilahust, kuni sade lahustus
     ja tekkis värvitu lahus (vahepeal loksutasime).
 
 25. Lisasime 1 ml formaliini (aldehüüd). (NB! Katseklaasi loksutada ei
     tohi!). Katseklaasi seintele tekkis metallist hõbeda kiht
     (hõbepeegel). Kui seda kohe ei teki, hoitakse katseklaasi mõni minut
-    kuumas (\~70°C, mitte keevas!) vesivannis.
+    kuumas (\~$\qty{70}{\degreeCelsius}$, mitte keevas!) vesivannis.
 
 26. Peale katset valasime katseklaasi sisu kohe minema.
 
@@ -149,18 +120,18 @@ Töö osad:
 
 28. Loputasime veega.
 
-29. Valasime sisse 2 ml 10 % $\ce{AgNO3}$ lahust.
+29. Valasime sisse $\qty{2}{\ml}$ 10-% $\ce{AgNO3}$ lahust.
 
-30. Lisasime 10 tilka 5 % $\ce{NaOH}$ lahust. Tekkis must sade
+30. Lisasime kümme tilka 5-% $\ce{NaOH}$ lahust. Tekkis must sade
     ($\ce{AgOH}$ ja $\ce{Ag2O}$).
 
-31. Lisasime tilkhaaval 25 % $\ce{NH3}$ vesilahust, kuni sade lahustus
+31. Lisasime tilkhaaval 25-% $\ce{NH3}$ vesilahust, kuni sade lahustus
     ja tekkis värvitu lahus (vahepeal loksutasime).
 
-32. Lisasime 1 ml propanooli (alkohol). (NB! Katseklaasi loksutada ei
+32. Lisasime $\qty{1}{\ml}$ propanooli (alkohol). (NB! Katseklaasi loksutada ei
     tohi!). Katseklaasi seintele tekkis metallist hõbeda kiht
     (hõbepeegel). Kui seda kohe ei teki, hoitakse katseklaasi mõni minut
-    kuumas (\~70°C, mitte keevas!) vesivannis.
+    kuumas (\~$\qty{70}{\degreeCelsius}$, mitte keevas!) vesivannis.
 
 33. Peale katset valasime katseklaasi sisu kohe minema.
 
@@ -168,18 +139,18 @@ Töö osad:
 
 35. Loputasime veega.
 
-36. Valasime sisse 2 ml 10 % $\ce{AgNO3}$ lahust.
+36. Valasime sisse $\qty{2}{\ml}$ 10-% $\ce{AgNO3}$ lahust.
 
-37. Lisasime 10 tilka 5 % $\ce{NaOH}$ lahust. Tekkis must sade
+37. Lisasime kümme tilka 5-% $\ce{NaOH}$ lahust. Tekkis must sade
     ($\ce{AgOH}$ ja $\ce{Ag2O}$).
 
-38. Lisasime tilkhaaval 25 % $\ce{NH3}$ vesilahust, kuni sade lahustus
+38. Lisasime tilkhaaval 25-% $\ce{NH3}$ vesilahust, kuni sade lahustus
     ja tekkis värvitu lahus (vahepeal loksutasime).
 
-39. Lisasime 1 ml glükoosi (aldoos). (NB! Katseklaasi loksutada ei
+39. Lisasime $\qty{1}{\ml}$ glükoosi (aldoos). (NB! Katseklaasi loksutada ei
     tohi!). Katseklaasi seintele tekkis metallist hõbeda kiht
     (hõbepeegel). Kui seda kohe ei teki, hoitakse katseklaasi mõni minut
-    kuumas (\~70°C, mitte keevas!) vesivannis.
+    kuumas (\~$\qty{70}{\degreeCelsius}$, mitte keevas!) vesivannis.
 
 40. Peale katset valasime katseklaasi sisu kohe minema.
 
@@ -194,14 +165,31 @@ include_external_graphics("rmd/7/7-naoh-cuso4.png")
 
 ```
 
-Formaliini lisamise järel segu värvus ei muutunud. Propanooli lisamise
-järel segu värvus muutus (joonis \@ref(fig:aldehyde) leheküljel
-`r render_pageref(reference = "fig:aldehyde")`).
+Hõbepeegli eksperimendi tegime anorgaanilise keemia raames ja ilmselt
+seetõttu ei ole mul jäädvustusi sellekohasest eksperimendist orgaanilise
+keemia raames. Kui vastav anorgaanilise keemia raport valmis on, teen ristviite.
 
-```{r label = "aldehyde", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: kahes esimeses katseklaasis on vaskhüdroksiid segatud formaliiniga, kolmandas propanooliga."}
-include_external_graphics("rmd/7/7-formaliin-propanool.png")
+Saavutasime eesmärgi.
 
-```
+## Ülesanded
+
+### Ülesanne 33
+
+#### Püstitus
+
+Kas kuumutamisel toimub teises katseklaasis reaktsioon? Millest seda järeldad? Kirjuta
+vastav reaktsioon (üldistatult).
+
+#### Lahendus
+
+Kui segada kokku naatriumhüdroksiid ja vaskvitriol, ladestub
+vaskhüdroksiid:
+
+$$\ce{2NaOH + CuSO4 -> Cu(OH)2 + Na2SO4} \text{`r render_with_emojis(text = "((ref:a44), 1:15 min)")`}.$$
+
+Kui lisada tekkinud vaskhüdroksiidi lahusele aldehüüd, siis hakkab
+toimuma reaktsioon, kuid toatemperatuuril toimub see aeglaselt
+`r render_with_emojis(text = "((ref:a44), 2:14 min)")`.
 
 Kuumutades ei juhtunud tükk aega mitte midagi nähtavat, millest
 järeldasin, et karl oli ained kokku seganud liiga uisapäisa. ta ei
@@ -221,11 +209,98 @@ lahus (joonis \@ref(fig:path-to-carboxylic-acid) leheküljel
 `r render_pageref(reference = "fig:path-to-carboxylic-acid")`).
 Eksperiment kinnitas teooriat.
 
-```{r label = "path-to-carboxylic-acid", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: formaliin kui aldehüüd juba tumeneb karboksüülhappeks, sellal kui propanool alles alustab tumenemist, sest vaja esmalt jõuda aldehüüdi staatusesse."}
+```{r label = "path-to-carboxylic-acid", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: formaliin kui aldehüüd juba tumeneb karboksüülhappeks, sellal kui propanool alles alustab tumenemist, sest vaja esmalt muutuda aldehüüdiks."}
 include_external_graphics("rmd/7/7-oksüdeerumiskiirus.png")
 
 ```
 
-Hõbepeegli eksperimendi tegime anorgaanilise keemia raames ja ilmselt
-seetõttu ei ole mul jäädvustusi sellekohasest eksperimendist orgaanilise
-keemia raames.
+### Ülesanne 34
+
+#### Püstitus
+
+Kas aldehüüdid on head redutseerijad või oksüdeerijad?
+
+#### Lahendus
+
+Aldehüüd on redutseerija ja redutseerib komplekseeritud vask(II)iooni
+vask(I)oksiidiks:
+
+$$\ce{2Cu^2+}_\text{complexed}\ce{+2OH- + 2e- -> Cu2O + H2O}.$$
+
+Kuna lahus on aluseline, oksüdeerub aldehüüd ise vastava karboksüülhappe
+soolaks:
+
+$$\ce{RCHO + 3OH- -> RCOO- + 2H2O + 2e-}.$$
+
+Seetõttu on terve reaktsioon selline:
+
+$$\ce{2Cu^2+}_\text{complexed}\ce{+5OH- + RCHO -> Cu2O + 3H2O + RCOO-} \text{`r render_with_emojis(text = paste("((ref:a2015-188))", ".", sep = ""))`}$$
+
+õpetaja kirjutas tahvlile reaktsioonivõrrandi, mille kohaselt tekib
+mitte vask(I)oksiid, vaid hoopis vask(I)hüdroksiid.
+
+### Ülesanne 35
+
+#### Püstitus
+
+Mis toimus kolmandas katseklaasis? Miks?
+
+#### Lahendus
+
+Formaliini lisamise järel segu värvus ei muutunud. Propanooli lisamise
+järel segu värvus muutus (joonis \@ref(fig:aldehyde) leheküljel
+`r render_pageref(reference = "fig:aldehyde")`). Kuna neid segusid tegi karl ja ta mõõtis silma järgi, ei olnud komponendid õigetes proportsioonides, mis põhjustas propanooli reageerimise toatemperatuuril.
+
+```{r label = "aldehyde", echo=FALSE, fig.cap = "Pildi vaataja poolt vasakult paremale: kahes esimeses katseklaasis on vaskhüdroksiid segatud formaliiniga, kolmandas propanooliga."}
+include_external_graphics("rmd/7/7-formaliin-propanool.png")
+
+```
+
+Aldehüüd oksüdeerub kiiremini karboksüülhappeks kui alkohol, sest on
+vähem vaheetappe. Seda kogesime, kui olin hiljem segud valmistanud õigetes proportsioonides ja nägime, kuidas formaliin üsna kohe peale kuumutama hakkamist tumenema hakkas, sellal kui propanooliga võttis kauem aega.
+
+### Ülesanne 36
+
+#### Püstitus
+
+Milline rühm on oluline hõbepeeglireaktsiooni toimumiseks?
+
+#### Lahendus
+
+Hõbepeegli reaktsioon toimub aldehüüdidega `r render_with_emojis(text = "((ref:a2021-chemical))")`.
+
+### Ülesanne 37
+
+#### Püstitus
+
+Kirjuta hõbepeeglireaktsiooni kohta reaktsioonivõrrandid.
+
+#### Lahendus
+
+Hõbepeegli reaktsiooni võrrandid on vastavalt toimumise järjekorras \@ref(eq:silver-nitrate-and-sodium-hydroxide) leheküljel `r render_pageref(reference = "eq:silver-nitrate-and-sodium-hydroxide")`, \@ref(eq:silver-oxide-and-ammonia) leheküljel `r render_pageref(reference = "eq:silver-oxide-and-ammonia")` ja \@ref(eq:aldehyde-and-diaminesilver-I-hydroxide) leheküljel `r render_pageref(reference = "eq:aldehyde-and-diaminesilver-I-hydroxide")`.
+
+```{=tex}
+\begin{align}
+\ce{2AgNO3 + 2NaOH -> Ag2O + 2NaNO3 + H2O}.
+(\#eq:silver-nitrate-and-sodium-hydroxide)
+\end{align}
+
+```
+
+```{=tex}
+\begin{align}
+\ce{Ag2O + 4NH3 + H2O -> 2[Ag(NH3)2]+OH-}.
+(\#eq:silver-oxide-and-ammonia)
+\end{align}
+
+```
+
+
+```{=tex}
+\begin{align}
+\ce{RCHO(aq) + 2Ag(NH3)2+(aq) + 3OH-(aq) ->\\
+RCOO-(aq) + 2Ag(s) + 4NH3(aq) + 2H2O}.
+(\#eq:aldehyde-and-diaminesilver-I-hydroxide)
+\end{align}
+
+```

@@ -2,33 +2,8 @@
 
 ## Teooria
 
-Kui 1,2,3-propaantriool segada vaskhüdroksiidiga, tekib vaskglütseraat
-(joonis \@ref(fig:copper-glycerate) leheküljel
-`r render_pageref(reference = "fig:copper-glycerate")`).
-
-```{r label = "copper-glycerate", echo=FALSE, fig.cap = paste("Glütserooli reageerimisel vaskhüdroksiidiga tekib vaskglütseraat ", render_with_emojis(text = "((ref:alcohols))"), ".", sep = "")}
-include_external_graphics("rmd/6/P44R20.jpeg")
-
-```
-
-õpetaja kirjutas joonisel \@ref(fig:copper-glycerate) leheküljel
-`r render_pageref(reference = "fig:copper-glycerate")` oleva
-reaktsioonivõrrandi asemel tahvlile teistsuguse reaktsioonivõrrandi, mis
-tundub kummaline, sest selles osaleb vask üksnes katalüsaatoris, kuid
-eksisteerib saaduses, ning hapnikuaatomid on kolme sidemega. Kuna mul
-puudub arusaamine, kuidas nii saab olla, siis seda teisendit ma oma
-raportis ei esita.
-
 Primaarsel alkoholil on hüdroksüülrühm süsiniku küljes, mis on seotud
 ainult ühe süsinikuga.
-
-Etanool on primaarne alkohol. Järelikult oksüdeerub etanool
-$\ce{CH3-CH2-OH}$ kõigepealt aldehüüdiks etanaal $\ce{CH3-CHO}$ ja siis
-karboksüülhappeks etaanhape $\ce{CH3-COOH}$.
-
-Naatriumi lisamisel etanoolile tekivad naatriumetoksiid ja vesinik:
-
-$$\ce{2CH3CH2OH(l) + 2Na(s) -> 2CH3CH2ONa(aq) + H2(g)} \text{`r render_with_emojis(text = "((ref:clark-2019-the))")`}.$$
 
 Naatrium on vesinikust tegusam ja lükkab vesiniku välja võttes viimase
 positsiooni endale.
@@ -57,9 +32,9 @@ Oskus tekitada
 
 ## Ained
 
-1.  5 % $\ce{CuSO4}$.
+1.  $\qty{5}{\percent}$ $\ce{CuSO4}$.
 
-2.  5 % $\ce{NaOH}$.
+2.  $\qty{5}{\percent}$ $\ce{NaOH}$.
 
 3.  Etanool.
 
@@ -67,7 +42,7 @@ Oskus tekitada
 
 5.  Butanool.
 
-6.  5 % $\ce{K2Cr2O7}$.
+6.  $\qty{5}{\percent}$ $\ce{K2Cr2O7}$.
 
 7.  Kontsentreeritud $\ce{H2SO4}$.
 
@@ -79,32 +54,32 @@ Töö sooritasin marjuga, kes segas kokku vasksulfaadi ja
 naatriumhüdroksiidi ning loksutas ja kes toimetas ka kaaliumkromaadiga,
 mõõtis samuti etanooli, ning karl salumetsaga, kes jaotas vasksulfaadi
 ja naatriumhüdroksiidi segu kahte katseklaasi, toimetas tõmbekapis ja
-möllas naatriumiga.
+möllas naatriumiga, 2022. a viiendas oktoobripäevas.
 
 Töö osad:
 
-1.  Katseklaasi valasime 1 ml 5 % $\ce{CuSO4}$ lahust.
+1.  Katseklaasi valasime $\qty{1}{\ml}$ $\num{5}$-$\unit{\percent}$ $\ce{CuSO4}$ lahust.
 
-2.  Lisasime 1 ml 5 % $\ce{NaOH}$ lahust. Tekib kahvatusinine mahukas
+2.  Lisasime $\qty{1}{\ml}$ $\num{5}$-$\unit{\percent}$ $\ce{NaOH}$ lahust. Tekib kahvatusinine mahukas
     $\ce{Cu(OH)2}$ sade.
 
 3.  Katseklaasi sisu loksutasime.
 
 4.  Jagasime katseklaasi sisu kahte tühja katseklaasi.
 
-5.  Punktis 4 täidetud ühte katseklaasi lisasime 5 tilka etanooli.
+5.  Punktis 4 täidetud ühte katseklaasi lisasime viis tilka etanooli.
 
 6.  Punktis 4 täidetud ühte katseklaasi, kuhu polnud lisatud etanooli,
-    lisasime 5 tilka glütserooli.
+    lisasime viis tilka glütserooli.
 
-7.  Tühja katseklaasi pipeteerisime 1 ml etanooli.
+7.  Tühja katseklaasi pipeteerisime $\qty{1}{\ml}$ etanooli.
 
-8.  Tühja katseklaasi pipeteerisime 1 ml butanooli.
+8.  Tühja katseklaasi pipeteerisime $\qty{1}{\ml}$ butanooli.
 
-9.  Sammul 7 mainitud katseklaasi lisasime veidi 5 % $\ce{K2Cr2O7}$
+9.  Sammul 7 mainitud katseklaasi lisasime veidi $\num{5}$-$\unit{\percent}$ $\ce{NaOH}$ $\ce{K2Cr2O7}$
     vesilahust.
 
-10. Sammul 8 mainitud katseklaasi lisasime veidi 5 % $\ce{K2Cr2O7}$
+10. Sammul 8 mainitud katseklaasi lisasime veidi $\num{5}$-$\unit{\percent}$ $\ce{NaOH}$ $\ce{K2Cr2O7}$
     vesilahust.
 
 11. Sammul 7 mainitud katseklaasi lisasime tõmbekapis mõne tilga
@@ -115,13 +90,36 @@ Töö osad:
 
 13. Keeduklaasi valasime etanooli.
 
-14. Keeduklaasist mõõtsime pipetiga 3 ml etanooli tühja katseklaasi.
+14. Keeduklaasist mõõtsime pipetiga $\qty{3}{\ml}$ etanooli tühja katseklaasi.
 
 15. Asetasime sammul 14 mainitud katseklaasi väikese tüki (väikse
     hernetera suurune) metallilist naatriumit. NB! Vältida vee sattumist
     kontakti naatriumiga!
 
 ## Tulemused
+
+Vahetult pärast naatriumitüki lisamist etanooli tekkisid mullid ja segu
+meenutas *Kellukest*. Peagi tõusis põhja vajunud naatriumitükk heljuma
+ja seejärel ujuma ning näha oli ka lenduvat vesinikku (joonis
+\@ref(fig:na-in-ethanol) leheküljel
+`r render_pageref(reference = "fig:na-in-ethanol")`).
+
+```{r label = "na-in-ethanol", echo=FALSE, fig.cap = "Naatrium ägedalt reageerimas etanooliga. Auruna eraldub vesinik.", out.height = "90%"}
+include_external_graphics("rmd/6/6-na.png")
+
+```
+
+Püstitatud eesmärgid saavutasime.
+
+## Ülesanded
+
+### Ülesanne 24
+
+#### Püstitus
+
+Millises katseklaasis toimus värvuse muutus? Miks? Kirjuta vastav reaktsioonivõrrand.
+
+#### Lahendus
 
 Glütserool muutis lahuse tumedamaks (joonised
 \@ref(fig:dropping-glycerol) leheküljel
@@ -138,6 +136,44 @@ include_external_graphics("rmd/6/6-glütserooli-tilgutamine.png")
 include_external_graphics("rmd/6/6-glütserooliga-etanooliga.png")
 
 ```
+
+Glütserooli ja vask(II)hüdroksiidi reageerimisel peaks tekkima vaskglütseraat (valem \@ref(eq:copper-glycerate) leheküljel `r render_pageref(reference = "eq:copper-glycerate")`). Ometi, kui püüda koostada reaktsioonivõrrand sellisel kujul vaskglütseraadiga, milles on kaks topeltsidemega hapniku aatomit, on liigne väljakutse seda tasakaalu saada.
+
+```{=tex}
+\begin{align}
+\chemfig{H-[:30]O-[:-30]-[:30](-[:90]O-[:150]H)-[:-30](=[:-90]O)-[:30]O(-[:90]H)-[:-30,,,,dash pattern=on 1pt off 1pt]Cu-[:30,,,,dash pattern=on 1pt off 1pt]O(-[:90]H)-[:-30](=[:-90]O)-[:30](-[:90]O-[:30]H)-[:-30]-[:30]O-[:-30]H} `r render_with_emojis(text = "((ref:pubchem-copper))")`.
+(\#eq:copper-glycerate)
+\end{align}
+
+```
+
+õpetaja tahvlile kirjutatud avaldis ei ole võrrand, sest aatomite arv reaktiivide ja saaduste seas ei ole võrdne (joonis
+\@ref(fig:teacher-s-complex-salt) leheküljel
+`r render_pageref(reference = "fig:teacher-s-complex-salt")`). Leidsin ka kaks veakohta, mille kordategemisel on tasakaal olemas. Võrrandit vaskglütseraadi saamiseks esitatakse väga vähestes kohtades. Ainus minu leitud andmeallikas, kus oli esitatud vähemalt võrrand, on `r render_with_emojis(text = "(ref:Cu-II-glycerate)")` ning see on käesolevas teoses võrrand \@ref(eq:producing-Cu-II-glycerate) leheküljel `r render_pageref(reference = "eq:producing-Cu-II-glycerate")`. Seega, kui õpetaja eemaldanuks ühe süsiniku 1,2,3-propaantriooli süsiniku küljest ühe liigse vesiniku ja duubeldanuks veemolekulide arvu, saavutanuks ta mingil määral tasakaalu, kuid vask(II)hüdroksiid on tal märgitud katalüsaatoriks, mistõttu ei tohiks saaduste seas vaske üldse olla, kuid ometi see on märgitud kõikide nelja kovalentse sidemega. `r render_with_emojis(text = "(ref:a2022-list)")` esitab vasesoolade loendi ja selles ei ole vaskglütseraati.
+
+```{r label = "teacher-s-complex-salt", echo=FALSE, fig.cap = "õpetaja kirjutatud reaktsiooniskeem vaskglütseraadi tootmiseks. Tegemist on tõhusa õppematerjaliga, sest võimaldab õpilastel leida viis viga."}
+include_external_graphics("rmd/6/6-õpetaja-komplekssool.png")
+
+```
+
+```{=tex}
+\begin{align}
+2 \underbrace{\chemfig{HO-[:30]-[:-30](-[:-90]OH)-[:30]-[:-30]OH}}_\text{1,2,3-propaantriool `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-285)")`}+ \underbrace{\ce{Cu(OH)2}}_\text{vaskhüdroksiid} \ce{->}\\
+	  \underbrace{\chemfig{H-[:180]O-[:180]-[:-90](-[:-90]-O(-[:30,,,,dash pattern=on 1pt off 1pt])-[:-90]H)-O-[:-30]Cu-[:-30]O-(-[:90]-[:180]O(-[:-150,,,,dash pattern=on 1pt off 1pt])-[:90]H)-[:-90]-[:180]O-[:180]H}}_\text{vask(II)glütseraat} + 2 \ce{H2O}.
+(\#eq:producing-Cu-II-glycerate)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "(ref:obtaining), 1:13")` selgitab, miks 1,2,3-propaantriooliga katseklaasis toimus värvuse muutus: Vask(II)hüdroksiid reageerib alkoholiga, milles on kahe naabersüsiniku külge ühendatud hüdroksüülrühm, ja ei reageeri alkoholiga, milles ei ole.
+
+### Ülesanne 25
+
+#### Püstitus
+
+Millist värvuse muutust täheldad?
+
+#### Lahendus
 
 $\ce{K2Cr2O7}$ lisamise mõjul muutus etanool *Fanta*-sarnaseks, butanool
 hakkas meenutaba filtreeritud õunamahla (joonised
@@ -165,13 +201,51 @@ include_external_graphics("rmd/6/6-väävelhape-alkoholis.png")
 
 ```
 
-Vahetult pärast naatriumitüki lisamist etanooli tekkisid mullid ja segu
-meenutas *Kellukest*. Peagi tõusis põhja vajunud naatriumitükk heljuma
-ja seejärel ujuma ning näha oli ka lenduvat vesinikku (joonis
-\@ref(fig:na-in-ethanol) leheküljel
-`r render_pageref(reference = "fig:na-in-ethanol")`).
+### Ülesanne 26
 
-```{r label = "na-in-ethanol", echo=FALSE, fig.cap = "Naatrium ägedalt reageerimas etanooliga. Auruna eraldub vesinik.", out.height = "90%"}
-include_external_graphics("rmd/6/6-na.png")
+#### Püstitus
+
+Kas etanool on on primaarne, sekundaarne või tertsiaarne alkohol?
+Järelikult oksüdeerus etanool kõigepealt .........................ks ja siis ...............................ks.
+
+#### Lahendus
+
+Etanool on primaarne alkohol. Järelikult oksüdeerub etanool kõigepealt aldehüüdiks ja siis karboksüülhappeks.
+
+### Ülesanne 27
+
+#### Püstitus
+
+Skematiseeri etanooli oksüdeerumine: $\ce{CH3-CH2-OH -> ................... -> ...................}$
+Anna tekkinud ühenditele nimetused!
+
+#### Lahendus
+
+Etanooli oksüdeerumine on esitatud skeemil \@ref(eq:oxydizing-ethanol) leheküljel `r render_pageref(reference = "eq:oxydizing-ethanol")`.
+
+```{=tex}
+\begin{align}
+\ce{CH3-CH2-OH ->} \underbrace{\ce{CH3-CHO}}_\text{etanaal} \ce{->} \underbrace{\ce{CH3-COOH}}_\text{etaanhape}.
+(\#eq:oxydizing-ethanol)
+\end{align}
+
+```
+
+### Ülesanne 28
+
+#### Püstitus
+
+Mis reaktsiooni käigus eraldus? Kirjuta vastav reaktsioonivõrrand ja anna tekkinud
+ühendile nimetus.
+
+#### Lahendus
+
+Naatriumi lisamisel etanoolile tekivad naatriumetoksiid ja eralduv vesinik ning vastav võrrand on \@ref(eq:producing-sodium-etoxide) leheküljel `r render_pageref(reference = "eq:producing-sodium-etoxide")`.
+
+```{=tex}
+\begin{align}
+\ce{2CH3CH2OH(l) + 2Na(s) -> 2CH3CH2ONa(aq) + H2(g)} \text{`r render_with_emojis(text = "((ref:clark-2019-the))")`}.
+(\#eq:producing-sodium-etoxide)
+\end{align}
 
 ```

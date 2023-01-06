@@ -2,53 +2,10 @@
 
 ## Teooria
 
-Happe ja aluse vahelise reaktsiooni tulemusena tekib sool.
-
-Etaanhappe ja naatriumhüdroksiidi omavahelise reageerimise tulemusena
-tekivad naatriumetanaat ja vesi:
-
-$$\ce{CH3COOH + NaOH -> CH3COONa + H2O}.$$
-
 Soola ja happe vahelise reaktsiooni tulemusena tekivad uus hape ja uus
 sool.
 
-Naatriumetanaadi ja väävelhappe omavahelise reaktsiooni tulemusena
-tekivad etaanhape ja naatriumsulfaat:
-
-$$\ce{2CH3COONa + H2SO4 -> 2CH3COOH + Na2SO4}.$$
-
-Etaanhappe ja etanooli reageerimises toimib väävelhape katalüsaatorina:
-
-$$\ce{CH3COOH + C2H5OH ->[\text{conc.} H2SO4]} \underbrace{\ce{CH3COOC2H5}}_{\text{etüületanaat}} + \ce{H2O}.$$
-
-Etüületanaadi hüdrolüüsi tulemusel naatriumhüdroksiidiga tekivad
-karboksüülhappe sool naatriumetanaat ja alkohol etanool:
-
-$$\ce{CH3COOC2H5 + NaOH -> CH3COONa + CH3CH2OH}.$$
-
-Alkoholi olemasolu puhul muutub kroomisegu oranž värvus 2-3 sekundi
-jooksul roheliseks. Etanool oksüdeerub kroomisegu toimel
-karboksüülhappeks:
-
-```{=tex}
-\begin{align}
-\ce{3CH3CH2OH + 4CrO3 + 6HCl -> 3CH3COOH + 2CrCl3 + 9H2O}.
-(\#eq:ethanol-to-ethanate)
-\end{align}
-```
-Oksüdeerija võtab oksüdeeritavalt elektrone, mille tulemusel oksüdeerija
-oksüdatsiooniaste langeb ja redutseerija oksüdatsiooniaste tõuseb.
-Võrrandis \@ref(eq:ethanol-to-ethanate) on $\ce{CrO3}$ oksüdeerija ning
-langetab kroomi oksüdatsiooniastet, mis on $\ce{CrCl3}$'s väiksem.
-Redutseerija on etanool suurendades radikaali oksüdatsiooniastet, mis on
-kõrgem etanaadis.
-
-Fenoolftaleiiniga saab kindlaks teha ilmselt aluselist keskkonda.
-Fenoolftaleiini värvus aluselises keskkonnas on roosa
-`r render_with_emojis(text = "((ref:fenoolftaleiin))")`.
-
-Nii fenoolftaleiini kui fluorestseiini saamiseks kasutatakse ftaalhapet
-ja väävelhapet. Mõlemal on spetsiifiline värvus.
+Alkoholi olemasolu puhul muutub kroomisegu oranž värvus $\qtyrange{2}{3}{\second}$ kestel roheliseks.
 
 ## Eesmärgid
 
@@ -100,7 +57,7 @@ Muude töö osade jaoks:
 
 3.  Pliit, et soojendada.
 
-4.  Kolm 100 ml keeduklaasi, et soojendada vesivannis, mõõta ja
+4.  Kolm $\qty{100}{\ml}$ keeduklaasi, et soojendada vesivannis, mõõta ja
     lahustada.
 
 5.  Vesi, et soojendada vesivannis.
@@ -111,7 +68,7 @@ Muude töö osade jaoks:
 
 8.  Kaks lahuse indikaatorpaberit ja legend pH taseme mõõtmiseks.
 
-9.  200-300 ml keeduklaasi, et lahustada.
+9.  $\qtyrange{200}{300}{\ml}$ keeduklaas, et lahustada.
 
 10. Tõmbekapp, et mitte mürgistust saada.
 
@@ -126,9 +83,9 @@ Muude töö osade jaoks:
 
 1.  Kontsentreeritud etaanhape.
 
-2.  5 % $\ce{NaOH}$.
+2.  5-% $\ce{NaOH}$.
 
-3.  10 % $\ce{H2SO4}$.
+3.  10-% $\ce{H2SO4}$.
 
 4.  Bensoehape.
 
@@ -146,9 +103,9 @@ Muude töö osade jaoks:
 
 11. Resortsinool.
 
-12. 20 % $\ce{NaOH}$.
+12. 20-% $\ce{NaOH}$.
 
-13. 10 % $\ce{HCl}$.
+13. 10-% $\ce{HCl}$.
 
 14. Atsetoon.
 
@@ -156,14 +113,14 @@ Muude töö osade jaoks:
 
 ## Töö käik
 
-Töö teostasin karl salumetsaga.
+Töö teostasin karl salumetsaga. Teostusaega me ei registreerinud, mistõttu ma ei saa kindlalt väita, millal me seda tegime, ja kui kindlalt väita ei saa, ei väidagi.
 
 Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
 
-1.  Katseklaasi asetasime 0,5 ml (vedelat) või 0,5 g (tahket) uuritavat
+1.  Katseklaasi asetasime $\qty{0,5}{\ml}$ (vedelat) või $\qty{0,5}{\g}$ (tahket) uuritavat
     hapet.
 
-2.  Lisasime 5 ml vett.
+2.  Lisasime $\qty{5}{\ml}$ vett.
 
 3.  Loksutasime.
 
@@ -175,29 +132,29 @@ Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
 
 Ülejäänud töö osad:
 
-1.  Katseklaasi asetasime 2 tilka kontsentreeritud etaanhapet.
+1.  Katseklaasi asetasime kaks tilka kontsentreeritud etaanhapet.
 
-2.  Lisasime tilkhaaval 5 % $\ce{NaOH}$ lahust.
+2.  Lisasime tilkhaaval $\num{5}$-$\unit{\percent}$ $\ce{NaOH}$ lahust.
 
 3.  Loksutasime, kuni etaanhappe lõhn kadus
 
-4.  Lisasime 1 ml 10 % $\ce{H2SO4}$ lahust. Tekkis uuesti etaanhappe
+4.  Lisasime $\qty{1}{\ml}$ $\num{10}$-$\unit{\percent}$ $\ce{H2SO4}$ lahust. Tekkis uuesti etaanhappe
     lõhn.
 
-5.  Tühja katseklaasi asetasime 0,1 g bensoehapet.
+5.  Tühja katseklaasi asetasime $\qty{0,1}{\g}$ bensoehapet.
 
-6.  Lisasime tilkhaaval 5 % $\ce{NaOH}$ lahust.
+6.  Lisasime tilkhaaval $\num{5}$-$\unit{\percent}$ $\ce{NaOH}$ lahust.
 
 7.  Loksutasime, kuni bensoehape täielikult lahustus.
 
-8.  Lisasime 1 ml 10 % $\ce{H2SO4}$ lahust. Tekkis bensoehappe valge
+8.  Lisasime $\qty{1}{\ml}$ $\num{10}$-$\unit{\percent}$ $\ce{H2SO4}$ lahust. Tekkis bensoehappe valge
     sade.
 
-9.  Tühja katseklaasi valasime 0,5 ml etaanhapet.
+9.  Tühja katseklaasi valasime $\qty{0,5}{\ml}$ etaanhapet.
 
-10. Lisasime 1 ml etanooli.
+10. Lisasime $\qty{1}{\ml}$ etanooli.
 
-11. Lisasime 3 tilka kontsentreeritud $\ce{H2SO4}$.
+11. Lisasime kolm tilka kontsentreeritud $\ce{H2SO4}$.
 
 12. Soojendatakse ettevaatlikult.
 
@@ -220,15 +177,15 @@ Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
 
 21. Segasime.
 
-22. Kallasime osa lahust 100 ml tühja keeduklaasi.
+22. Kallasime osa lahust $\qty{100}{\ml}$ tühja keeduklaasi.
 
-23. Lisasime 50 ml vett.
+23. Lisasime $\qty{50}{\ml}$ vett.
 
 24. Lisasime kanget $\ce{NaOH}$ lahust kuni punase värvuse tekkeni.
 
 25. Mõõtsime lahuse pH indikaatorpaberiga.
 
-26. Lisasime 10-% $\ce{HCl}$.
+26. Lisasime $\num{10}$-$\unit{\percent}$ $\ce{HCl}$.
 
 27. Mõõtsime lahuse pH indikaatorpaberiga.
 
@@ -236,7 +193,7 @@ Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
 
 29. Lisasime kahekordse koguse resortsinooli.
 
-30. Tõmbekapis lisasime 3-4 tilka kontsentreeritud $\ce{H2SO4}$.
+30. Tõmbekapis lisasime kolm kuni neli tilka kontsentreeritud $\ce{H2SO4}$.
 
 31. Segasime klaaspulgaga.
 
@@ -244,21 +201,21 @@ Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
 
 33. Lasime jahtuda.
 
-34. Kallasime segu 200-300 ml keeduklaasi.
+34. Kallasime segu $\qtyrange{200}{300}{\ml}$ keeduklaasi.
 
-35. Lisasime 150-200 ml vett.
+35. Lisasime $\qtyrange{150}{200}{\ml}$ vett.
 
 36. Segasime.
 
-37. Lisasime 6,5 ml 10 % $\ce{NaOH}$ lahust.
+37. Lisasime $\qty{6,5}{\ml}$ $\num{10}$-$\unit{\percent}$ $\ce{NaOH}$ lahust.
 
 38. Täheldasime.
 
-39. Lisasime keeduklaasi 10-% $\ce{HCl}$.
+39. Lisasime keeduklaasi $\num{10}$-$\unit{\percent}$ $\ce{HCl}$.
 
-40. 5 tilka sammul 13 mainitud estrit viisime tühja katseklaasi.
+40. Viis tilka sammul 13 mainitud estrit viisime tühja katseklaasi.
 
-41. Lisasime 1 ml $\ce{NaOH}$ kontsentreeritud lahust.
+41. Lisasime $\qty{1}{\ml}$ $\ce{NaOH}$ kontsentreeritud lahust.
 
 42. Soojendasime vesivannil 10 minutit.
 
@@ -276,70 +233,6 @@ Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega:
 48. Loksutasime.
 
 ## Tulemused
-
-pH mõõtmiste tulemused on esitatud tabelis
-\@ref(tab:comparison-of-acids). Näeme, et kõige tugevamad happed on
-anorgaanilised happed. Alkoholid paistavad olevat nõrgad happed.
-
-```{r label = "comparison-of-acids", echo=FALSE}
-acids <- c(
-  "conc. $\\ce{HCl}$",
-  "conc. $\\ce{H2SO4}$",
-  "99,3-\\% $\\ce{CH3COOH}$",
-  "$\\ce{HO(O)CC(O)OH}$",
-  "$\\ce{C6H5(OH)}$",
-  "$\\ce{CH3CH2OH}$"
-)
-
-is_hard <- c(
-  0,
-  0,
-  0,
-  1,
-  1,
-  0
-)
-
-pH_paper <- c(
-  1,
-  1,
-  3,
-  1,
-  3,
-  7
-)
-
-pH_meter <- c(
-  NA,
-  .66,
-  2.2,
-  1.1,
-  3.5,
-  3.15
-)
-
-pH <- data.frame(acids = acids, is_hard = is_hard, pH_paper = pH_paper, pH_meter = pH_meter)
-
-colnames(pH) <- c(
-  "Uuritav hape, millele on lisatud 5 ml vett",
-  "Kas tahke?",
-  "pH indikaatorpaberiga",
-  "pH-meetri näit"
-)
-
-librarian::shelf(c(
-  "dplyr",
-  "kableExtra"
-))
-
-print_table(
-  table = pH,
-  caption = "Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega."
-) %>%
-  column_spec(1, width = "12em") %>%
-  column_spec(3, width = "8em")
-
-```
 
 Etaanhappe katseklaasist peale loksutamist oli tõesti etaanhappe lõhn
 kadunud, mis naases, kui olime sinna lisanud väävelhapet.
@@ -392,20 +285,20 @@ include_external_graphics("rmd/8/8-ftaalhape-h2so4-kuumutatuna.png")
 
 ```
 
-Pärast veidi vee lisamist ja loksutamist oli fenoolilahus heledam kui
+Pärast vee lisamist ja loksutamist oli fenoolilahus heledam kui
 enne (joonis \@ref(fig:after-some-water) leheküljel
 `r render_pageref(reference = "fig:after-some-water")`).
 
-```{r label = "after-some-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pärast kuumutamisejärgset veidikese vee lisamist ja loksutamist."}
+```{r label = "after-some-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segu pärast kuumutamisejärgset vee lisamist ja loksutamist."}
 include_external_graphics("rmd/8/8-veidi-vett.png")
 
 ```
 
-Pärast 50 ml vee lisamist osale fenoolilahusele oli tulemussegu värvitu
+Pärast $\qty{50}{\ml}$ vee lisamist osale fenoolilahusele oli tulemussegu värvitu
 (joonis \@ref(fig:after-more-water) leheküljel
 `r render_pageref(reference = "fig:after-more-water")`).
 
-```{r label = "after-more-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segust osa pärast 50 ml vee lisamist."}
+```{r label = "after-more-water", echo=FALSE, fig.cap = "Ftaalhappe, fenooli ja väävelhappe segust osa pärast $\\qty{50}{\\ml}$ vee lisamist."}
 include_external_graphics("rmd/8/8-50ml-vett.png")
 
 ```
@@ -480,3 +373,236 @@ lenduda.
 include_external_graphics("rmd/8/8-kroomisegu.png")
 
 ```
+
+Kõik püstitatud eesmärgid saavutasime.
+
+## Ülesanded
+
+### Ülesanne 38
+
+#### Püstitus
+
+Võrdle omavahel anorgaanilisi ja orgaanilisi happeid. Millised on tugevamad happed?
+
+#### Lahendus
+
+pH mõõtmiste tulemused on esitatud tabelis
+\@ref(tab:comparison-of-acids). Näeme, et kõige tugevamad happed on
+anorgaanilised happed.
+
+```{r label = "comparison-of-acids", echo=FALSE}
+acids <- c(
+  "conc. $\\ce{HCl}$",
+  "conc. $\\ce{H2SO4}$",
+  "99,3-\\% $\\ce{CH3COOH}$",
+  "$\\ce{HO(O)CC(O)OH}$",
+  "$\\ce{C6H5(OH)}$",
+  "$\\ce{CH3CH2OH}$"
+)
+
+is_hard <- c(
+  0,
+  0,
+  0,
+  1,
+  1,
+  0
+)
+
+pH_paper <- c(
+  1,
+  1,
+  3,
+  1,
+  3,
+  7
+)
+
+pH_meter <- c(
+  NA,
+  .66,
+  2.2,
+  1.1,
+  3.5,
+  3.15
+)
+
+pH <- data.frame(acids = acids, is_hard = is_hard, pH_paper = pH_paper, pH_meter = pH_meter)
+
+colnames(pH) <- c(
+  "Uuritav hape, millele on lisatud $\\qty{5}{\\ml}$ vett",
+  "Kas tahke?",
+  "pH indikaatorpaberiga",
+  "pH-meetri näit"
+)
+
+librarian::shelf(c(
+  "dplyr",
+  "kableExtra"
+))
+
+print_table(
+  table = pH,
+  caption = "Karboksüülhapete tugevuse võrdlemine omavahel ja teiste hapetega."
+) %>%
+  column_spec(1, width = "12em") %>%
+  column_spec(3, width = "8em")
+
+```
+
+### Ülesanne 39
+
+#### Püstitus
+
+Kas alkoholid on tugevad või väga nõrgad happed?
+
+#### Lahendus
+
+Alkoholid paistavad olevat nõrgad happed.
+
+### Ülesanne 40
+
+#### Püstitus
+
+Mis tekib happe ja aluse vahelise raktsiooni tulemusena?
+
+#### Lahendus
+
+Happe ja aluse vahelise reaktsiooni tulemusena tekib sool.
+
+### Ülesanne 41
+
+#### Püstitus
+
+Kirjuta reaktsioonivõrrand etaanhappe ja $\ce{NaOH}$ vahelisest reaktsioonist. Anna
+tekkiva(te)le ühendile nimetus.
+
+#### Lahendus
+
+Etaanhappe ja naatriumhüdroksiidi omavahelise reageerimise tulemusena
+tekivad naatriumetanaat ja vesi, nagu on esitatud skeemil \@ref(eq:producing-sodium-ethanate) leheküljel `r render_pageref(reference = "eq:producing-sodium-ethanate")`.
+
+```{=tex}
+\begin{align}
+\ce{CH3COOH + NaOH -> CH3COONa + H2O}.
+(\#eq:producing-sodium-ethanate)
+\end{align}
+
+```
+
+### Ülesanne 42
+
+#### Püstitus
+
+Kirjuta reaktsioonivõrrand selle kohta, kuidas etaanhappe sool reageerib väävelhappega?
+
+#### Lahendus
+
+Naatriumetanaadi ja väävelhappe omavahelise reaktsiooni tulemusena
+tekivad etaanhape ja naatriumsulfaat, nagu on esitatud võrrandis \@ref(eq:sodium-ethanate-and-sulfuric-acid) leheküljel `r render_pageref(reference = "eq:sodium-ethanate-and-sulfuric-acid")`.
+
+```{=tex}
+\begin{align}
+\ce{2CH3COONa + H2SO4 -> 2CH3COOH + Na2SO4}.
+(\#eq:sodium-ethanate-and-sulfuric-acid)
+\end{align}
+
+```
+
+### Ülesanne 43
+
+#### Püstitus
+
+Milline osa on selles reaktsioonis väävelhappel?
+
+#### Lahendus
+
+Etaanhappe ja etanooli reageerimises toimib väävelhape katalüsaatorina.
+
+### Ülesanne 44
+
+#### Püstitus
+
+Kirjuta reaktsioonivõrrand lihtsustatud struktuurvalemina estri tekkimise kohta antud katse
+lähteainetega ning anna tekkinud estrile nimetus.
+
+#### Lahendus
+
+Reaktsioonivõrrand lihtsustatud struktuurvalemina estri tekkimise kohta antud katse lähteainetega on esitatud skeemis \@ref(eq:acetic-acid-and-ethanol) leheküljel `r render_pageref(reference = "eq:acetic-acid-and-ethanol")`.
+
+```{=tex}
+\begin{align}
+\ce{CH3COOH + C2H5OH ->[\text{conc.} H2SO4]} \underbrace{\ce{CH3COOC2H5}}_{\text{etüületanaat}} + \ce{H2O}.
+(\#eq:acetic-acid-and-ethanol)
+\end{align}
+
+```
+
+### Ülesanne 45
+
+#### Püstitus
+
+Kirjuta reaktsioonivõrrand etüületanaadi hüdrolüüsi kohta $\ce{NaOH}$'ga. Millised aineklassid/-
+rühmad reaktsiooni tulemusena tekivad?
+
+#### Lahendus
+
+Etüületanaadi hüdrolüüsi tulemusel naatriumhüdroksiidiga tekivad
+karboksüülhappe sool naatriumetanaat ja alkohol etanool, nagu on esitatud skeemis \@ref(eq:ethylethanate-and-sodium-hydroxide) leheküljel `r render_pageref(reference = "eq:ethylethanate-and-sodium-hydroxide")`.
+
+```{=tex}
+\begin{align}
+\ce{CH3COOC2H5 + NaOH -> CH3COONa + CH3CH2OH}.
+(\#eq:ethylethanate-and-sodium-hydroxide)
+\end{align}
+
+```
+
+### Ülesanne 46
+
+#### Püstitus
+
+Milleks oksüdeerub katse teises osas etanool kroomsegu toimel?
+
+#### Lahendus
+
+Etanool oksüdeerub kroomisegu toimel karboksüülhappeks, nagu on esitatud skeemis \@ref(eq:ethanol-to-ethanate) leheküljel `r render_pageref(reference = "eq:ethanol-to-ethanate")`.
+
+```{=tex}
+\begin{align}
+\ce{3CH3CH2OH + 4CrO3 + 6HCl -> 3CH3COOH + 2CrCl3 + 9H2O}.
+(\#eq:ethanol-to-ethanate)
+\end{align}
+```
+
+Oksüdeerija võtab oksüdeeritavalt elektrone, mille tulemusel oksüdeerija
+oksüdatsiooniaste langeb ja redutseerija oksüdatsiooniaste tõuseb.
+Võrrandis \@ref(eq:ethanol-to-ethanate) on $\ce{CrO3}$ oksüdeerija ning
+langetab kroomi oksüdatsiooniastet, mis on $\ce{CrCl3}$'s väiksem.
+Redutseerija on etanool suurendades radikaali oksüdatsiooniastet, mis on
+kõrgem etanaadis.
+
+### Ülesanne 47
+
+#### Püstitus
+
+Millist keskkonda on võimalik fenoolftaleiiniga kindlaks teha?
+
+#### Lahendus
+
+Fenoolftaleiiniga saab kindlaks teha aluselist keskkonda `r render_with_emojis(text = "((ref:haynes-2014-crc), lk 8-84)")`.
+
+### Ülesanne 48
+
+Fenoolftaleiini värvus aluselises keskkonnas on punane.
+
+### Ülesanne 49
+
+#### Püstitus
+
+Mille poolest sarnanevad fenoolftaleiin ja fluorestseiin ning nende saamine?
+
+#### Lahendus
+
+Nii fenoolftaleiini kui fluorestseiini saamiseks kasutatakse ftaalhapet
+ja väävelhapet. Mõlemal on spetsiifiline värvus.

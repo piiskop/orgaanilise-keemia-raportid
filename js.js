@@ -38,7 +38,7 @@ function setTargets() {
   document.getElementById("book-source").target = "GitHub";
   
   let div = document.getElementById("main-nav").getElementsByTagName("nav")[0].getElementsByClassName("book-extra")[0];
-  createLink(div, "book-print", "orgaanilise-keemia-raportid.pdf", "View printable book");
+  createLink(div, "book-print", "orgaanilise-keemia-raportid.pdf", "trükiteisend");
 }
 
 window.onload = function () {

@@ -2,10 +2,37 @@
 
 ## Teooria
 
-```{r label = "aspirin", echo=FALSE, fig.cap = "Pikal seismisel avatud anumas omandab aspiriin tugeva äädikalõhna. See võib olla tingitud niiske õhuga reageerimisel tekkinud etaanhappest."}
-include_external_graphics("rmd/12-67.png")
+Etaananhüdriidi aurud on ärritava toimega.
+
+Etaananhüdriid hüdrolüüsub etaanhappeks.
+
+Aspiriin sadestub aeglaselt külmas vees.
+
+Aspiriini ümberkristallimiseks ei tohi vett liiga palju lisada.
+
+```{r label = "calculate-number-of-pills"}
+ASA <- 325e-6
+
+#' This function calculates the number of pills with acetylsalicylic acid that can be made out of the given mass of acetylsalicylic acid.
+#' 
+#' @param m the mass of acetylicsalicylic acid
+#' 
+#' @returns the number of pills
+calculate_number_of_pills <- function(m) {
+  return(m / ASA)
+}
 
 ```
+
+Ühes aspiriinitabletis sisaldub keskmiselt $\qty{`r as.character(ASA)`}{\kg}$ atsetüülsalitsüülhapet.
+
+## Eesmärgid
+
+Oskus
+
+1. sünteesida atsetüülsalitsüülhapet ja
+
+2. arvutada atsetüülsalitsüülhappega seotud koguseid.
 
 ## Töövahendid
 
@@ -23,19 +50,23 @@ include_external_graphics("rmd/12-67.png")
 
 7.  Vaakumpump.
 
-8.  Kaks keeduklaasi.
+8.  Kaks $\qty{200}{\ml}$ keeduklaasi.
 
 9.  Vesivann.
 
 10. Katseklaasid.
 
-11. Õhukese kihi kromatograafilised plaadid.
+11. Magnetsegaja eemaldi.
 
-12. Voolutuskamber.
+12. Mõõtesilinder.
 
-13. Joodikamber.
+13. Klaaspulk.
 
-## Ained
+14. Pipett.
+
+15. Spaatel.
+
+## Sisendained
 
 1.  Salitsüülhape.
 
@@ -47,46 +78,343 @@ include_external_graphics("rmd/12-67.png")
 
 5.  10 M $\ce{HCl}$ vesilahus.
 
-6.  Metanool.
-
-7.  Kontsentreeritud $\ce{H2SO4}$.
-
-8.  1-% $\ce{FeCl3}$ vesilahus.
-
-9.  Tundmatu proov.
-
-10. Atsetoon.
-
-11. Heksaan.
-
 ## Töö käik
 
-1.  Aspiriini (atsetüülsalitsüülhappe) süntees.
+Töö teostasin ragne kalmeti ja marjuga 2022. a kaheksandas detsembripäevas.
 
-2.  Metüülsalitsülaadi (laanelilleõli) süntees.
+Töö osad:
 
-3.  Aspiriini puhtuse uurimine pH väärtuse ja raudkloriidi abil.
+1. Asetasime kohtventilatsiooni all $\qty{4,000}{\g}$ salitsüülhapet väikesesse kuiva Erlenmeyeri kolbi ja jätsime kohtventilatsiooni alla.
 
-4.  Dibensalatsetooni õhukese kihi kromatograafiline uurimine.
+2. Lisasime mõõtpipeti abil $\qty{10}{\ml}$ etaananhüdriidi.
 
-## Tulemused
+3. Liigutasime kolvi kohtventilatsiooni alt tõmbekappi.
 
-```{r}
-m_aspirin <- 21.642
+4. Segasime ja lisasime segamise kestel kaheksa tilka kontsentreeritud fosforhapet.
+
+5. Liigutasime kolvi tõmbekapist kohtventilatsiooni alla.
+
+6. Kuumutasime segu $\qtyrange{80}{90}{\degreeCelsius}$ juures $\qty{15}{\min}$, seda samaaegselt magnetsegajaga segades.
+
+7. Lisasime 20 tilka destilleeritud vett.
+
+8. Lasime segul jahtuda toatemperatuurini.
+
+9.  Valasime koos magnetiga $\qty{200}{\ml}$ keeduklaasi (joonis \@ref(fig:from-bulb-into-beaker) leheküljel `r render_pageref(reference = "fig:from-bulb-into-beaker")`).
+
+    ```{r label = "from-bulb-into-beaker", echo=FALSE, fig.cap = "Salitsüülhappe, etaananhüdriidi, fosforhappe ja destilleeritud vee segu liikumas Erlenmeyeri kolvist keeduklaasi."}
+    include_external_graphics("rmd/12/12-kolvist-keeduklaasi.png")
+
+    ```
+
+10. Eemaldasime magnetieemaldajaga magneti.
+
+11. Lisasime $\qty{40}{\ml}$ jäise temperatuuriga vett (joonis \@ref(fig:adding-distilled-water) leheküljel `r render_pageref(reference = "fig:adding-distilled-water")`).
+
+    ```{r label = "adding-distilled-water", echo=FALSE, fig.cap = "Jäise temperatuuriga destilleeritud vesi liikumas salitsüülhappe, etaananhüdriidi, fosforhappe ja destilleeritud vee sekku."}
+    include_external_graphics("rmd/12/12-jäise-temperatuuriga-vesi-sekku.png")
+
+    ```
+
+12. Segasime klaaspulgaga.
+
+13. Asetasime keeduklaasi jäävanni seisma ja jätsime selle sinna, kuni aspiriinikristalle enam juurde ei tekkinud.
+
+14. Kogusime kristallid Büchneri filtri abil (joonis \@ref(fig:gathering-crystals) leheküljel `r render_pageref(reference = "fig:gathering-crystals")`).
+
+    ```{r label = "gathering-crystals", echo=FALSE, fig.cap = "Büchneri filtril on kristallid kuivamas."}
+    include_external_graphics("rmd/12/12-kristallide-pesemine.png")
+
+    ```
+
+15. Pesime kristalle filtril $\qty{20}{\ml}$ jääkülma veega.
+
+16. Kordasime eelmise sammu tegevust kaks korda.
+
+17. Valasime tühja keeduklaasi $\qty{50}{\ml}$ küllastunud $\ce{NaHCO3}$ vesilahust.
+
+18. Lahustasime küllastunud $\ce{NaHCO3}$ vesilahuses aspiriinikristallid (joonis \@ref(fig:diluting-aspirin-in-nahco3) leheküljel `r render_pageref(reference = "fig:diluting-aspirin-in-nahco3")`) ja jätsime üksnes polümeerid lahustamata (joonis \@ref(fig:insoluble-polymers) leheküljel `r render_pageref(reference = "fig:insoluble-polymers")`).
+
+    ```{r label = "diluting-aspirin-in-nahco3", echo=FALSE, fig.cap = "Aspiriinikristallid pudenemas $\\ce{NaHCO3}$ vesilahusesse."}
+    include_external_graphics("rmd/12/12-kristallid-pudenemas-naatriumkarbonaati.png")
+
+    ```
+
+    ```{r label = "insoluble-polymers", echo=FALSE, fig.cap = "Aspiriinikristallid on $\\ce{NaHCO3}$ vesilahuses lahustunud, polümeerid mitte."}
+    include_external_graphics("rmd/12/12-lahustumatud-polümeerid.png")
+
+    ```
+
+19. Lahustumatud lisandid eraldasime Büchneri filtri abil (joonised \@ref(fig:polymers-on-filter) leheküljel `r render_pageref(reference = "fig:polymers-on-filter")` ja \@ref(fig:aspirin-filtrate) leheküljel `r render_pageref(reference = "fig:aspirin-filtrate")`).
+
+    ```{r label = "polymers-on-filter", echo=FALSE, fig.cap = "Lahustumatud polümeerid filtril."}
+    include_external_graphics("rmd/12/12-polümeerid-filtril.png")
+
+    ```
+
+    ```{r label = "aspirin-filtrate", echo=FALSE, fig.cap = "Aspiriinifiltraat."}
+    include_external_graphics("rmd/12/12-aspiriinifiltraat.png")
+
+    ```
+
+20. Filtraadi valasime tühja keeduklaasi.
+
+21. Lisasime ettevaatlikult $\num{10}$ M ehk vastavalt võrdusele \@ref(eq:conversion-from-M-to-mol-per-m3) leheküljel `r render_pageref(reference = "eq:conversion-from-M-to-mol-per-m3")` $\qty{`r as.character(convert_from_M_to_mol_per_m3(M = 10))`}{\mole\per\cubic\meter}$ $\ce{HCl}$ vesilahust (joonis \@ref(fig:adding-hcl-into-aspirin) leheküljel `r render_pageref(reference = "fig:adding-hcl-into-aspirin")`) kuni selgelt happelise reaktsioonini ja atsetüülsalitsüülhappe väljasadestumiseni.
+
+    ```{r label = "adding-hcl-into-aspirin", echo=FALSE, fig.cap = "Vesinikkloriidhape tilkumas aspiriini."}
+    include_external_graphics("rmd/12/12-hcl-aspiriini.png")
+
+    ```
+
+22. Veendusime, et saadus oli happeline, indikaatorpaberiga (joonis \@ref(fig:ph-of-aspirin) leheküljel `r render_pageref(reference = "fig:ph-of-aspirin")`).
+
+    ```{r label = "ph-of-aspirin", echo=FALSE, fig.cap = "Saavutasime aspiriinilahuse pH'ks 5."}
+    include_external_graphics("rmd/12/12-ph-aspiriin.png")
+
+    ```
+
+23. Jahutasime segu jääkastis, kuni kogu aspiriin oli täielikult välja sadestunud.
+
+24. Sadestunud kristallid eraldasime Büchneri filtri abil.
+
+25. Paigutasime saadud aspiriini kristallid Erlenmeyeri kolbi (joonis \@ref(fig:aspirin-into-bulb) leheküljel `r render_pageref(reference = "fig:aspirin-into-bulb")`), et saadud aspiriin puhastada ümberkristallimisega vees.
+
+    ```{r label = "aspirin-into-bulb", echo=FALSE, fig.cap = "ragne pudistamas aspiriini kristalle filtrilt Erlenmeyeri kolbi."}
+    include_external_graphics("rmd/12/12-aspiriini-kristallid-filtrilt-kolbi.png")
+
+    ```
+
+26. ragne lisas vett ja marju segas, kuni tekkis paks kristallide *pudru* (joonis \@ref(fig:porridge-of-aspirin) leheküljel `r render_pageref(reference = "fig:porridge-of-aspirin")`).
+
+    ```{r label = "porridge-of-aspirin", echo=FALSE, fig.cap = "Aspiriini *pudru* ootamas kuumutamist."}
+    include_external_graphics("rmd/12/12-aspiriini-pudru.png")
+
+    ```
+
+27. Lisasime kolbi kapillaari.
+
+28. Kolbi pidime lisama kapillaari, kuid meie seda ei teinud. Kuumutasime segu pliidil (joonis \@ref(fig:heating-porridge) leheküljel `r render_pageref(reference = "fig:heating-porridge")`) keemiseni, seda aegajalt marju poolt loksutades (joonis \@ref(fig:shaking-porridge) leheküljel `r render_pageref(reference = "fig:shaking-porridge")`).
+
+    ```{r label = "heating-porridge", echo=FALSE, fig.cap = "Aspiriini *pudru* kuumenemas."}
+    include_external_graphics("rmd/12/12-pudru-kuumenemas.png")
+
+    ```
+
+    ```{r label = "shaking-porridge", echo=FALSE, fig.cap = "marju loksutamas aspiriini segu selle keemise kestel."}
+    include_external_graphics("rmd/12/12-shaking-aspirin.png")
+
+    ```
+
+29. Keevasse segusse lisas ragne aegajalt väikestes kogustes vett, kuni kõik kristallid lahustusid (joonis \@ref(fig:porridge-boiling) leheküljel `r render_pageref(reference = "fig:porridge-boiling")`), ning marju aegajalt loksutas segu. Juhendis on mainitud sobiliku etanooli koguse äratabamise hetke, kuid samas on kirjas, et lisada tuli vett.
+
+    ```{r label = "porridge-boiling", echo=FALSE, fig.cap = "Aspiriin keemas."}
+    include_external_graphics("rmd/12/12-aspiriin-keemas.png")
+
+    ```
+
+30. Segul lasime aeglaselt jahtuda ja kristalluda, kuni kristalle rohkem ei tekkinud (joonis \@ref(fig:porridge-cooling) leheküljel `r render_pageref(reference = "fig:porridge-cooling")`).
+
+    ```{r label = "porridge-cooling", echo=FALSE, fig.cap = "Aspiriin jahtumas ja kristallumas."}
+    include_external_graphics("rmd/12/12-aspiriin-jahtumas.png")
+
+    ```
+
+31. Jahutasime segu toatemperatuurini jääkastis.
+
+32. Kogusime kristallid Büchneri filtri abil (joonised \@ref(fig:aspirin-into-filter) leheküljel `r render_pageref(reference = "fig:aspirin-into-filter")` ja \@ref(fig:filtering-aspirin) leheküljel `r render_pageref(reference = "fig:filtering-aspirin")`).
+
+    ```{r label = "aspirin-into-filter", echo=FALSE, fig.cap = "Pärast jääkastis jahutamist ragne lisamas aspiriini kristalle filtrile."}
+    include_external_graphics("rmd/12/12-aspiriin-filtrisse.png")
+
+    ```
+
+    ```{r label = "filtering-aspirin", echo=FALSE, fig.cap = "ragne aitamas aspiriinil filtreeruda. Filtril on näha kapillaar, mis aitas ühtlaselt kuumeneda."}
+    include_external_graphics("rmd/12/12-aspiriin-filtreerumas.png")
+
+    ```
+
+33. Pesime filtril $\qty{30}{\ml}$ koguse jääkülma veega.
+
+34. Kordasime eelmise sammu tegevust kolm korda.
+
+35. Pesime filtril $\qty{30}{\ml}$ külma etanooliga.
+
+36. ragne kaalus Petri tassi (joonis \@ref(fig:weighing-petri-for-aspirin) leheküljel `r render_pageref(reference = "fig:weighing-petri-for-aspirin")`).
+
+    ```{r label = "weighing-petri-for-aspirin", echo=TRUE, fig.cap = paste("ragne kaalumas tühja Petri tassi, millele hiljem asetasime aspiriini kuivama. Tass kaalus $\\qty{", as.character(m_petri), "}{\\kg}$.", sep = "")}
+    m_petri <- 18.77e-3
+    include_external_graphics("rmd/12/12-petri-tassi-kaalumas-aspiriini-jaoks.png")
+
+    ```
+
+37. Asetasime ümberkristallitud aspiriini Petri tassile (joonis \@ref(fig:aspirin-onto-petri) leheküljel `r render_pageref(reference = "fig:aspirin-onto-petri")`).
+
+    ```{r label = "aspirin-onto-petri", echo=FALSE, fig.cap = "ragne pudistamas aspiriini Petri tassile nädalaks kuivama."}
+    include_external_graphics("rmd/12/12-aspiriin-petrile.png")
+
+    ```
+
+38. Eemaldasime kohtventilatsiooni.
+
+39. Kaalusime aspiriini koos Petri tassiga (joonis \@ref(fig:weighing-aspirin-with-petri) leheküljel `r render_pageref(reference = "fig:weighing-aspirin-with-petri")`).
+
+    ```{r label = "weighing-aspirin-with-petri", echo=TRUE, fig.cap = paste("Mõõtsime aspiriini massiks koos Petri tassiga \\qty{", as.character(m_petri_and_aspirin), "}{\\kg}.", sep = "")}
+    m_petri_and_aspirin <- 22.89e-3
+    include_external_graphics("rmd/12/12-weighing-aspirin-with-petri.png")
+
+    ```
+
+## Ülesanded
+
+### Ülesanne 67
+
+#### Püstitus
+
+Pikal seismisel avatud anumas omandab aspiriin tugeva äädikalõhna. Millest võiks see olla
+tingitud (näidata ära ka reaktsioonivõrrand)?
+
+#### Lahendus
+
+Avatud anumas liitub aspiriiniga õhust veeaur, millega reageerides tekib äädikhape. Võrrandis \@ref(eq:acetylsalicylic-acid-becoming-vinegar) leheküljel `r render_pageref(reference = "eq:acetylsalicylic-acid-becoming-vinegar")` on atsetüülrühm asendatud võrrandist \@ref(eq:acetyl) leheküljel `r render_pageref(reference = "eq:acetyl")`:
+
+```{=tex}
+\begin{align}
+\underbrace{\chemfig{*6(=-=(-[:30]OAc)-(-[:90]COOH)=-)}}_{\text{atsetüülsalitsüülhape `r render_with_emojis("((ref:haynes-2014-crc), p. 7-34)")`}}\ce{+ H2O -> }\\
+\underbrace{\chemfig{*6(=-=(-[:30]OH)-(-[:90]COOH)=-)}}_\text{2-hüdroksübensoehape `r render_with_emojis("((ref:haynes-2014-crc), p. 3-307)")`} + \underbrace{\ce{CH3COOH}}_\text{äädikhape}
+(\#eq:acetylsalicylic-acid-becoming-vinegar)
+\end{align}
 
 ```
 
-meie aspiriini kuivmass oli `r m_aspirin` g.
+### Ülesanne 68
 
-```{r}
-m_71 <- 325
-yield_71 <- .6
-m_theoretical_71 <- m_71 / yield_71
-M_aspirin <- 180
-n_71 <- m_theoretical_71 / M_aspirin
-M_salicyl <- 138
-m_salicyl <- n_71 * M_salicyl
+#### Püstitus
+
+```{r label = "LD50"}
+ld50_adult <- 143e-6
+ld50_child <- 104e-6
+m_child <- 10
 
 ```
 
-1 aspiriinitableti valmistamiseks kulub `r m_salicyl` mg salitsüülhapet.
+Aspiriini letaalne doos (LD~50~) täiskasvanule on $\qty{`r as.character(ld50_adult)`}{\mg\per\kg}$ ja lapsele $\qty{`r as.character(ld50_child)`}{\mg\per\kg}$. Milline on
+letaalne doos normaalkaalulisele täiskasvanule ja $\qty{`r as.character(m_child)`}{\kg}$ lapsele?
+
+#### Lahendus
+
+Normaalkaal sõltub keha kõrgusest. Kuna täiskasvanud kehad on väga erineva kõrgusega, siis ühtselt vastata ei saa, milline oleks letaalne doos normaalkaalulisele täiskasvanule. Seetõttu ma esitan siinkohal näite ühe täiskasvanud keha kohta, mis on normaalkaaluline:
+
+```{r label = "calculate-ld-for-m"}
+m_adult <- 77.4
+
+#' This function calculates the lethal dose for a given mass considering the given rate.
+#' 
+#' @param ld50 the rate
+#' @param m the mass
+#' 
+#' @returns the lethal dose
+calculate_ld_for_m <- function(ld50, m) {
+  return(ld50 * m)
+}
+
+ld50_m_adult <- calculate_ld_for_m(ld50 = ld50_adult, m = m_adult)
+ld50_m_child <- calculate_ld_for_m(ld50 = ld50_child, m = m_child)
+
+```
+
+See keha kaalus 2023. a kolmandas päevas $\qty{`r as.character(m_adult)`}{\kg}$. Kui sellesse kehasse oleks manustatud samas päevas $\qty{`r as.character(ld50_m_adult)`}{\kg}$ atsetüülsalitsüülhapet, oleks vastavalt normile $\qty{`r as.character(ld50_adult)`}{\mg\per\kg}$ konverteeritud see keha elusast surnuks.
+
+Kui $\qty{`r as.character(m_child)`}{\kg}$ lapsekehasse oleks manustatud ühes päevas $\qty{`r as.character(ld50_m_child)`}{\kg}$ atsetüülsalitsüülhapet, oleks vastavalt normile $\qty{`r as.character(ld50_child)`}{\mg\per\kg}$ konverteeritud see lapskeha elusast surnuks.
+
+### Ülesanne 69
+
+#### Püstitus
+
+Mitu tabletti on
+letaalne doos täiskasvanule ja $\qty{`r as.character(m_child)`}{\kg}$ lapsele?
+
+Ka sellele küsimusele ei saa eelnimetatud põhjusel täpselt vastata. Lasen teha arvutused lähtuvalt nimetatud täiskasvanud keha massist nimetatud kuupäevas:
+
+```{r label = "calculate-ld-pills"}
+lethal_number_of_pills_per_adult <- calculate_number_of_pills(m = ld50_m_adult)
+lethal_number_of_pills_per_child <- calculate_number_of_pills(m = ld50_m_child)
+
+```
+
+$\num{`r as.character(lethal_number_of_pills_per_adult)`}$ tableti atsetüülsalitsüülhappe tarbimine 2023. a kolmandas päevas $\qty{`r as.character(m_adult)`}{\kg}$ kaalunud täiskasvanud keha poolt põhjustanuks elu tühistamise sellest kehast. $\num{`r as.character(lethal_number_of_pills_per_child)`}$ tableti atsetüülsalitsüülhappe tarbimine `r m_child`-kg lapsekeha poolt viinuks samasugusele tulemusele.
+
+### Ülesanne 70
+
+#### Püstitus
+
+Mitu aspiriinitabletti
+saaks valmistada punktis 13.1 sünteesitud atsetüülsalitsüülhappest?
+
+#### Lahendus
+
+Punkti 13.1 juhendis pole. Lähtun vastamises, et juhendi koostaja on teinud vea ja mõelnud hoopis punkti 12.1 *Aspiriini (atsetüülsalitsüülhappe) süntees*, sest selle järgi sünteesisime meie atsetüülsalitsüülhapet:
+
+```{r label = "number-of-pills-of-our-material"}
+m_aspirin_with_petri_after_drying <- 21.642e-3
+m_aspirin <- m_aspirin_with_petri_after_drying - m_petri
+number_of_pills_out_of_our_material <- calculate_number_of_pills(m = m_aspirin)
+
+```
+
+meie aspiriini kuivmass oli $\qty{`r as.character(m_aspirin)`}{\g}$. Sellest saaks valmistada $\num{`r as.character(floor(number_of_pills_out_of_our_material))`}$ tabletti.
+
+### Ülesanne 71
+
+#### Püstitus
+
+```{r label = "yield-of-salicylic-acid"}
+yield_of_salicylic_acid = 60
+
+```
+
+Kui palju salitsüülhapet kulub ühe aspiriinitableti valmistamiseks, kui saagis on $\qty{`r as.character(yield_of_salicylic_acid)`}{\percent}$?
+
+#### Lahendus
+
+Atsetüülsalitsüülhappe tootmise võrrandisse \@ref(eq:making-acetylsalicytic-acid) leheküljel `r render_pageref(reference = "eq:making-acetylsalicytic-acid")` on atsetüülrühm lühendatud võrdusest \@ref(eq:acetyl) leheküljel `r render_pageref(reference = "eq:acetyl")`.
+
+```{=tex}
+\begin{align}
+\chemfig{*6(=-=(-[:30]OH)-(-[:90]COOH)=-)} + \underbrace{\chemfig{-[:30](=[:90]O)-[:-30]O-[:30](=[:90]O)-[:-30]}}_\text{atseetanhüdriid} \ce{->}\\
+\underbrace{\chemfig{*6(=-=(-[:30]OAc)-(-[:90]COOH)=-)}}_{\ce{C9H8O4} \text{`r render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-8)")`}} + \ce{CH3COOH}
+(\#eq:making-acetylsalicytic-acid)
+\end{align}
+
+```
+
+Kasutan molaarmassi valemit \@ref(eq:molar-mass-by-mass-and-amount) leheküljel `r render_pageref(reference = "eq:molar-mass-by-mass-and-amount")` ja saagise valemit \@ref(eq:yield) leheküljel `r render_pageref(reference = "eq:yield")`, et luua tegeliku salitsüülhappe massi arvutamise valem \@ref(eq:m-of-salicylic-acid) leheküljel `r render_pageref(reference = "eq:m-of-salicylic-acid")`.
+
+```{=tex}
+\begin{align}
+m(\ce{C7H6O3})_\text{tegelik} = \frac{\frac{m(\ce{C9H8O4})}{\text{saagis}}}{M(\ce{C9H8O4})} \cdot M(\ce{C7H6O3}).
+(\#eq:m-of-salicylic-acid)
+\end{align}
+
+```
+
+Lasen teostada arvutused:
+
+```{r label = "m-salicylic-acid"}
+M_acetylsalicytic_acid = M_C * 9 + M_H * 8 + M_O * 4
+M_salicytic_acid = M_C * 7 + M_H * 6 + M_O * 3
+m_salicylic_acid = ASA / (yield_of_salicylic_acid / 100) / M_acetylsalicytic_acid * M_salicytic_acid
+
+```
+
+Selgus, et ühe atsetüülsalitsüülhappe tableti valmistamiseks kulub salitsüülhapet nimetatud saagise korral $\qty{`r as.character(signif(x = m_salicylic_acid, digits = 1))`}{\kg}$.
+
+### Ülesanne 72
+
+#### Püstitus
+
+Aspiriini sünteesi kõrvalsaadusena moodustab salitsüülhape polümeeri (salitsüülhape
+esineb antud polüestri moodustumise reaktsioonis nii alkoholi kui ka karboksüülhappena).
+
+#### Lahendus
+
+Teave vastu võetud.

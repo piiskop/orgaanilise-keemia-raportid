@@ -1,15 +1,5 @@
 # Destillatsioon
 
-## Eesmärgid
-
-1.  Arusaam, mis on destillatsioon.
-
-2.  Oskus destilleerida.
-
-3.  Oskus mõõta murdenäitajat.
-
-4.  Oskus hinnata destillaati murdenäitaja kaudu.
-
 ## Teooria
 
 Destilleerimisega eraldatakse üksteisest aineid, mille
@@ -76,10 +66,10 @@ aparatuurist välja sattudes süttida. Kui vedelike segule lisatakse
 soojust, siis selle temperatuur tõuseb, mis kestab, kuni madalama
 aurustumistemperatuuriga vedelik hakkab faasi vahetama vedelast
 gaasiliseks. Selle vedeliku aur tõuseb kolvist külgtorusse ja jõuab
-termomeetrini, mis näitab aurustumistemperatuuri. **Termomeetri õige asend on oluline tagamaks võimalikult täpset aurustumistemperatuuri täheldamist ja registreerimist.** **Kui termomeetri
+termomeetrini, mis näitab aurustumistemperatuuri. Termomeetri õige asend on oluline tagamaks võimalikult täpset aurustumistemperatuuri täheldamist ja registreerimist. Kui termomeetri
 vedeliku paak oleks jahuti kaldtorust kõrgemal, siis jõuaks aur
 külgtorusse, enne kui puudutaks paaki, mis tähendaks, et vedelik
-aurustunuks justkui madalama temperatuuriga, kui õige on.** Faasinihke
+aurustunuks justkui madalama temperatuuriga, kui õige on. Faasinihke
 kestel temperatuur ei muutu. Aur liigub jahuti külgtorusse, mida
 ümbritsev jahutusvesi jahutab auru, nii et see kondenseerub ja valgub
 destillaadi väljalaske ava kaudu kogumisnõusse. Destillatsiooni
@@ -104,6 +94,16 @@ Atsetooni
 sulamistemperatuur on vastavalt
 `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-1, 3-4")`
 $\qty{56,08 \pm 0,07}{\degreeCelsius}$.
+
+## Eesmärgid
+
+1.  Arusaam, mis on destillatsioon.
+
+2.  Oskus destilleerida.
+
+3.  Oskus mõõta murdenäitajat.
+
+4.  Oskus hinnata destillaati murdenäitaja kaudu.
 
 ## Töövahendid
 
@@ -146,7 +146,7 @@ $\qty{56,08 \pm 0,07}{\degreeCelsius}$.
 
 ## Töö käik
 
-Töö teostasin ragne kalmetiga.
+Töö teostasin ragne kalmetiga 23. novembripäevas.
 
 Töö osad:
 
@@ -222,17 +222,66 @@ Töö osad:
 
 ## Tulemused
 
+Mõõtsime destilleeritud vee murdumisnäitajaks $\num{1,3332}$ ja atsetooni omaks
+$\num{1,3604}$. Destillaat sisaldas ainult atsetooni ja igas $\qty{10}{\ml}$ destillaadis
+oli atsetoonile vastav murdumisnäitaja. Kui destillaadi murdumisnäitaja
+olnuks atsetooni murdumisnäitajast väiksem, olnuks tegemist juba vee ja
+atsetooni seguga või ainult veega. Nt kui me poleks peale viimase
+keeduklaasi $\qty{10}{\ml}$ täitumist destillatsiooni lõpetanud, tõusnuks
+aurustumistemperatuur vee omani ja keeduklaasi oleks lisandunud
+veetilku.
+
+Saavutasime kõik püstitatud eesmärgid.
+
+## Ülesanded
+
+### Ülesanne 50
+
+#### Püstitus
+
+Miks on oluline termomeetri õige asend destillatsiooniseadmes? Mis juhtuks kui
+termomeetri elavhõbedareservuaar oleks liiga kõrgel?
+
+#### Lahendus
+
+Termomeetri õige asend on oluline tagamaks võimalikult täpset aurustumistemperatuuri täheldamist ja registreerimist. Kui termomeetri
+vedeliku paak oleks jahuti kaldtorust kõrgemal, siis jõuaks aur
+külgtorusse, enne kui puudutaks paaki, mis tähendaks, et vedelik
+aurustunuks justkui madalama temperatuuriga, kui õige on.
+
+### Ülesanne 51
+
+#### Püstitus
+
+Millise järelduse võib teha destillaadi kohta, mille murdumisnäitaja on atsetooni
+murdumisnäitajast väiksem?
+
+#### Lahendus
+
+Kui destillaadi murdumisnäitaja
+olnuks atsetooni murdumisnäitajast väiksem, olnuks tegemist juba vee ja
+atsetooni seguga või ainult veega.
+
+### Ülesanne 52
+
+#### Püstitus
+
+Koosta joonis destillaatide murdumisnäitajatega ja vastavate temperatuuridega.
+
+#### Lahendus
+
+
 Tabelisse \@ref(tab:distilling) leheküljel
     `r render_pageref(reference = "tab:distilling")` on kantud destillatsiooni andmed.
 
 ```{r label = "distilling", echo=FALSE}
 quantity_of_distillate <- c(
   "1 tilk",
-  "$\\qty{10}{\\ml}$",
-  "$\\qty{20}{\\ml}$",
-  "$\\qty{30}{\\ml}$",
-  "$\\qty{40}{\\ml}$",
-  "$\\qty{50}{\\ml}$"
+  "10 ml",
+  "20 ml",
+  "30 ml",
+  "40 ml",
+  "50 ml"
 )
 
 temperature <- c(
@@ -322,7 +371,7 @@ mitmekordne.
 
 Joonisel \@ref(fig:graph-for-distilling) leheküljel
 `r render_pageref(reference = "fig:graph-for-distilling")` on esitatud
-**aurustumistemperatuuri sõltuvus destillaadi kogusest**. meie täheldasime, et destillaat hakkas
+aurustumistemperatuuri sõltuvus destillaadi kogusest. meie täheldasime, et destillaat hakkas
 kogunema juba $\qty{55}{\degreeCelsius}$ juures. Seejärel temperatuur veel tõusis ja jäi
 püsima $\qty{61}{\degreeCelsius}$ juures.
 
@@ -338,14 +387,5 @@ ggplot(data = distilling, aes(x = `Destillaadi hulk kokku`, y = `$\\frac{\\text{
 
 ```
 
-**Joonist murdumisnäitajatega pole mõtet teha, sest kolme tüvenumbri
-täpsusega need üksteisest ei erinenud.**
-
-Mõõtsime destilleeritud vee murdumisnäitajaks $\num{1,3332}$ ja atsetooni omaks
-$\num{1,3604}$. Destillaat sisaldas ainult atsetooni ja igas $\qty{10}{\ml}$ destillaadis
-oli atsetoonile vastav murdumisnäitaja. **Kui destillaadi murdumisnäitaja
-olnuks atsetooni murdumisnäitajast väiksem, olnuks tegemist juba vee ja
-atsetooni seguga või ainult veega.** Nt kui me poleks peale viimase
-keeduklaasi $\qty{10}{\ml}$ täitumist destillatsiooni lõpetanud, tõusnuks
-aurustumistemperatuur vee omani ja keeduklaasi oleks lisandunud
-veetilku.
+Joonist murdumisnäitajatega pole mõtet teha, sest kolme tüvenumbri
+täpsusega need üksteisest ei erinenud.

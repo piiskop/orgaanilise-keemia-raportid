@@ -360,7 +360,7 @@ N_\text{A} = 6,022 140 76 × 10^{23} \pm 4.4 × 10^{−8} \frac{1}{\mathrm{mol}}
 
 `r render_with_emojis(text = "((ref:bureau-1974-the), p. 127)")`.
 
-Avaldan Avogadro konstandist (\@ref(eq:avogadro-constant)) mooli:
+Avaldan Avogadro konstandist (avaldis \@ref(eq:avogadro-constant)) mooli:
 
 ```{=tex}
 \begin{align}
@@ -603,7 +603,7 @@ M_\text{B} = \frac{m}{n_\text{B}}
 
 ```{=tex}
 \begin{align}
-\frac{M}{N},
+\mathrm{\frac{M}{N}},
 (\#eq:dimensional-analysis-for-molar-mass-by-mass-and-amount)
 \end{align}
 
@@ -693,6 +693,30 @@ calculate_c_by_mass_concentration <- function(n, mass_concentration, m) {
 
 ```
 
+Molaarsust mõõdetakse moolides liitrite kohta:
+
+```{=tex}
+\begin{align}
+\mathrm{M} = \unit{\mole\per\liter} \cdot \qty{1e3}{\liter\per\cubic\meter} = \qty{1e3}{\mole\per\cubic\meter}
+(\#eq:conversion-from-M-to-mol-per-m3)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 2-59)")`.
+
+```{r label = "convert-from-M-to-mol-per-m3"}
+#' This function converts from the given molarity to moles per cubic meters.
+#' 
+#' @param M the molarity
+#' 
+#' @returns the value in moles per cubic meters
+convert_from_M_to_mol_per_m3 <- function(M) {
+  return(1e3 * M)
+}
+
+```
+
 ## Ühikutevaheline konverteerimine
 
 ```{=tex}
@@ -764,3 +788,17 @@ kolbi loksutama ja vedelik hakkaks ebaühtlaselt keema. Kapillaar või muu
 poorne tükk lisab mullidele kinnituspinda hoides niimoodi ära suurte
 mullide tekkimise, kui seda kinnituspinda on piisavalt.
 `r render_with_emojis(text = "((ref:functions))")`.
+
+## Atsetüül-
+
+Asendusrühma atsetüül- tähistus on Ac ja selle valem on \@ref(eq:acetyl) leheküljel `r render_pageref(reference = "eq:acetyl")`.
+
+```{=tex}
+\begin{align}
+\mathrm{Ac} = \ce{CH3CO}-
+(\#eq:acetyl)
+\end{align}
+
+```
+
+`r render_with_emojis(text = "((ref:haynes-2014-crc), lk 2-23)")`.

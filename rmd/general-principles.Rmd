@@ -13,53 +13,69 @@ if (knitr::is_html_output()) {
 
 ```
 
-Benseen ($\ce{C6H6}$, aromaatne süsivesinik ehk areen `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-64, 8-69)")`) ja etaanhape ($\ce{CH3COOH}$, karboksüülhape) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidavad, et etaanhape ja benseen segunevad omavahel.
+Butüületanaadi valem on \@ref(eq:butyl-acetate) leheküljel `r render_pageref(reference = "eq:butyl-acetate")`.
 
-Benseen ja etanool ($\ce{CH3CH2OH}$, alkohol) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et etanool ja benseen segunevad omavahel.
+```{=tex}
+\begin{align}
+\chemfig{-[:30](=[:90]O)-[:-30]O-[:30]-[:-30]-[:30]-[:-30]}\text{ `r render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-81)")`}.
+(\#eq:butyl-acetate)
+\end{align}
 
-Benseen ja 2-propanoon (atsetoon, $\ce{(CH3)2C=O}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-65)")`, $\chemfig{-[:30](=[::60]O)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-5)")`, ketoon) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et atsetoon ja benseen segunevad omavahel.
+```
 
-Atsetoon ja heksaan ($\ce{CH3CH2CH2CH2CH2CH3}$, alkaan) omavahel ei lahustu, sest nende polaarsuste erinevus on suur.
+Ksüleeni ehk dimetüülbenseeni valem on $\ce{C8H10}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), lk 16-46)")`.
+
+Benseen (aromaatne süsivesinik ehk areen `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-64, 8-69)")`) ja etaanhape omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidavad, et etaanhape ja benseen segunevad omavahel.
+
+Benseen ja etanool omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et etanool ja benseen segunevad omavahel.
+
+Benseen ja 2-propanoon (atsetoon, $\chemfig{-[:30](=[::60]O)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-5)")`, ketoon) omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et atsetoon ja benseen segunevad omavahel.
+
+Atsetoon ja heksaan omavahel ei lahustu, sest nende polaarsuste erinevus on suur.
 
 Atsetoon ja etanool omavahel lahustuvad, sest nende polaarsuste erinevus on väike. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-246")` väidab, et atsetoon ja etanool segunevad omavahel.
 
-Triklorometaan (kloroform, $\ce{HCCl3}$, alkaan) ja etanool omavahel lahustuvad. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-246")` väidab, et triklorometaan ja etanool segunevad omavahel.
+Triklorometaan (kloroform) ja etanool omavahel lahustuvad. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-246")` väidab, et triklorometaan ja etanool segunevad omavahel.
 
-Vesi ($\ce{H2O}$) ja metaan ($\ce{CH4}$, alkaan) omavahel lahustuvad, sest metaanil puudub hüdrofiilne osa. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-344")` väidab, et vesi ja metaan on omavahel vähelahustuvad.
+Vesi ja metaan omavahel lahustuvad, sest metaanil puudub hüdrofiilne osa. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-344")` väidab, et vesi ja metaan on omavahel vähelahustuvad.
 
 Vesi ja heksaan omavahel ei lahustu, sest heksaanil puudub hüdrofiilne osa. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-298")` väidab, et vesi ja heksaan omavahel ei lahustu.
 
-Vesi ja 2-propanool ($\ce{CH3HCOHCH3}$, $\chemfig{-[:30](=[::60]OH)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-467)")`, alkohol) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-466")` väidab, et vesi ja 2-propanool omavahel segunevad.
+Vesi ja 2-propanool ($\chemfig{-[:30](=[::60]OH)-[:-30]}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-467)")`, alkohol) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-466")` väidab, et vesi ja 2-propanool omavahel segunevad.
 
 Vesi ja butanool ($\ce{CH3CH2CH2H2COH}$, alkohol) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-78")` väidab, et vesi ja butanool omavahel lahustuvad.
 
 Vesi ja benseen omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-34")` väidab, et vesi ja benseen kergelt lahustuvad omavahel.
 
-Vesi ja metüülbenseen ($\ce{CH3C6H5}$, `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-515)")`, tolueen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.  `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-514")` väidab, et vesi ja tolueen omavahel ei lahustu.
+Vesi ja metüülbenseen (tolueen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.  `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-514")` väidab, et vesi ja tolueen omavahel ei lahustu.
 
-Vesi ja hüdroksübenseen (fenool `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-446)")`, $\ce{C6H5(OH)}$, $\chemfig{*6(-=-=(-OH)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-447)")`, tsükloalkeen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-446")` väidab, et vesi ja hüdroksübenseen omavahel lahustuvad.
+Vesi ja hüdroksübenseen (fenool `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-446)")`, $\chemfig{*6(-=-=(-OH)-=)}\qquad$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-447)")`, tsükloalkeen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-446")` väidab, et vesi ja hüdroksübenseen omavahel lahustuvad.
 
 Vesi ja etaanhape omavahel lahustuvad, sest hüdrofoobseid süsinikke ja hüdrofiilseid hapnikke on võrdselt. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-4")` väidab, et vesi ja etaanhape omavahel segunevad.
 
-Vesi ja etaandihape (oblikhape, $\ce{HO(O)CC(O)OH}$, $\chemfig{HO-[:-30](=[::-60]O)-[:30](=[::60]O)-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-431)")`, karboksüülhape) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-430")` väidab, et vesi ja etaandihape omavahel lahustuvad.
+Vesi ja etaandihape (oblikhape, $\chemfig{HO-[:-30](=[::-60]O)-[:30](=[::60]O)-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-431)")`) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-430")` väidab, et vesi ja etaandihape omavahel lahustuvad.
 
-Vesi ja oktadekaanhape (stearhape, $\ce{CH3(CH2)16C(O)OH}$, karboksüülhape) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-488")` väidab, et vesi ja oktadekaanhape omavahel ei lahustu.
+Vesi ja oktadekaanhape (stearhape) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-488")` väidab, et vesi ja oktadekaanhape omavahel ei lahustu.
 
 Vesi ja 2-hüdroksü-1,2,3-heksaantrihape ehk 2-hüdroksü-1,2,3-propaantrikarboksüülhape `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-126)")` (sidrunhape, $\ce{(HOOC)CH2C(COOH)(OH)CH2COOH}$, $\ce{(HO)C(COOH)3}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 5-126)")`, $\ce{H3C(OH)(COO)3}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 5-73)")`, $\chemfig{HOOC-[:-30]-[:30](-[::60]COOH)(-[:-90]OH)-[:-30]-[:30]COOH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-127)")`, karboksüülhape) omavahel lahustuvad, sest hüdrofiilseid hapnikke on võrdlemisi palju. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-126)")` väidab, et vesi ja 2-hüdroksü-1,2,3-propaaneeterkarboksüülhape omavahel väga hästi lahustuvad.
 
 Vesi ja atsetoon omavahel ei lahustu, sest nende polaarsuste erinevus on suur. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-4)")` väidab, et vesi ja 2-propanoon omavahel segunevad.
 
-Vesi ja dietüüleeter ($\ce{CH3CH2OCH2CH3}$, eeter) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja dietüüleeter omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
-Vesi ja etüületanaat ($\ce{CH3COOCH2CH3}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 6-53)")`, ester `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-52)")`) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja etüületanaat omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
-Vesi ja tärpentin ($\ce{C10H6}$, `r render_with_emojis(text = "(ref:haynes-2014-crc)")` ei maini sellise valemiga ühendit) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+Vesi ja tärpentin omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
 
 Vesi ja triklorometaan ($\ce{HCCl3}$, alkaan) omavahel ei lahustu, sest hüdrofiilseid osi triklorometaanis pole. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-520)")` väidab, et vesi ja triklorometaan on omavahel vähe lahustuvad.
 
-Vesi ja bensiin ($\ce{C5-C12}$, `r render_with_emojis(text = "(ref:haynes-2014-crc)")` ei kirjelda bensiini eraldi ühendina) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. Vesi on ka polaarne, bensiin mittepolaarne aine - seega ei lahustu omavahel.
+Vesi ja bensiin omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju. Vesi on ka polaarne, bensiin mittepolaarne aine - seega ei lahustu omavahel.
 
-Vee ja 1,2,3-propaantriool (glütserool, gro, $\ce{HOCH2C(OH)H2CH(OH)}$, $\chemfig{HO-[:30]-[:-30](-[:-90]OH)-[:30]-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-285)")`, alkohol) omavahelise lahustuvuse kohta ei tea mitte midagi väita, sest juhendis puudub teave, milline on glütserooli valem. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-284)")` väidab, et vesi ja 1,2,3-propaantriool omavahel segunevad.
+Vee ja 1,2,3-propaantriool (glütserool, gro, $\chemfig{HO-[:30]-[:-30](-[:-90]OH)-[:30]-[:-30]OH}$ `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-285)")`, alkohol) omavahelise lahustuvuse kohta ei tea mitte midagi väita, sest juhendis puudub teave, milline on glütserooli valem. `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 3-284)")` väidab, et vesi ja 1,2,3-propaantriool omavahel segunevad.
+
+### Eesmärk
+
+Eksperimentaalselt kontrollitud teooria paikapidavus ning võrreldud ennustused tegelikkusega.
 
 ### Töövahendid
 
@@ -95,13 +111,9 @@ Vee ja 1,2,3-propaantriool (glütserool, gro, $\ce{HOCH2C(OH)H2CH(OH)}$, $\chemf
 
 10. Tundmatu aine.
 
-### Eesmärk
-
-Eksperimentaalselt kontrollitud teooria paikapidavus ning võrreldud ennustused tegelikkusega.
-
 ### Töö käik
 
-Praktilise osa sooritasin karl salumetsaga.
+Praktilise osa sooritasin karl salumetsaga. Töö teostamise aega ma ei registreerinud, mistõttu puudub mul alus kindlaks väiteks, millal me selle tegime.
 
 Testisime kõikide [teooria](#theory-on-solubility) osas esitatud ainepaaride omavahelist lahustuvust. Igas lõigus on lahusti märgitud esimese ainena ja lahustatav aine teise ainena. 
 
@@ -109,7 +121,7 @@ Töö osad, millest benseeniga eksperimendid tegime tõmbekapis:
 
 1. Täitsime pool katseklaasi lahustiga.
 
-2. Lisasime katseklaasi ~0,05 g lahustatavat ainet (spaatli/pipeti otsatäis).
+2. Lisasime katseklaasi ~$\qty{0,05}{\g}$ lahustatavat ainet (spaatli/pipeti otsatäis).
 
 3. Sulgesime katseklaasi korgiga.
 
@@ -180,6 +192,187 @@ include_external_graphics("rmd/1/vesi-tärpentin.png")
 
 me ei eksperimenteerinud triklorometaaniga, bensiiniga ega 1,2,3-propaantriooliga.
 
+Saavutasime eesmärgi.
+
+### Ülesanded
+
+#### Ülesanne 1
+
+##### Püstitus
+
+Kirjuta tabelisse iga aine nimetuse taha, millisesse aineklassi/-rühma see kuulub.
+
+##### Lahendus
+
+Tabelis \@ref(tab:table-of-substances-with-groups) leheküljel `r render_pageref(reference = "tab:table-of-substances-with-groups")` on iga juhendi vastavas alapunktis nimetatud aine rühm.
+
+```{r label = "table-of-substances-with-groups", echo=FALSE}
+substances <- c(
+  "atsetoon",
+  "benseen",
+  "bensiin",
+  "n-butanool",
+  "2-butanoon",
+  "butüületanaat",
+  "dietüüleeter",
+  "1,2-dikloroetaan",
+  "diklorometaan",
+  "dimetüülsulfoksiid",
+  "etaanhape",
+  "etaandihape",
+  "etanool",
+  "etüületanaat",
+  "fenool",
+  "glütserool",
+  "heksaan",
+  "2-hüdroksü-1,2,3-heksaantrihape",
+  "ksüleen",
+  "metaan",
+  "metanool",
+  "pentaan",
+  "oktadekaanhape",
+  "2-propanool",
+  "tetraklorometaan",
+  "tolueen",
+  "triklorometaan",
+  "tsükloheksaan",
+  "tärpentin",
+  "vesi"
+)
+
+condensed_structural_formulas <- c(
+  paste("$\\ce{(CH3)2C=O}$", footnote_marker_number(3)),
+  "$\\ce{C6H6}$",
+  "$\\ce{C5-C12}$",
+  "$\\ce{C_nH_{2n+1}OH}$",
+  paste("$\\ce{C2H5CH(O)CH3}$", footnote_marker_number(5)),
+  paste("$\\ce{CH3-C(=O)O-C4H9}$", footnote_marker_number(6)),
+  "$\\ce{CH3CH2OCH2CH3}$",
+  paste("$\\ce{ClC2H4Cl}$", footnote_marker_number(7)),
+  "$\\ce{ClCH2Cl}$",
+  paste("$\\ce{CH3S(=O)CH3}$", footnote_marker_number(8)),
+  "$\\ce{CH3COOH}$",
+  "$\\ce{HO(O)CC(O)OH}$",
+  "$\\ce{CH3CH2OH}$",
+  paste("$\\ce{CH3COOCH2CH3}$", footnote_marker_number(9)),
+  "$\\ce{C6H5(OH)}$",
+  "$\\ce{HOCH2C(OH)H2CH(OH)}$",
+  "$\\ce{CH3CH2CH2CH2CH2CH3}$",
+  "$\\ce{(HOOC)CH2C(COOH)(OH)CH2COOH}$",
+  "$\\ce{C8H10}$",
+  "$\\ce{CH4}$",
+  "$\\ce{CH3OH}$",
+  "$\\ce{CH3(CH2)3CH3}$",
+  "$\\ce{CH3(CH2)16C(O)OH}$",
+  "$\\ce{CH3HCOHCH3}$",
+  "$\\ce{CCl4}$",
+  paste("$\\ce{CH3C6H5}$", footnote_marker_number(11)),
+  "$\\ce{HCCl3}$",
+  "$\\ce{C6H12}$",
+  "\\~$\\ce{C10H6}$",
+  "$\\ce{H2O}$"
+)
+
+groups <- c(
+  "ketoon",
+  "areen",
+  paste("segu", footnote_marker_number(4)),
+  "alkohol",
+  "ketoon",
+  paste("atsükliline anhüdriid", footnote_marker_number(1)),
+  "eeter",
+  "alkaan",
+  "alkaan",
+  "oksiid",
+  "karboksüülhape",
+  "karboksüülhape",
+  "alkohol",
+  paste("ester", footnote_marker_number(10)),
+  "areen",
+  "alkohol",
+  "alkaan",
+  "karboksüülhape",
+  "areen",
+  "alkaan",
+  "alkohol",
+  "alkaan",
+  "karboksüülhape",
+  "alkohol",
+  "alkaan",
+  "areen",
+  "alkaan",
+  "alkaan",
+  paste("segu", footnote_marker_number(2)),
+  "hüdroksiid"
+)
+#16-10 xylenes
+table_of_substances <- data.frame(
+  substance = substances,
+  condensed_structural_formula = condensed_structural_formulas,
+  group = groups
+)
+
+colnames(table_of_substances) <- c(
+  "Aine",
+  "Valem",
+  "Rühm"
+)
+
+librarian::shelf(c(
+  "dplyr",
+  "kableExtra"
+))
+
+print_table(
+  table = table_of_substances,
+  caption = "Valitud ainete rühmad.",
+  footnotes = c(
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 8-51)", escape = TRUE), # 1
+    render_with_emojis(text = "((ref:turpentine))", escape = TRUE), # 2
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 8-65)", escape = TRUE), # 3
+    render_with_emojis(text = "((ref:a2015-38))", escape = TRUE), # 4
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-79)", escape = TRUE), # 5
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-81)", escape = TRUE), # 6
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-163)", escape = TRUE), # 7
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-223)", escape = TRUE), # 8
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 6-53)", escape = TRUE), # 9
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 8-52)", escape = TRUE), # 10
+    render_with_emojis(text = "((ref:haynes-2014-crc), lk 3-515)", escape = TRUE) # 11
+  )
+) %>%
+  column_spec(1, width = "9em") %>%
+  column_spec(2, width = "19em")
+
+```
+
+#### Ülesanne 2
+
+##### Püstitus
+
+Joonista katsetes kasutatud ainete lihtsustatud struktuurvalem.
+
+##### Lahendus
+
+Valemid on *Valem*i tulbas tabelis \@ref(tab:table-of-substances-with-groups) leheküljel `r render_pageref(reference = "tab:table-of-substances-with-groups")`.
+
+#### Ülesanne 3
+
+##### Püstitus
+
+Leia aine, mis lahustab (hästi) nii polaarseid kui ka mittepolaarseid aineid?
+
+##### Lahendus
+
+Ainetest, millega me eksperimenteerisime ja mille kohta oli olemas teoreetiline teave, on etanool aine, mis lahustab nii polaarseid kui mittepolaarseid aineid.
+
+#### Ülesanne 4
+
+##### Püstitus
+
+Milliseid järeldusi/oletusi võiks teha tundmatu aine kohta tema lahustuvuse põhjal?
+
+##### Lahendus
+
 Vesi ja tundmatu aine lahustusid omavahel, nagu on näha pildil \@ref(fig:solubility-water-unknown) leheküljel `r render_pageref(reference = "fig:solubility-water-unknown")`. Tundmatu aine oli oletatavalt polaarne ja võrdlemisi suure hüdrofiilse osaga. Visuaalselt ei olnud märgata vee hägustumist ega sademe tekkimist. karl oletas, et tundmatu aine oli vesi ning sellele saime õpetajalt verbaalse kinnituse.
 
 ```{r label = "solubility-water-unknown", echo=FALSE, fig.cap = "Vesi ja tundmatu aine lahustusid omavahel täielikult."}
@@ -187,9 +380,9 @@ include_external_graphics("rmd/1/vesi-tundmatu.png")
 
 ```
 
-Ainetest, millega me eksperimenteerisime ja mille kohta oli olemas teoreetiline teave, on etanool aine, mis lahustab nii polaarseid kui mittepolaarseid aineid.
-
 ## Orgaaniliste ainete põlemine
+
+[]{#theory-on-burning}
 
 ### Teooria
 
@@ -198,10 +391,6 @@ Hargnemata ahelaga orgaanilised ühendid süttivad kergemini kui hargnenud ahela
 Alkaanidest nagu petrooleum, bensiin ja heksaan süttib kõige raskemini petrooleum jättes tahma, paremini süttib alkaanide segu bensiin põledes tahmatult, kuid mittepuhtalt, veelgi paremini süttib heksaan, mille ahel on hargnemata.
 
 Alkoholidest nagu metanool, etanool ja 3-metüül-1-butanool (isoamüülalkohol, `r render_with_emojis(text = "((ref:haynes-2014-crc), p. 16-41)")`) süttib kõige raskemini viimane, sest sellel on ainsana hargnenud ahel.
-
-Beilsteini test tähendab vase immutamist ja pärast saadud aine põletamist, et välja selgitada leegi värvuse järgi, kas aines on kloori, broomi või joodi. Roheline värvus näitab kloori, broomi või joodi esinemist ühendis. Fluor leegi värvust ei muuda. Seetõttu Beilsteini testiga fluori sisaldust testida ei saa.
-
-Beilsteini testi pole mõtet teha vase asemel rauaga, sest viimase halogeniidid ei lendu, küll aga vase omad.
 
 ### Eesmärk
 
@@ -249,11 +438,11 @@ Töö osad:
 
 1. Asetasime kolm kõrget portselantiiglit kuumakindlale alusele, milleks meil oli metallkandik.
 
-2. Tõmbekapi all pipeteerisime tühja portselantiiglisse 2 ml petrooleumi.
+2. Tõmbekapi all pipeteerisime tühja portselantiiglisse $\qty{2}{\ml}$ petrooleumi.
 
-3. Tõmbekapi all pipeteerisime tühja portselantiiglisse 1 ml bensiini [alkaanide segu ($\ce{C5}$-$\ce{C12}$)].
+3. Tõmbekapi all pipeteerisime tühja portselantiiglisse $\qty{1}{\ml}$ bensiini [alkaanide segu ($\ce{C5}$-$\ce{C12}$)].
 
-4. Tõmbekapi all pipeteerisime tühja portselantiiglisse 1 ml heksaani.
+4. Tõmbekapi all pipeteerisime tühja portselantiiglisse $\qty{1}{\ml}$ heksaani.
 
 5. Süütasime gaasisüüteliga järjest kõik vedelikud jälgides süttimist.
 
@@ -263,11 +452,11 @@ Töö osad:
 
 8. Asetasime kolm väikest madalat portselantiiglit kuumakindlale alusele, milleks meil oli metallkandik.
 
-9. Tõmbekapi all tekitasime tühja tiiglisse 1 ml metanooli.
+9. Tõmbekapi all tekitasime tühja tiiglisse $\qty{1}{\ml}$ metanooli.
 
-10. Tõmbekapi all tekitasime tühja tiiglisse 1 ml etanooli.
+10. Tõmbekapi all tekitasime tühja tiiglisse $\qty{1}{\ml}$ etanooli.
 
-11. Tõmbekapi all tekitasime tühja tiiglisse 1 ml isoamüülalkoholi.
+11. Tõmbekapi all tekitasime tühja tiiglisse $\qty{1}{\ml}$ isoamüülalkoholi.
 
 12. Süütasime gaasisüüteliga järjest kõik vedelikud madalates tiiglites jälgides süttimist.
 
@@ -303,29 +492,6 @@ Töö osad:
 
 ### Tulemused
 
-Petrooleumi me ei saanudki iseseisvalt põlema. Gaasisüüteli leeki petrooleumi vastas hoides oli näha tiigli serva tahmumist (joonis \@ref(fig:burning-kerosene) leheküljel `r render_pageref(reference = "fig:burning-kerosene")`), mis tähendab, et põlemine oli mittetäielik. Kogu süsinik ei moodusta hapnikuga süsihappegaasi ja ladestub tahmana.
-
-```{r label = "burning-kerosene", echo=FALSE, fig.cap = "Petrooleum ei põlenud puhtalt tekitades tiiglile tahmase serva."}
-include_external_graphics("rmd/2/2-petrooleum.png")
-
-```
-
-Bensiin süttis kergesti. Leek oli kollane nagu näha joonisel \@ref(fig:burning-petrol) leheküljel `r render_pageref(reference = "fig:burning-petrol")`, mis tähendab, et põlemine ei toimunud puhtalt. Tahma ei olnud näha.
-
-```{r label = "burning-petrol", echo=FALSE, fig.cap = "Bensiin ei põlenud puhtalt, ei jätnud ka tahma."}
-include_external_graphics("rmd/2/2-bensiin.png")
-
-```
-
-Heksaan süttis kergesti. Leek oli kollane nagu näha joonisel \@ref(fig:burning-hexan) leheküljel `r render_pageref(reference = "fig:burning-hexan")`, mis tähendab, et põlemine ei toimunud puhtalt. Tahma ei olnud näha.
-
-```{r label = "burning-hexan", echo=FALSE, fig.cap = "Heksaan ei põlenud puhtalt, ei jätnud ka tahma."}
-include_external_graphics("rmd/2/2-heksaan.png")
-
-```
-
-Heksaani ja bensiini süttimise raskuses me erinevust ei tuvastanud, kuigi teoreetiliselt pidi bensiin raskemini süttima. Kuna me petrooleumi põlema ei saanudki, kinnitas see teooriat, et petrooleum nendest kolmest kõige raskemini süttib. See ka jättis ainsana tahma, mis samuti kinnitas teooriat.
-
 Metanool süttis kergesti. Leek oli sinine nagu näha joonisel \@ref(fig:burning-methanol) leheküljel `r render_pageref(reference = "fig:burning-methanol")`, mis tähendab, et põlemine toimus puhtalt ja täielikult.
 
 ```{r label = "burning-methanol", echo=FALSE, fig.cap = "Metanool põles õrnsinise leegiga."}
@@ -340,14 +506,14 @@ include_external_graphics("rmd/2/2-etanool.png")
 
 ```
 
-Isoamüülalkohol süttis läbi suurte raskuste. Leek oli olulises osas kollane nagu näha joonisel \@ref(fig:burning-isoamylalcohol) leheküljel `r render_pageref(reference = "fig:burning-isoamylalcohol")`, mis tähendab, et põlemine toimus mitte nii puhtalt kui etanooli põlemine.
+Isoamüülalkohol süttis takistatult. Leek oli olulises osas kollane nagu näha joonisel \@ref(fig:burning-isoamylalcohol) leheküljel `r render_pageref(reference = "fig:burning-isoamylalcohol")`, mis tähendab, et põlemine toimus mitte nii puhtalt kui etanooli põlemine.
 
 ```{r label = "burning-isoamylalcohol", echo=FALSE, fig.cap = "Isoamüülalkohol põles kollase leegiga."}
 include_external_graphics("rmd/2/2-isoamüülalkohol.png")
 
 ```
 
-Kogesime, et 3-metüül-1-butanool süttis tõepoolest kõige raskemini saades teooriale kinnitust.
+Kogesime, et 3-metüül-1-butanool süttis tõepoolest kõige raskemini, saades teooriale kinnitust.
 
 Pärast vasktraadi immutamist joodi lahuses etanoolis (joonis \@ref(fig:wetting-with-iodine-and-tetrachloromethane) leheküljel `r render_pageref(reference = "fig:wetting-with-iodine-and-tetrachloromethane")`) põles traadi ots rohelise leegiga, nagu on näha joonisel \@ref(fig:burning-iodine) leheküljel `r render_pageref(reference = "fig:burning-iodine")`.
 
@@ -381,3 +547,59 @@ include_external_graphics("rmd/2/2-bensiinine-vask-põleb.png")
 ```
 
 Kogesime, et kloori ja joodi sisaldav aine põles rohelise leegiga ning bensiin, mis ei sisalda kloori, joodi ega broomi, põles kollase leegiga, mis kinnitas teooriat.
+
+Saavutasime eesmärgi.
+
+### Ülesanded
+
+#### Ülesanne 5
+
+##### Püstitus
+
+Võrdle omavahel bensiini, diislikütuse ja heksaani põlemist ning metanooli, etanooli ja
+isoamüülalkoholi põlemist. Millestest asjaoludest on tingitud nende erinev põlemine?
+
+##### Lahendus
+
+Diislikütuse asemel kasutasime petrooleumi, mida me ei saanudki iseseisvalt põlema. Gaasisüüteli leeki petrooleumi vastas hoides oli näha tiigli serva tahmumist (joonis \@ref(fig:burning-kerosene) leheküljel `r render_pageref(reference = "fig:burning-kerosene")`), mis tähendab, et põlemine oli mittetäielik. Kogu süsinik ei moodusta hapnikuga süsihappegaasi ja ladestub tahmana.
+
+```{r label = "burning-kerosene", echo=FALSE, fig.cap = "Petrooleum ei põlenud puhtalt, tekitades tiiglile tahmase serva."}
+include_external_graphics("rmd/2/2-petrooleum.png")
+
+```
+
+Bensiin süttis takistamatult. Leek oli kollane, nagu näha joonisel \@ref(fig:burning-petrol) leheküljel `r render_pageref(reference = "fig:burning-petrol")`, mis tähendab, et põlemine ei toimunud puhtalt. Tahma ei olnud näha.
+
+```{r label = "burning-petrol", echo=FALSE, fig.cap = "Bensiin ei põlenud puhtalt, ei jätnud ka tahma."}
+include_external_graphics("rmd/2/2-bensiin.png")
+
+```
+
+Heksaan süttis takistamatult. Leek oli kollane nagu näha joonisel \@ref(fig:burning-hexan) leheküljel `r render_pageref(reference = "fig:burning-hexan")`, mis tähendab, et põlemine ei toimunud puhtalt. Tahma ei olnud näha.
+
+```{r label = "burning-hexan", echo=FALSE, fig.cap = "Heksaan ei põlenud puhtalt, ei jätnud ka tahma."}
+include_external_graphics("rmd/2/2-heksaan.png")
+
+```
+
+Heksaani ja bensiini süttimise raskuses me erinevust ei tuvastanud, kuigi [teoreetiliselt](#theory-on-burning) pidi bensiin raskemini süttima. Kuna me petrooleumi põlema ei saanudki, kinnitas see teooriat, et petrooleum nendest kolmest kõige raskemini süttib. See ka jättis ainsana tahma, mis samuti kinnitas teooriat.
+
+#### Ülesanne 6
+
+##### Püstitus
+
+Miks on võimalik Beilsteini testiga tuvastada kloori, broomi ja joodi, kuid mitte fluori?
+
+##### Lahendus
+
+Beilsteini test tähendab vase immutamist ja pärast saadud aine põletamist, et välja selgitada leegi värvuse järgi, kas aines on kloori, broomi või joodi. Roheline värvus näitab kloori, broomi või joodi esinemist ühendis. Fluor leegi värvust ei muuda. Seetõttu Beilsteini testiga fluori sisaldust testida ei saa.
+
+#### Ülesanne 7
+
+##### Püstitus
+
+Kas Beilsteini test tuleb välja ka raudtraati kasutades? Põhjendada vastust.
+
+##### Lahendus
+
+Beilsteini testi pole mõtet teha vase asemel rauaga, sest viimase halogeniidid ei lendu, küll aga vase omad.

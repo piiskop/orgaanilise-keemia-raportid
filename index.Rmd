@@ -113,9 +113,10 @@ print_table <- function(table, caption, digits = 2, additional_header = NULL, fo
       table,
       bootstrap_options = c("striped", "bordered", "condensed", "responsive", "hover"),
       latex_options = c("striped", "repeat_header"),
-      # repeat_header_text = paste(caption, "$\\textit{(Jätkub...)}$"),
+      repeat_header_text = paste(caption, "$\\textit{(Jätkub...)}$"),
       repeat_header_method = "replace",
-      repeat_header_continued = TRUE # "Tabel järgneb järgmisel leheküljel..."
+      #repeat_header_continued = TRUE # "Tabel järgneb järgmisel leheküljel..."
+      repeat_header_continued = "Tabel järgneb järgmisel leheküljel..."
     ))
     
     if (!is.null(footnotes)) {
@@ -227,20 +228,34 @@ render_color <- function(color, text) {
 
 # Sissejuhatus {.unnumbered}
 
-See raport siin kirjeldab kõiki eksperimente, mida sooritasime Tallinna Ülikooli kursuse *Orgaaniline keemia I* raames laura tomsoni juhendamise all ruumis T-211 vahemikus septembrist detsembrini 2022.
+See raport siin kirjeldab kõiki eksperimente, mille sooritasime Tallinna Ülikooli kursuse *Orgaaniline keemia I* raames laura tomsoni juhendamise all ruumis T-211 vahemikus septembrist detsembrini 2022, lähtudes nende eksperimentide juhendist.
 
-Täielikult on kirjeldatud eksperimendid, mis on juhendis tähistatud 1-11. Eksperiment 12 on kirjeldatud osaliselt.
+Algusse sättisin üldise reeglistiku, milles on peamiselt valemid ja tuletuskäigud. Kulutasin aruannet koostades mitu ajaühikut, mooli endale selgekstegemisele. Teadsin, mis see on ja kuidas rakendada, ent puudu oli lüli, mis seda ka mõista võimaldanuks. On oluline, et õppimises ei oleks sees lünki, sest muidu ei pruugi kõik edasine mõistetav olla. Süübinuna detailidesse jõudsin massini. Seega tuli teostada sarnane uuring massi kohta, et jõuda algsuuruseni, mis on selgelt mõistetav. Mass on vastupidavus kiirendusele, mis on omakorda kiiruse muutumine ajas, ja see asukoha muutumine ajas, mis on piisavalt elementaarne suurus. Seetõttu on kõik lülid reeglite osas kirjas, et jõuda moolini ja kaugemalegi. mind väga häirib, kui loen teadusartiklit, milles selgitatakse mingit protsessi, kuid kahe protsessi sammu vahel on liiga suur vahemaa, et ilma n-ö seitsme penikoorma saabasteta seda vahemaad ühe sammuna astuda. Lünga täitmine alternatiivseid allikaid kasutades on aja- ja energiamahukas. Seetõttu kirjutan enda ning ka muude lugejate jaoks sammud lahti piisavalt lühikese pikkusega.
 
-Algusse sättisin üldise reeglistiku, milles on peamiselt valemid ja tuletuskäigud.
+Arvutuste jaoks viitan valemile ja näitan ära arvutuskäigu R's.
 
-Tööde kestel jäädvustasin eksperimentide osi audiovisuaalselt, mis võimaldas raportit ilmestada piltidega tulemustest. Sellist pildimaterjali on veel palju, millega meeleldi täiendaksin eksperimentide 10-12 kirjeldusi, kus on need kõik puudu, sest semestri ülekoormuse tõttu ei ole ma jõudnud seda veel teha.
+Tööde kestel jäädvustasin eksperimentide osi audiovisuaalselt, mis võimaldas raportit ilmestada piltidega tulemustest. Iga mulle olulisena tundunud muutus, mille kohta oli võimalik visuaalne ilmestus lisada, on lisaks sõnalisele kirjeldusele nähtav pildil. Visuaalsed ilmestajad on paigutatud automaatselt viidatud kohale võimalikult lähedale piisavalt suurele alale. Võinuksin kõik pildid ka lisasse sättida, mis võimaldanuks lugeda teksti ilma pildipausideta. Sedapuhku tundus, et seos tekstiga on tugevam, kui pilt on teksti sees. Kui keegi viitsib selle faili välja trükkida, siis paberraamatuna lugedes võiks lisa olemasolu korral hoida kaht järjehoidjat: üht teksti, teist piltide jaoks. Kui pildid on teksti sees, vajadus eraldi järjehoidja järele puudub. Kui kasutada korralikku Portable Document Formati failide lugerit, siis kõik failis olevad lingid toimivad ning nende kaudu saab navigeerida pildile ja tagasiliikumise klahvi abil viitamiskohale naasta. Samuti on abiks sisujuht.
 
-Eksperimentide kirjeldused jaotasin vastavalt juhendi struktuurile ja järjekorrale. Sisemine struktuur hõlmab üldiselt teooriat, eesmärke, tööriistade ja ainete loendeid ning tulemuste kirjeldusi. Vastused juhendis olevatele küsimustele on paigutatud loogilisse kohta vastava osa juures eksperimendi kirjelduses.
+Eksperimentide kirjeldused jaotasin vastavalt juhendi struktuurile ja järjekorrale. Sisemine struktuur hõlmab üldiselt teooriat, eesmärke, tööriistade ja sisendainete loendeid, tulemuste kirjeldusi ning ülesannete lahendamise osa.
+
+Teooria maht sõltub eksperimendist. Teooria aitab mõista, mida me tegime, ning on õppimisprotsessi lahutamatu osa.
 
 Kirjeldusstiilis kasutan mina- ja meie-vormi, et oleks selge, kes mida tegi. mulle üldse ei meeldi anonüümne stiil *teadlased avastasid* või umbisikuline stiil *avastati*, sest need lükkavad nii tegija kui viitaja vastutusest kõrvale.
 
-Kasutan raportis võimalusel Système Internationali (SI) ühikuid, kuid mõnes juhus paremaks hoomamiseks SI-väliseid või tuletatud SI ühikuid. Nt kui termomeetri näit oli Celsiuse kraadides, siis viitasin sellele termomeetri näidule samades ühikutes ja mitte kelvinites.
+Enamasti on kasutuses faktipõhine kirjutusviis, kuid kohati olen ilmestanud teksti emotsionaalselt, et sellesse paigutatud teave oleks hõlpsamini hoomatav ja meenutatav. Kaasaegne õpetamine nõuab mitmekülgset lähenemisoskust ning mentaalsete vürtside kasutamist, millega tekivad ajju tugevamad seosed.
 
-Raport on abiks orgaanilise keemia vastavate teemade mõistmisel, meeldetuletuseks, kuidas mingeid eksperimente tegime, samuti abiks seotud teemade õpetamiseks ettevalmistamises.
+Aruande loomine on kestanud umbkaudu kaks nädalat ja kaks päeva ning on olnud nauding, mille kestel olen kinnistanud teadmisi-oskusi, mida laboratooriumisessioonides omandasin. Samuti olen õppinud juurde tehnilisi oskusi `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`i osas. Sellele naudingule vastukaaluks on olnud väljakutse napi ajaga, kasutajasõbralik teos valmis teha. Oluline osa aega on kulunud iseseisvale õppimisele, et leida kinnitust või lükata ümber väiteid, milles olen kahelnud.
 
-mina olen peacecop kalmer: ja minu üliõpilaskood on *210951MLLB.LT*.
+Kasutan raportis võimalusel Système Internationali (SI) ühikuid, kuid mõnes juhus paremaks hoomamiseks SI-väliseid või tuletatud SI ühikuid. Nt kui termomeetri näit oli Celsiuse kraadides, siis viitasin sellele termomeetri näidule samades ühikutes ja mitte kelvinites, sest kahekohaliste arvudega on lihtsam mängida kui kolmekohalistega.
+
+Raport on abiks orgaanilise keemia vastavate teemade mõistmisel, meeldetuletuseks, kuidas mingeid eksperimente tegime, samuti abiks seotud teemade õpetamiseks ettevalmistamises. Seetõttu on ka aruande maht kordades suurem kui nominaalse bakalaureuseteose maht.
+
+Aruandes on kajastatud ka äpardusi, sest vigadest õppimine on tõhus õppimine.
+
+Vorminduses võtsin aluseks ühe *bookdown*i jaoks loodud `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`i teesi küljendusmalli, mille kohandasin vastavaks [JUHENDile
+loodusteaduste ja loodusainete didaktika erialade
+lõputööde koostamiseks ja vormistamiseks](https://www.tlu.ee/sites/default/files/Instituudid/LTI/Dokumendid/Loodusteadused/Juhend_Loodusteadused_BA_MA_2020_veebi_12012021.pdf). Kuigi tegemist ei ole eriala lõputöö väljundiga, hoian oma kirjalike väljundite osas ühtset stiili.
+
+Aruanne on kättesaadav nii [veebi-](http://orgaanilise-keemia-raportid.tennis24.ee/) kui [trükiteisendina](http://orgaanilise-keemia-raportid.tennis24.ee/orgaanilise-keemia-raportid.pdf). Kuna kasutan mitut `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`i teeki, mida *MathJax* veebi jaoks tõlkida ei oska, siis soovitan tarbida trükiversiooni - veebiversioonis kõike ei näe. Vestlust aruande osade üle saab arendada [GitHubis](https://github.com/piiskop/orgaanilise-keemia-raportid), kus on võimalik näha ka tervet raporti valmistamise ajalugu.
+
+mina olen peacecop kalmer: üliõpilaskoodiga *210951MLLB.LT* ja soovin sulle huvitavaid lugemiselamusi.

@@ -70,20 +70,6 @@ $\qty{`r as.character(M_acetone)`}{\kg\per\mol}$.
 2-propanooni tihedus on $\qty{25}{\degreeCelsius}$ juures
 $\qty{`r as.character(mass_concentration_of_acetone)`}{\kg\metre\cubed}$.
 
-Kui panna kokku benseenkarboksaldehüüd ja 2-propanoon, on protsess
-selgitatav võrrandiga \@ref(eq:benzenkarboxaldehyde-and-acetone)
-leheküljel
-`r render_pageref(reference = "eq:benzenkarboxaldehyde-and-acetone")`:
-
-```{=tex}
-\begin{align}
-2 \chemfig{*6(-=-(-[:30]=[:-30]\ce{O})=-=)} + \chemfig{-[:30](=[:90]\ce{O})-[:-30]} \ce{->[NaOH]} \\
-\chemfig{*6(-=-(-[:30]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:-30](*6(-=-=-=)))=-=)} \ce{+ 2H2O},
-(\#eq:benzenkarboxaldehyde-and-acetone)
-\end{align}
-```
-milles **naatriumhüdroksiid on tugeva alusena katalüsaator**. See võrrand on brutovõrrand. Detailselt tekkivat poole benseenkarboksaldehüüdi reageerimisel 2-propanooniga bensülidiinatsetoon, mis reageerides teise poole benseenkarboksaldehüüdiga tekitavat 1,5-difenüül-1,4-pentadieen-3-ooni `r render_with_emojis(text = "((ref:what))")`.
-
 Lasen arvutada 1,5-difenüül-1,4-pentadieen-3-ooni tootmiseks vajaliku
 ruumilise koguse benseenkarboksaldehüüdi vastavalt valemile
 \@ref(eq:volume) leheküljel `r render_pageref(reference = "eq:volume")`:
@@ -124,7 +110,7 @@ Reaktiivid benseenkarboksaldehüüd ja 2-propanoon segatakse anumas,
 millest valatakse segu teise anumasse, kus on naatriumhüdroksiidi lahus.
 Et esimese anuma seintelt kogu segu kätte saada, pestakse seda anumat
 väikeste koguste etanooliga ja valatakse pesuvedelik teise nimetatud
-anumasse. **Etanool on orgaaniline lahusti, mis lahustab lähteained.**
+anumasse.
 
 Kui reaktsioon on paarikümne minutise segamise tulemusena toimunud,
 kogutakse saadus 1,5-difenüül-1,4-pentadieen-3-oon Büchneri filtri abil
@@ -141,11 +127,10 @@ kiirendamiseks saab korgitükiga sadet vastu filtrit vajutada.
 
 Et saada ka see osa naatriumhüdroksiidi saadusest kätte, mis
 filterdamise ajal ei eemaldunud, pannakse sade nõusse ja segatakse
-veega. **Naatriumhüdroksiid lahustub vees, 1,5-difenüül-1,4-pentadieen-oon
-mitte.** Pärast tuleb kogu segu uuesti filterdada.
+veega. Pärast tuleb kogu segu uuesti filterdada.
 
 Sünteesitud dibensalatsetoon sisaldab lisandeid, mis eemaldatakse
-ümberkristallimisega. Ümberkristallitavale 1,5-difenüül-1,4-pentadieen-oonile ei tohi etanooli lisada liiga palju. **Kui etanooli lisatakse sellele ainele palju rohkem, kui oleks minimaalselt vajalik kogu aine lahustamiseks, siis see osa etanooli, mis ei lahusta dibensalatsetooni, jääb lahustumata.** Pärast kuumutamist segu jahutatakse, et toimuks lahustamisele vastupidine protsess kristalliseerumine. Kui etanooli on lisatud rohkem kui 1,5-difenüül-1,4-pentadieen-ooni lahustamiseks oli vajalik, see jääketanool takistab dibensalatsetoonil jahtudes kristalliseeruda ja protsess kestab kauem. **Kui aga etanooli kasutada ümberkristalliseerumises liiga vähe, ei lahustu kogu dibensalatsetoon ja osa seda ainet jääb ümberkristalliseerumata.** **Ümberkristallitavad kristallid tuleb filtrida jahutatult, sest kui seda teha kuumalt, osa ainet, mis muidu kristalliseeruks, valgub filtraadiks.** Kristallumine peab toimuma aeglaselt.
+ümberkristallimisega. Ümberkristallitavale 1,5-difenüül-1,4-pentadieen-oonile ei tohi etanooli lisada liiga palju. Pärast kuumutamist segu jahutatakse, et toimuks lahustamisele vastupidine protsess kristalliseerumine. Kristallumine peab toimuma aeglaselt.
 
 Saadus 1,5-difenüül-1,4-pentadieen-3-oon ei lahustu vees, lahustub
 kergelt etanoolis ning piisavalt 2-propanoonis ja kloroformis
@@ -165,35 +150,6 @@ m_dibenzalacetone <- calculate_m(M_B = M_dibenzalacetone, n_B = n_dibenzalaceton
 ```
 
 Nii et $\qty{`r as.character(signif(x = V_benzencarboxaldehyde, digits = 2))`}{\metre\cubed}$'st benseenkarboksaldehüüdist ja $\qty{`r as.character(signif(x = V_acetone, digits = 2))`}{\metre\cubed}$'st 2-propanoonist saab teoreetiliselt $\qty{`r as.character(m_dibenzalacetone)`}{\kg}$ 1,5-difenüül-1,4-pentadieen-3-ooni.
-
-1,5-difenüül-1,4-pentadieen-3-oonil olevat **kolm geomeetrilist isomeeri**, millest üks
-ehk trans,trans-1,5-difenüül-1,4-pentadieen-3-oon on esitatud võrrandis
-\@ref(eq:benzenkarboxaldehyde-and-acetone) leheküljel
-`r render_pageref(reference = "eq:benzenkarboxaldehyde-and-acetone")`.
-Ülejäänud kaks isomeeri: cis,trans-1,5-difenüül-1,4-pentadieen-3-oon ehk trans,cis-1,5-difenüül-1,4-pentadieen-3-oon ja cis,cis-1,5-difenüül-1,4-pentadieen-3-oon on
-esitatud vastavalt skeemil \@ref(eq:cis-trans) leheküljel
-`r render_pageref(reference = "eq:cis-trans")` ja \@ref(eq:cis-cis)
-leheküljel `r render_pageref(reference = "eq:cis-cis")`. `r render_with_emojis(text = "((ref:what))")`.
-
-```{=tex}
-\begin{align}
-\chemfig{*6(-=-(-[:30]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:90](*6(-=-=-=)))=-=)}.
-(\#eq:cis-trans)
-\end{align}
-```
-```{=tex}
-\begin{align}
-\chemfig{*6(-(-[:-90]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:90](*6(-=-=-=)))=-=-=)}.
-(\#eq:cis-cis)
-\end{align}
-```
-
-**Sulamistemperatuuri saab määrata nii vesi- kui õlivanniga. Õlil on
-kõrgem keemistemperatuur kui veel, mistõttu sobib õli kõrgema
-sulamistemperatuuriga ainete sulamistemperatuuri määramiseks.** **Vesivanni
-kasutades dibensalatsetooni sulamistemperatuuri määrata ei saa**, sest
-selleks ajaks, kui dibensalatsetoon sulama hakkab, oleks vesi juba ära
-auranud.
 
 1,5-difenüül-1,4-pentadieen-3-ooni sulamistemperatuuri määramiseks kapillaari abil tuleb kapillaari põhja saada nii palju ainet, et visuaalselt oleks võimalik sulamine tuvastada. Termomeeter ei tohi õlivanni puudutada ja peaks olema vanni põhjast piisavalt kõrgel. Sulamine tehakse kindlaks kapillaaris oleva aine muutuste toimumise kaudu. Muutused võivad olla värvuse muutused, paakumine ehk kristallide kokkusulamine. Aine sulamistemperatuur on temperatuurivahemik esimese vedelikupiisa ilmumisest kapillaaris kuni aine täieliku sulamiseni.
 
@@ -280,7 +236,7 @@ Elektromagnetnlainete neeldumise väljaselgitamiseks aines spektrofotomeetriga t
 
 ## Töö käik
 
-Töö teostasin koos ragne kalmeti ja gisela angelaga.
+Töö teostasin koos ragne kalmeti ja gisela angela aasaga 23. novembripäevas.
 
 Töö osad:
 
@@ -354,7 +310,7 @@ benseenkarboksaldehüüdi sammul 1 arvutatud mahus. Aine lõhnas martsipani jär
     ```
 
     Et anuma seintelt kogu bensaldehüüdi ja atsetooni segu kätte saada,
-    pidanuksime pesema esialgsed benseencarboksaldehüüdi ja atsetooni segu nõud väikese koguse
+    pidanuksime pesema esialgset benseencarboksaldehüüdi ja atsetooni segu nõud väikese koguse
     etanooliga ja valama selle Erlenmeyeri kolbi.
     Audiovisuaalselt salvestiselt ei suutnud ma seda tegevust tuvastada.
 
@@ -395,7 +351,7 @@ benseenkarboksaldehüüdi sammul 1 arvutatud mahus. Aine lõhnas martsipani jär
     leheküljel
     `r render_pageref(reference = "fig:adding-300-ml-water")`).
 
-    ```{r label = "adding-300-ml-water", echo=FALSE, fig.cap = "Lisasime 1,5-difenüül-1,4-pentadieen-3-ooni sademele 300 ml vett."}
+    ```{r label = "adding-300-ml-water", echo=FALSE, fig.cap = "Lisasime 1,5-difenüül-1,4-pentadieen-3-ooni sademele $\\qty{300}{\\ml}$ vett."}
     include_external_graphics("rmd/11/11-adding-300-ml-water.png")
 
     ```
@@ -460,7 +416,7 @@ benseenkarboksaldehüüdi sammul 1 arvutatud mahus. Aine lõhnas martsipani jär
 
 21. Kolbi lisasime kapillaari (joonis
     \@ref(fig:capillary) leheküljel
-    `r render_pageref(reference = "fig:capillary")`.
+    `r render_pageref(reference = "fig:capillary")`).
 
     ```{r label = "capillary", echo=FALSE, fig.cap = "gisela angela puistas putru kapillaari, et suurendada pinda, millele mullid kinnituvad."}
     include_external_graphics("rmd/11/11-kapillaar.png")
@@ -655,7 +611,7 @@ benseenkarboksaldehüüdi sammul 1 arvutatud mahus. Aine lõhnas martsipani jär
     `r render_pageref(reference = "fig:weighing")`) ja lasin arvutada
     sünteesitud dibensalatsetooni massi.
 
-    ```{r label = "weighing", echo=FALSE, fig.cap = "Omavalistatud 1,5-difenüül-1,4-pentadieen-3-oon kaalul."}
+    ```{r label = "weighing", echo=FALSE, fig.cap = "Omavalmistatud 1,5-difenüül-1,4-pentadieen-3-oon kaalul."}
     include_external_graphics("rmd/11/11-kaalumine.png")
 
     ```
@@ -673,7 +629,7 @@ benseenkarboksaldehüüdi sammul 1 arvutatud mahus. Aine lõhnas martsipani jär
     ja \@ref(fig:dibenzalacetone-in-acetone) leheküljel
     `r render_pageref(reference = "fig:dibenzalacetone-in-acetone")`).
 
-    ```{r label = "dibenzalacetone-into-acetone", echo=FALSE, fig.cap = "Kaks sellist tükikest 1,5-difenüül-1,4-pentadieen-3-ooni nagu spaatlil lisas ragne katseklaasis olevasse etanooli."}
+    ```{r label = "dibenzalacetone-into-acetone", echo=FALSE, fig.cap = "Kaks sellist tükikest 1,5-difenüül-1,4-pentadieen-3-ooni, nagu spaatlil, lisas ragne katseklaasis olevasse etanooli."}
     include_external_graphics("rmd/11/11-dibensalatsetoon-atsetooni.png")
 
     ```
@@ -922,20 +878,6 @@ leheküljel
 lahuse kontsentratsioon
 $\qty{`r as.character(c_spekter)`}{\mol\per\metre\cubed}$.
 
-Praktiline ultraviolettlainete vahemik on $\qtyrange{190}{400}{\nm}$
-`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-7)")`.
-1,5-difenüül-1,4-pentadieen-3-ooni neelduvuse maksimum oli selles
-vahemikus. Kuna see **neelab hästi ultraviolettkiirgust, ka seda, mis
-saabub Päikesest, saab seda kasutada kaitseainena päikesekreemides**. See
-sobib päikesekreemi ka seetõttu, et **koostis on püsiv** ja seega ka toime
-on püsiv \`r render_with_emojis(text = "((ref:why))"). õpetaja leidis ka, et aine **ei tekitavat allergilist reaktsiooni**.
-
-**Keeruline on seletada, miks 1,5-difenüül-1,4-pentadieen-3-oon meile
-kahvatukollasena paistab. See tähendab, et aine neelab järelikult
-vastasvärvi, mis on kuskil sinise värvi lainealas. Ometi on maksimum
-ultraviolettkiirguse alas, mis tähendaks, et me peaksime ainet nägema
-hoopis helerohelisena.**
-
 ```{r label = "c-kaalutud"}
 mass_concentration_of_dibenzalacetone <- convert_from_g_per_ml_to_kg_per_m3(1.1)
 c_kaalutud <- calculate_c_by_mass_concentration(n = n_dibenzalacetone, mass_concentration = mass_concentration_of_dibenzalacetone, m = m_dibenzalacetone)
@@ -954,3 +896,173 @@ $\qty{5.8e-2}{\mol\per\metre\cubed}$.
 
 Paistab, et kõik koguste kontsentratsioonid on üksteise suhtes väga
 erinevad.
+
+Kõik eesmärgid, välja arvatud kolmas, said saavutatud.
+
+## Ülesanded
+
+### Ülesanne 56
+
+#### Püstitus
+
+Milline osa on naatriumhüdroksiidil dibensalatsetooni sünteesil?
+
+#### Lahendus
+
+Kui panna kokku benseenkarboksaldehüüd ja 2-propanoon, on protsess
+selgitatav võrrandiga \@ref(eq:benzenkarboxaldehyde-and-acetone)
+leheküljel
+`r render_pageref(reference = "eq:benzenkarboxaldehyde-and-acetone")`:
+
+```{=tex}
+\begin{align}
+2 \chemfig{*6(-=-(-[:30]=[:-30]\ce{O})=-=)} + \chemfig{-[:30](=[:90]\ce{O})-[:-30]} \ce{->[NaOH]} \\
+\chemfig{*6(-=-(-[:30]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:-30](*6(-=-=-=)))=-=)} \ce{+ 2H2O},
+(\#eq:benzenkarboxaldehyde-and-acetone)
+\end{align}
+```
+milles naatriumhüdroksiid on tugeva alusena katalüsaator. See võrrand on brutovõrrand. Detailselt tekkivat poole benseenkarboksaldehüüdi reageerimisel 2-propanooniga bensülidiinatsetoon, mis reageerides teise poole benseenkarboksaldehüüdiga tekitavat 1,5-difenüül-1,4-pentadieen-3-ooni `r render_with_emojis(text = "((ref:what))")`.
+
+### Ülesanne 57
+
+#### Püstitus
+
+Milline osa on etanoolil dibensalatsetooni sünteesil?
+
+#### Lahendus
+
+Etanool on orgaaniline lahusti, mis lahustab lähteained.
+
+### Ülesanne 58
+
+#### Püstitus
+
+Milleks on vajalik sünteesitud dibensalatsetooni vette asetamine ja segamine?
+
+#### Lahendus
+
+Naatriumhüdroksiid lahustub vees, 1,5-difenüül-1,4-pentadieen-oon
+mitte.
+
+### Ülesanne 59
+
+#### Püstitus
+
+Dibensalatsetoonil on 3 geomeetrilist isomeeri: cis, cis; cis, trans; trans, trans. Näidata ära
+kõigi kolme ühendi struktuurid ja nimetused.
+
+#### Lahendus
+
+1,5-difenüül-1,4-pentadieen-3-oonil olevat kolm geomeetrilist isomeeri, millest üks
+ehk trans,trans-1,5-difenüül-1,4-pentadieen-3-oon on esitatud võrrandis
+\@ref(eq:benzenkarboxaldehyde-and-acetone) leheküljel
+`r render_pageref(reference = "eq:benzenkarboxaldehyde-and-acetone")`.
+Ülejäänud kaks isomeeri: cis,trans-1,5-difenüül-1,4-pentadieen-3-oon ehk trans,cis-1,5-difenüül-1,4-pentadieen-3-oon ja cis,cis-1,5-difenüül-1,4-pentadieen-3-oon on
+esitatud vastavalt skeemil \@ref(eq:cis-trans) leheküljel
+`r render_pageref(reference = "eq:cis-trans")` ja \@ref(eq:cis-cis)
+leheküljel `r render_pageref(reference = "eq:cis-cis")`. `r render_with_emojis(text = "((ref:what))")`.
+
+```{=tex}
+\begin{align}
+\chemfig{*6(-=-(-[:30]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:90](*6(-=-=-=)))=-=)}.
+(\#eq:cis-trans)
+\end{align}
+```
+```{=tex}
+\begin{align}
+\chemfig{*6(-(-[:-90]=[:-30]-[:30](=[:90]\ce{O})-[:-30]=[:30]-[:90](*6(-=-=-=)))=-=-=)}.
+(\#eq:cis-cis)
+\end{align}
+```
+
+### Ülesanne 60
+
+#### Püstitus
+
+Miks ei tohi etanooli ümberkristallitavale dibensalatsetoonile lisada liiga palju (palju
+rohkem, kui oleks minimaalselt vajalik kogu aine lahustamiseks)?
+
+#### Lahendus
+
+Kui etanooli lisatakse sellele ainele palju rohkem, kui oleks minimaalselt vajalik kogu aine lahustamiseks, siis see osa etanooli, mis ei lahusta dibensalatsetooni, jääb lahustumata.
+
+### Ülesanne 61
+
+#### Püstitus
+
+Miks ei tohi etanooli ümberkristallitavale dibensalatsetoonile lisada etanooli liiga vähe (nii
+vähe, et kõik kristallid ei lahustu)?
+
+#### Lahendus
+
+Kui etanooli on lisatud rohkem kui 1,5-difenüül-1,4-pentadieen-ooni lahustamiseks oli vajalik, see jääketanool takistab dibensalatsetoonil jahtudes kristalliseeruda ja protsess kestab kauem. Kui aga etanooli kasutada ümberkristalliseerumises liiga vähe, ei lahustu kogu dibensalatsetoon ja osa seda ainet jääb ümberkristalliseerumata.
+
+### Ülesanne 62
+
+#### Püstitus
+
+Miks ei tohi ümberkristallitavaid kristalle filtrida kuumalt (miks on vajalik segu eelnev
+jahutamine)?
+
+#### Lahendus
+
+Ümberkristallitavad kristallid tuleb filtrida jahutatult, sest kui seda teha kuumalt, osa ainet, mis muidu kristalliseeruks, valgub filtraadiks.
+
+### Ülesanne 63
+
+#### Püstitus
+
+Kas dibensalatsetooni sulamistemperatuuri saab määrata ka vesivanni kasutades?
+
+#### Lahendus
+
+Vesivanni
+kasutades dibensalatsetooni sulamistemperatuuri määrata ei saa, sest
+selleks ajaks, kui dibensalatsetoon sulama hakkab, oleks vesi juba ära
+auranud.
+
+### Ülesanne 64
+
+#### Püstitus
+
+Millal on otstarbekas kasutada sulamistemperatuuri määramiseks vesivanni, millal
+õlivanni?
+
+#### Lahendus
+
+Sulamistemperatuuri saab määrata nii vesi- kui õlivanniga. Õlil on
+kõrgem keemistemperatuur kui veel, mistõttu sobib õli kõrgema
+sulamistemperatuuriga ainete sulamistemperatuuri määramiseks.
+
+### Ülesanne 65
+
+#### Püstitus
+
+Miks on dibensalatsetoon kahvatukollase värvusega (põhjendada neeldumisspektri alusel)?
+
+#### Lahendus
+
+Kui neeldunud elektromagnetkiirgus on inimese jaoks nähtamatus ultravioletses elektromagnetkiirguse spektrumi osas, mis tähendab väikest lainepikkust, siis kiirgatud valgus on pikema lainepikkusega inimesele nähtava kiirgusega alas umbes kohas, milles näeme sellist värvust, millist nägime 1,5-difenüül-1,5-pentadieen-3-oonil (joonis \@ref(fig:electromagnetic-spectrum) leheküljel
+    `r render_pageref(reference = "fig:electromagnetic-spectrum")`).
+
+```{r label = "electromagnetic-spectrum", echo=FALSE, fig.cap = paste("Kui aine neelab elektromagnetkiirgust kõige enam ultraviolettkiirguse (UV) osas, siis peegeldub sellest ainest kõige enam valgust nähtava valguse keskosas ", render_with_emojis(text = "((ref:excited), 2:32)"), ".", sep = "")}
+include_external_graphics("rmd/11/11-electromagnetic-spectrum.png")
+
+```
+
+### Ülesanne 66
+
+#### Püstitus
+
+Millised dibensalatsetooni omadused võimaldavad seda hästi kasutada päikesekreemide
+koostisainena (nimetada 2)?
+
+#### Lahendus
+
+Praktiline ultraviolettlainete vahemik on $\qtyrange{190}{400}{\nm}$
+`r render_with_emojis(text = "((ref:haynes-2014-crc), p. 8-7)")`.
+1,5-difenüül-1,4-pentadieen-3-ooni neelduvuse maksimum oli selles
+vahemikus. Kuna see neelab hästi ultraviolettkiirgust, ka seda, mis
+saabub Päikesest, saab seda kasutada kaitseainena päikesekreemides. See
+sobib päikesekreemi ka seetõttu, et koostis on püsiv ja seega ka toime
+on püsiv `r render_with_emojis(text = "((ref:why))")`. õpetaja leidis ka, et aine ei tekitavat allergilist reaktsiooni.
